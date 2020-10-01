@@ -2,20 +2,20 @@
 name: New Submission
 about: Add new submissions
 title: ''
-labels: good first issue, C++, Hacktoberfest, first timer, python, java, javascript,
-  New Submssion, TypeScript, scala, ruby
+labels: C++, Hacktoberfest, New Submssion, TypeScript, first timer, good first issue,
+  java, javascript, python, ruby, scala
 assignees: ''
 
 ---
 
 **Submission Title**
-Bubble Sort/AVL Graph ...
+Bubble Sort/AVL Graph/Vector
 
 **Submission Type**
-Algo/DS/STL/Mathematical
+Algorithm/Data Structure/STL/Mathematical
 
 **Submission Description**
-Describe the Algo/DS
+Describe the Algo/DS/STL
 
 **Contributors**
 - [ ]  C++ -
