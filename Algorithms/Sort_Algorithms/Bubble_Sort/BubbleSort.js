@@ -5,7 +5,8 @@ function swap(arr, first_Index, second_Index) {
 }
 
 function bubbleSort(arr) {
-  if (arr.length < 1) return 0;
+  if (arr.length < 1)
+    return 0;
   var arrayLength = arr.length;
   for (let i = 0; i < arrayLength; i++) {
     for (let j = 0, end = arrayLength - i; j < end; j++) {
@@ -16,4 +17,4 @@ function bubbleSort(arr) {
   }
   return arr;
 }
-console.log(bubbleSort([3, 0, 2, 5, -1, 4, 1]));
+console.log(bubbleSort([ 3, 0, 2, 5, -1, 4, 1 ]));
