@@ -3,9 +3,11 @@ const binarySearch = (arr, start, end, target) => {
     mid = parseInt(start + (end - start) / 2)
     if (arr[mid] == target) {
       return mid
-    } else if (arr[mid] > target) {
+    }
+    else if (arr[mid] > target) {
       return binarySearch(arr, start, mid - 1, target)
-    } else {
+    }
+    else {
       return binarySearch(arr, mid + 1, end, target)
     }
   } else {
