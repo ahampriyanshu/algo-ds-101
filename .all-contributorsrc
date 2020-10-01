@@ -4,7 +4,17 @@
   ],
   "imageSize": 100,
   "commit": false,
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "Singh-Aishwarya",
+      "name": "Aishwarya Singh",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/56748230?v=4",
+      "profile": "https://github.com/Singh-Aishwarya",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
   "contributorsPerLine": 7,
   "projectName": "algo_ds_101",
   "projectOwner": "ahampriyanshu",
