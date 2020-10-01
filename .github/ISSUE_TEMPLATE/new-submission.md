@@ -2,8 +2,8 @@
 name: New Submission
 about: Add new submissions
 title: ''
-labels: C++, Hacktoberfest, first timer, python, java, javascript, New Submssion,
-  TypeScript, scala, ruby
+labels: good first issue, C++, Hacktoberfest, first timer, python, java, javascript,
+  New Submssion, TypeScript, scala, ruby
 assignees: ''
 
 ---
