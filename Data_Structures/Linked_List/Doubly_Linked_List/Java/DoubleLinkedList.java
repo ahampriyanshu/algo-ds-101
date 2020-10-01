@@ -1,5 +1,4 @@
-class DoubleLinkedList<T>
-{
+class DoubleLinkedList<T> {
   private T value;
   private LinkedList<T> next;
   private LinkedList<T> prev;
@@ -10,31 +9,17 @@ class DoubleLinkedList<T>
     SetNext(next);
   }
 
-  public LinkedList(T value) {
-    this(null, value, null);
-  }
+  public LinkedList(T value) { this(null, value, null); }
 
-  public LinkedList<T> GetPrev() {
-    return prev;
-  }
+  public LinkedList<T> GetPrev() { return prev; }
 
-  public T GetValue() {
-    return value;
-  }
+  public T GetValue() { return value; }
 
-  public LinkedList<T> GetNext() {
-    return next;
-  }
+  public LinkedList<T> GetNext() { return next; }
 
-  public void SetPrev(LinkedList<T> prev) {
-    this.prev = prev;
-  }
+  public void SetPrev(LinkedList<T> prev) { this.prev = prev; }
 
-  public void SetValue(T value) {
-    this.value = value;
-  }
+  public void SetValue(T value) { this.value = value; }
 
-  public void SetNext(LinkedList<T> next) {
-    this.next = next;
-  }
+  public void SetNext(LinkedList<T> next) { this.next = next; }
 }

@@ -1,5 +1,4 @@
-class LinkedList<T>
-{
+class LinkedList<T> {
   private T value;
   private LinkedList<T> next;
 
@@ -8,23 +7,13 @@ class LinkedList<T>
     SetNext(next);
   }
 
-  public LinkedList(T value) {
-    this(value, null);
-    }
+  public LinkedList(T value) { this(value, null); }
 
-  public T GetValue() {
-    return value;
-  }
+  public T GetValue() { return value; }
 
-  public LinkedList<T> GetNext() {
-    return next;
-  }
+  public LinkedList<T> GetNext() { return next; }
 
-  public void SetValue(T value) {
-    this.value = value;
-  }
+  public void SetValue(T value) { this.value = value; }
 
-  public void SetNext(LinkedList<T> next) {
-    this.next = next;
-  }
+  public void SetNext(LinkedList<T> next) { this.next = next; }
 }
