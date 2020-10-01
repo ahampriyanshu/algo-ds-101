@@ -1,14 +1,11 @@
-## Related Issues or Pull Requests
-
-(Write your answer here.)
+## Assigned Issue
+#21
 
 ### Have you read the [Contributing Guidelines](https://github.com/ahampriyanshu/algo_ds_101/blob/master/CONTRIBUTING.md)?
+Yes/No
 
-(Write your answer here.)
-
-### Changes made ?
-
-(Write your answer here.)
+### Files Affected ?
+name_of_file.extension
 
 ### Checklist
 
