@@ -7,12 +7,10 @@ array = [5, 4, 3, 2, 1, 6]
 
 for i in range(0, len(array)):
     for j in range(0, len(array) - 1):
-        if (
-            array[j] > array[j + 1]
-        ):  # swaps if greater element is before the smaller one
+        if (array[j] > array[j + 1]
+            ):  # swaps if greater element is before the smaller one
             temp = array[j]
             array[j] = array[j + 1]
             array[j + 1] = temp
-
 
 print(array)
