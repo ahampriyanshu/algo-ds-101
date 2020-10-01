@@ -1,8 +1,9 @@
 ---
 name: New Submission
-about: Add a new algo/ds
+about: Add new submissions
 title: ''
-labels: C++, Hacktoberfest, first timer, python, java, javascript, New Submssion
+labels: C++, Hacktoberfest, first timer, python, java, javascript, New Submssion,
+  TypeScript, scala, ruby
 assignees: ''
 
 ---
@@ -22,4 +23,7 @@ Describe the Algo/DS
 - [ ]  Python -
 - [ ] Java - 
 - [ ] JavaScript -
+- [ ] TypeScript -
 - [ ] Golang -
+- [ ] Ruby -
+- [ ] Scala -
