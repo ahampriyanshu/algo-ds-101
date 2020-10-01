@@ -1,25 +1,25 @@
-       // binary search
+// binary search
 
- #include<bits/stdc++.h>
- using namespace std ;
+#include<bits/stdc++.h>
+using namespace std ;
 
- int main()
+int main()
 
 {
-    int n ,i ,l , h , mid , key ;
+    int n,i,l, h, mid, key ;
     cin >> n ;
     int arr[n] ;
-    for(i=0;i<n;i++)
+    for(i=0; i<n; i++)
     {
         cin >> arr[i] ;
     }
-        
-         l=0 ;
-         h=n-1 ;
-     
-        cout   << "enter the key you want to search : ";
-        cin >> key ;
-        while(h>=l)
+
+    l=0 ;
+    h=n-1 ;
+
+    cout   << "enter the key you want to search : ";
+    cin >> key ;
+    while(h>=l)
     {
         mid=(l+h)/2 ;
 
@@ -35,12 +35,12 @@
         else if (key<mid)
         {
             h=mid-1 ;
-        }  
-       
+        }
+
     }
 
-         cout  << "element not found \n" << endl ;
-           
-           return 0 ;
-           
+    cout  << "element not found \n" << endl ;
+
+    return 0 ;
+
 }
