@@ -22,7 +22,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/Singh-Aishwarya"><img src="https://avatars0.githubusercontent.com/u/56748230?v=4" width="100px;" alt=""/><br /><sub><b>Aishwarya Singh</b></sub></a><br /><a href="https://github.com/ahampriyanshu/algo_ds_101/commits?author=Singh-Aishwarya" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Pranjal81"><img src="https://avatars3.githubusercontent.com/u/54803412?v=4" width="100px;" alt=""/><br /><sub><b>Pranjal Bansal</b></sub></a><br /><a href="https://github.com/ahampriyanshu/algo_ds_101/commits?author=Pranjal81" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/shubham2704"><img src="https://avatars2.githubusercontent.com/u/40126673?v=4" width="100px;" alt=""/><br /><sub><b>Shubham Goswami</b></sub></a><br /><a href="https://github.com/ahampriyanshu/algo_ds_101/commits?author=shubham2704" title="Code">💻</a></td>
   </tr>
 </table>
 
