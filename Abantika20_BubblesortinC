@@ -13,7 +13,7 @@ int main()
    for(i=0;i<count;i++)
    scanf("%d",&number[i]);
 
-   /* This is the main logic of bubble sort algorithm 
+   /* This is the main logic of bubble sort algorithm
     */
    for(i=count-2;i>=0;i--){
       for(j=0;j<=i;j++){
