@@ -13,7 +13,7 @@
       "contributions": [
         "code"
       ]
-    },
+    },  
     {
       "login": "Pranjal81",
       "name": "Pranjal Bansal",
@@ -23,15 +23,6 @@
         "code"
       ]
     },
-    {
-      "login": "hemangdtu",
-      "name": "hemangsinha",
-      "avatar_url": "https://avatars1.githubusercontent.com/u/55807508?v=4",
-      "profile": "https://github.com/hemangdtu",
-      "contributions": [
-        "code"
-      ]
-    }
   ],
   "contributorsPerLine": 7,
   "projectName": "algo_ds_101",
