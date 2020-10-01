@@ -3,8 +3,8 @@
 
 ### How to contribute
 
-- Get assigned on an existing issue or create a new one by click [here](https://github.com/ahampriyanshu/algo_ds_101/issues/new/choose)
+- Get assigned on an existing issue or create a new one by clicking [here](https://github.com/ahampriyanshu/algo_ds_101/issues/new/choose)
 - Fork the repository ro create your own copy
 - Create a new branch named as your ``username``
 - Commit the purposed file
-- Create a new Pull Request
+- Create a new Pull Request which mentions the issue number and the files affected
