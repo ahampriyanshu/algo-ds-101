@@ -1,4 +1,4 @@
-// A C++ Program to implement Odd-Even / Brick Sort
+// A C++ Program to implement Odd-Even  Brick Sort //
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -53,4 +53,4 @@ int main()
 	printArray(arr, n);
 
 	return (0);
-} 
+}
