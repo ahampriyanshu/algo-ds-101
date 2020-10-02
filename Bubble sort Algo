@@ -1,0 +1,55 @@
+Bubble Sort is a simple algorithm which is used to sort a given set of n elements provided in form of an array with n number of elements. Bubble Sort compares all the element one by one and sort them based on their values.
+
+If the given array has to be sorted in ascending order, then bubble sort will start by comparing the first element of the array with the second element, if the first element is greater than the second element, it will swap both the elements, and then move on to compare the second and the third element, and so on.
+
+If we have total n elements, then we need to repeat this process for n-1 times.
+
+It is known as bubble sort, because with every complete iteration the largest element in the given array, bubbles up towards the last place or the highest index, just like a water bubble rises up to the water surface.
+
+Sorting takes place by stepping through all the elements one-by-one and comparing it with the adjacent element and swapping them if required
+
+
+
+
+// C++ program for implementation of Bubble sort  
+#include <bits/stdc++.h> 
+using namespace std; 
+  
+void swap(int *xp, int *yp)  
+{  
+    int temp = *xp;  
+    *xp = *yp;  
+    *yp = temp;  
+}  
+  
+// A function to implement bubble sort  
+void bubbleSort(int arr[], int n)  
+{  
+    int i, j;  
+    for (i = 0; i < n-1; i++)      
+      
+    // Last i elements are already in place  
+    for (j = 0; j < n-i-1; j++)  
+        if (arr[j] > arr[j+1])  
+            swap(&arr[j], &arr[j+1]);  
+}  
+  
+/* Function to print an array */
+void printArray(int arr[], int size)  
+{  
+    int i;  
+    for (i = 0; i < size; i++)  
+        cout << arr[i] << " ";  
+    cout << endl;  
+}  
+  
+// Driver code  
+int main()  
+{  
+    int arr[] = {64, 34, 25, 12, 22, 11, 90};  
+    int n = sizeof(arr)/sizeof(arr[0]);  
+    bubbleSort(arr, n);  
+    cout<<"Sorted array: \n";  
+    printArray(arr, n);  
+    return 0;  
+}  
