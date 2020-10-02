@@ -4,7 +4,6 @@ using System;
 
 class MainClass {
   public static void Main (string[] args) {
-    Console.WriteLine ("Hello World");
 
     double[] arr = {0, 1, 2, 4, 9, 16, 25, 36, 64, 81, 100, 121, 144, 189, 400, 625};
     double n = arr.Length;
@@ -13,7 +12,7 @@ class MainClass {
 
     double step = Math.Sqrt(n);
     step = Math.Truncate(step);
-    double j = 0;
+    double j = n-step-1;
     for (double i=0; i<n; i=i+step)
     {
         if(arr[(int)i]>x)
@@ -23,8 +22,8 @@ class MainClass {
         }
     }
     
-    double u_b = j + step;
-    for ( ; j<u_b; j++)
+    double ub = j + step + 1;
+    for ( ; j<ub; j++)
     {
       if(arr[(int)j]==x)
       {
