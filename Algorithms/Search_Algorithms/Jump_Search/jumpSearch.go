@@ -27,7 +27,8 @@ func jumpSearch(arr []int, x int, n int) (inx float64){
     }
   }
   i = i - step
-  for ; i < i + step; i++{
+  ub:= i + step
+  for ; i < ub; i++{
     if(arr[int(i)]==x){
       return i;
     }
