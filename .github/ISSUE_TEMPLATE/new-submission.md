@@ -18,7 +18,7 @@ Algorithm/Data Structure/STL/Maths_And_Stats
 Describe the Algo/DS/STL
 
 **Folder Related To**
-main_folder => sub_folder => ... => ...
+Main_Folder => Sub_Folder => ... => ... => Filename.extension
 
 **Contributors**
 - [ ]  C++ -
