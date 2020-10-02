@@ -22,8 +22,9 @@ class MainClass {
           break;
         }
     }
-
-    for ( ; j<j+step; j++)
+    
+    double u_b = j + step;
+    for ( ; j<u_b; j++)
     {
       if(arr[(int)j]==x)
       {
