@@ -1,10 +1,10 @@
 name: Add contributors
 on:
   schedule:
-    - cron:  '23 17 * * *'
-# push:
-#   branches:
-#     - master
+    - cron:  '10 * * * *'
+  push:
+   branches:
+     - master
 
 jobs:
   add-contributors:
