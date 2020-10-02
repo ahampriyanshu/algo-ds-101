@@ -2,8 +2,8 @@
 name: New Submission
 about: Add new submissions
 title: ''
-labels: good first issue, C++, Hacktoberfest, first timer, python, java, javascript,
-  New Submssion, TypeScript, scala, ruby, php, swift, C#
+labels: C#, C++, Hacktoberfest, New Submssion, TypeScript, first timer, good first
+  issue, java, javascript, php, python, ruby, scala, swift
 assignees: ''
 
 ---
@@ -12,10 +12,13 @@ assignees: ''
 Bubble Sort/AVL Graph/Vector
 
 **Submission Type**
-Algorithm/Data Structure/STL/Mathematical
+Algorithm/Data Structure/STL/Maths_And_Stats
 
 **Submission Description**
 Describe the Algo/DS/STL
+
+**Folder Related To**
+main_folder => sub_folder => ... => ...
 
 **Contributors**
 - [ ]  C++ -
