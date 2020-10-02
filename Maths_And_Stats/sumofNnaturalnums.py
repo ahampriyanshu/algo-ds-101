@@ -1,4 +1,4 @@
-#  Sum of n natural Number in python3 .
+#  Sum of n natural Number in python3 ..
 
 try:
     n=int(input("Enter the Nth term upto which you want to calculate the sum: "))
