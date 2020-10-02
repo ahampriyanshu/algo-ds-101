@@ -90,14 +90,14 @@ Welcome to ``algo_ds_101``
 ### 18.
 ![19](https://user-images.githubusercontent.com/54521023/94943163-e4145080-04f4-11eb-8237-c0b2a6c75393.png)
 
+### HacktoberFest 2020
+
+Just create four PRs , wait till they mature and get limited edition T-shirt or plant a tree.
+
 
 ### How To sync your forked repository
 
 ```
-$ origin    https://github.com/**your_username**/algo_ds_101.git (fetch)
-$ origin    https://github.com/**your_username**/algo_ds_101.git (push)
-$ upstream  https://github.com/ahampriyanshu/algo_ds_101.git (fetch)
-$ upstream  https://github.com/ahampriyanshu/algo_ds_101.git (push)
 $ git fetch --all --prune
 $ git checkout master
 $ git reset --hard upstream/master
