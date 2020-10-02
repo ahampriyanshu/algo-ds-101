@@ -9,8 +9,7 @@ class goldmine {
 	// can be collected when journey started 
 	// from first column and moves allowed 
 	// are right, right-up and right-down 
-	static int getMaxGold(int gold[][], 
-							int m, int n) 
+	static int getMaxGold(int gold[][], int m, int n) 
 	{ 
 		
 		// Create a table for storing 
