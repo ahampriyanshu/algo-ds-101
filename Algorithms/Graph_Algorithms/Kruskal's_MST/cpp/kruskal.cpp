@@ -123,7 +123,7 @@ int get_parent(disjoint_set &s, int i) {
 }
 
 /*
-    Merge two sets in one, making the second set a child of the first one
+    Merge two sets in one, making the set v a child of set u
 */
 void set_union(disjoint_set &s, int u, int v) {
 
@@ -136,7 +136,7 @@ void set_union(disjoint_set &s, int u, int v) {
 
 
 /*
-    Check if node u contains the node v
+    Check if node u contains the node v for the set s
 */
 bool contains(disjoint_set &s, int u, int v) {
     int u_parent = get_parent(s, u);
@@ -149,36 +149,36 @@ bool contains(disjoint_set &s, int u, int v) {
 
 vector<edge> kruskal(vector<edge> graph, const int n_nodes) {
     
-    priority_queue<edge> pq;        // Use this priority queue to sort the edges by weight within a queue
+    priority_queue<edge> edge_queue;        // Use this priority queue to sort the edges by weight within a queue
     int edge_counter = 0;           // how many edges have been added so far
     vector<edge> tree(n_nodes - 1); // the resulting spanning tree
-    disjoint_set s = create_set(n_nodes); // Our disjoint set to test for cycles
+    disjoint_set set = create_set(n_nodes); // Our disjoint set to test for cycles
 
     for (auto e : graph) {
         // Note that the priority queue sorts in non-increasing order, 
         // so we have to negate the weight in order to invert the order.
         edge inverted_weight_edge = {-e.first, e.second };
-        pq.push(inverted_weight_edge);
+        edge_queue.push(inverted_weight_edge);
     } 
 
     // note that every spanning tree follows: 
     // number of edges = number of nodes - 1 
     while (edge_counter < n_nodes - 1) {
-        edge current = pq.top(); 
-        pq.pop();
+        edge current = edge_queue.top(); 
+        edge_queue.pop();
 
         // each side of the edge
         int u = current.second.first; 
         int v = current.second.second;
 
-        if ( !contains(s, u, v) ) {
+        if ( !contains(set, u, v) ) {
 
             // Add this edge to our tree, since it does not creates a cycle
             tree[edge_counter++] =  { -current.first, {u,v} }; 
             // (Remember to negate the weight ^, so we have the original edge)
 
             // Merge the spanning tree containing u with the spanning tree containing v
-            set_union(s, u, v);
+            set_union(set, u, v);
         }
     }
         
