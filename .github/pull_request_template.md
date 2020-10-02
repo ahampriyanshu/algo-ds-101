@@ -1,11 +1,11 @@
-## Assigned Issue ?
-#IssueNumber
+## Assigned Issue Number ?
+#007
 
 ## Language Opted ?
-C/++/Python
+C/C++/Python/Java/...
 
 ## Number of files added or updated ?
-1/2/3/4
+1/2/3/4/...
 
 ## Name of these files ?
 main folder => sub_folder => ... => ... => ... file.py

@@ -1,40 +1,24 @@
-name: Contributors
+name: Add contributors
 on:
   schedule:
-    - cron: '0 1 * * *'
+    - cron:  '10 * * * *'
   push:
-    branches:
-      - master
+   branches:
+     - master
+
 jobs:
-  contributors:
+  add-contributors:
     runs-on: ubuntu-latest
     steps:
-      - uses: bubkoo/contributors-list@v1
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          includeBots: false
-          svgTemplate: >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              width="{{ width }}"
-              height="{{#sum}} {{ contributorsHeight }} + {{ botsHeight }} + {{ collaboratorsHeight }} + 32 + 32 + 32 {{/sum}}"
-            >
-              <style>.contributor-link { cursor: pointer; }</style>
-            
-              <text x="5" y="5" text-anchor="start" alignment-baseline="before-edge" font-size="24">Contributors</text>
-              <g transform="translate(0, 32)">
-                {{{ contributors }}}
-              </g>
-            
-              <text x="5" y="{{#sum}} {{ contributorsHeight }} + 32 + 8 {{/sum}}" text-anchor="start" alignment-baseline="before-edge" font-size="24">Bots</text>
-              <g transform="translate(0, {{#sum}} {{ contributorsHeight }} + 32 + 32 {{/sum}})">
-                {{{ bots }}}
-              </g>
-            
-              <text x="5" y="{{#sum}} {{ contributorsHeight }} + {{ botsHeight }} + 32 + 32 + 8 {{/sum}}" text-anchor="start" alignment-baseline="before-edge" font-size="24">Collaborators</text>
-              <g transform="translate(0, {{#sum}} {{ contributorsHeight }} + {{ botsHeight }} + 32 + 32 + 32 {{/sum}})">
-                {{{ collaborators }}}
-              </g>
-            </svg>
+    - uses: actions/checkout@v2
+    - uses: BobAnkh/add-contributors@master
+      with:
+        REPO_NAME: 'BobAnkh/add-contributors'
+        CONTRIBUTOR: '### Contributors'
+        COLUMN_PER_ROW: '6'
+        ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        IMG_WIDTH: '100'
+        FONT_SIZE: '14'
+        PATH: '/CONTRIBUTORS.md'
+        COMMIT_MESSAGE: 'docs(CONTRIBUTORS): Updating Contributors'
+        AVATAR_SHAPE: 'square'
