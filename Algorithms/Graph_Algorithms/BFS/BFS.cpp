@@ -74,37 +74,19 @@ void Graph::BFS(int s)
   
 // Driver program to test methods of graph class 
 int main() 
-{ int vertex;
-cout<<"Enter the number of vertex\n";
-cin>>vertex;
+{ 
     // Create a graph given in the above diagram 
-    Graph g(vertex); 
-    	cout<<"Enter the edge as a  two vertex conected to each other\n";
-    	    	int a,b;
-    	    cin>>a>>b;
-    	    if(a>vertex-1&&b>vertex-1){
-    	    	cout<<"envalid edge";
-    	    	
-			}
-
-
-    while(1){
-    
-    		
-cout<<" type the edge want to add, and If you want to stop addition in Edge type -1 -1 \n"; 
-    	cin>>a>>b;
-    	if(a==-1)
-    	break;
-if(a>vertex-1&&b>vertex-1){
-    	    	cout<<"envalid edge";
-    	    	break;
-			}
- g.addEdge(a, b);
-	}
-   int start;
-    cout << "Enter the vertex from whic BFS start\n";
-    cin>>start;
-	g.BFS(start); 
+    Graph g(4); 
+    g.addEdge(0, 1); 
+    g.addEdge(0, 2); 
+    g.addEdge(1, 2); 
+    g.addEdge(2, 0); 
+    g.addEdge(2, 3); 
+    g.addEdge(3, 3); 
+  
+    cout << "Following is Breadth First Traversal "
+         << "(starting from vertex 2) \n"; 
+    g.BFS(2); 
   
     return 0; 
 } 
