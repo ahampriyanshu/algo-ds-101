@@ -16,7 +16,8 @@ function quickSort(array) { // assumes an array of ints
     }
  }
 
- var array = [9, 0, 2, 7, -2, 6, 1 ];
- console.log("Given array --> " + array);
- var arrayAfterQuickSort = quickSort(array);
- console.log("Array after QuickSort: " + arrayAfterQuickSort);
+// use node to run, uncomment below to test
+//  var array = [9, 0, 2, 7, -2, 6, 1 ];
+//  console.log("Given array --> " + array);
+//  var arrayAfterQuickSort = quickSort(array);
+//  console.log("Array after QuickSort: " + arrayAfterQuickSort);
