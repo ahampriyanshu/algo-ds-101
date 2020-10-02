@@ -15,32 +15,33 @@ function mergeIntervals(arr) {
         return 0;
     });
 
-    // result array
+    // result array which will work as stack
     let res = [];
 
     // push first interval into result array
     res.push(arr[0]);
 
     for (let i = 1; i < arr.length; i++) {
-        // get the last interval of the result array
-        const last = res[res.length - 1]
+        // get the top of the result array
+        // we will call it top interval
+        const top = res[res.length - 1]
 
-        // current interval end is less than the next interval's start that means disjoint intervals
-        // we can add the interval to our result
-        if (last.end < arr[i].start) {
+        // top interval's end is less than the current interval's start that means disjoint intervals
+        // we can push the current interval to our result
+        if (top.end < arr[i].start) {
             res.push(arr[i]);
         }
-        // current interval end is between the next interval's start and end
-        // we can merge intervals with ending at next interval's end
-        else if (last.end < arr[i].end) {
-            last.end = arr[i].end;
-            // delete the last interval
+        // top interval's end is between the current interval's start and end
+        // we can merge intervals with the ending at current interval's end
+        else if (top.end < arr[i].end) {
+            top.end = arr[i].end;
+            // delete the top interval
             res.pop();
             // insert new modified interval
-            res.push(last);
+            res.push(top);
         }
-        // Otherwise current interval end is after the next interval's end
-        // we can merge intervals with ending at current interval's end hence no change required
+        // Otherwise top interval's end is after the current interval's end
+        // i.e after merge we will get top interval, hence no change required
     }
 
     // print the array of merged intervals
