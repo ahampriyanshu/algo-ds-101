@@ -1,12 +1,11 @@
 #include <stdio.h>
 
-// Function to find factorial of given number
 unsigned int factorial(unsigned int n)
 {
-    int res = 1, i;
+    int fact = 1, i;
     for (i = 2; i <= n; i++)
-        res *= i;
-    return res;
+        fact *= i;
+    return fact;
 }
 
 int main()
