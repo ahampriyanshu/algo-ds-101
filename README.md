@@ -9,11 +9,11 @@ Welcome to ``algo_ds_101``
 
 ## Index
 
-## [Data Structures](Data_Structures)
-## [Algorithms](Algorithms)
-## [Maths And Stats](Maths_And_Stats)
-## [Resources](Resources)
-## [STL](STL)
+- [Data Structures](Data_Structures)
+- [Algorithms](Algorithms)
+- [Maths And Stats](Maths_And_Stats)
+- [Resources](Resources)
+- [STL](STL)
 
 
 ## To Contribute
