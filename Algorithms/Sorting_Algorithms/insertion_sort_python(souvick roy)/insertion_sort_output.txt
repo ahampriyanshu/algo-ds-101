@@ -1,0 +1,9 @@
+souvick@DESKTOP-2FMAH2P MINGW64 /e
+$ python insertion_sort.py
+Enter the number of elements in the array: 5
+
+Enter the numbers : 12 2 14 3 1
+Before sorted:   
+[12, 2, 14, 3, 1]
+After sorting:   
+[1, 2, 3, 12, 14]
