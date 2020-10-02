@@ -1,7 +1,5 @@
-/* 
-C program for implementation of binary insertion sort 
-Time Complexity : O(n^2)
-*/
+// C program for implementation of binary insertion sort,Time Complexity : O(n^2)
+
 
 
 #include <stdio.h> 
