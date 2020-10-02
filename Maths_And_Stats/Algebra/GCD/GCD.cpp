@@ -14,6 +14,12 @@ int main()
 {
 	int a,b;
 	cin>>a>>b;
-	cout<<"GCD of "<<a<<" and "<<b<<" is "<<gcd(a, b);
+	if(a>b)
+	{	
+		cout<<"GCD of "<<a<<" and "<<b<<" is "<<gcd(a, b);
+	}
+	else{
+		cout<<"GCD of "<<a<<" and "<<b<<" is "<<gcd(b, a);
+	}
 	return 0;
 }
