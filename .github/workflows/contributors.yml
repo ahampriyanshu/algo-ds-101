@@ -1,7 +1,7 @@
 name: Add contributors
 on:
   schedule:
-    - cron:  '10 * * * *'
+    - cron:  '1 * * * *'
   push:
    branches:
      - master
@@ -19,6 +19,6 @@ jobs:
         ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
         IMG_WIDTH: '100'
         FONT_SIZE: '14'
-        PATH: '/CONTRIBUTORS.md'
-        COMMIT_MESSAGE: 'docs(CONTRIBUTORS): Updating Contributors'
+        PATH: '/README.md'
+        COMMIT_MESSAGE: 'docs(README): Updating Contributors'
         AVATAR_SHAPE: 'square'
