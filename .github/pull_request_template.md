@@ -1,13 +1,20 @@
-## Assigned Issue
-#21
+## Assigned Issue ?
+#IssueNumber
 
-### Have you read the [Contributing Guidelines](https://github.com/ahampriyanshu/algo_ds_101/blob/master/CONTRIBUTING.md)?
-Yes/No
+## Language Opted ?
+C/++/Python
 
-### Files Affected ?
-name_of_file.extension
+## Number of files added or updated ?
+1/2/3/4
+
+## Name of these files ?
+main folder => sub_folder => ... => ... => ... file.py
+
+example :
+Algorithm => Search_Algorithm => Linear_Search => Linear_Search.py
 
 ### Checklist
 
 - [ ] I've read the contribution guidelines.
-- [ ] I've checked the issue list before deciding what to submit.
+- [ ] I've referred the correct issue number.
+- [ ] I've fill up this entire template correctly.
