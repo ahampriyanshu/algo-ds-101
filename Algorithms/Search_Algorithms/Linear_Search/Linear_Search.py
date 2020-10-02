@@ -1,5 +1,6 @@
 # The below given code implements Linear Search algorithm.
-# The program prints the index number of the element if the searched element is present in the list, else it prints -1.
+# Inputs: The first line of input contains space seperated integer values. The second line of the input contains the element to be searched.
+# Output: The program prints the index number of the element if the searched element is present in the list, else it prints -1.
 
 def LinearSearch(arr, element):
     for i in range (len(arr)):
