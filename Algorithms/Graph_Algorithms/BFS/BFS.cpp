@@ -30,7 +30,7 @@ Graph::Graph(int V)
   
 void Graph::addEdge(int v, int w) 
 { 
-    adj[v].push_back(w); // Add w to v’s list. 
+    adj[v].push_back(w); // Add w to vâ€™s list. 
 } 
   
 void Graph::BFS(int s) 
@@ -80,17 +80,27 @@ cin>>vertex;
     // Create a graph given in the above diagram 
     Graph g(vertex); 
     	cout<<"Enter the edge as a  two vertex conected to each other\n";
-    while(1){
-    	int a,b;
-    	
-    	cin>>a;
-    		if(a==-1)
-    	break;
-    	cin>>b;
-    		cout<<" type the edge want to add, and If you want to stop addition in Edge type -1 \n"; 
+    	    	int a,b;
+    	    cin>>a>>b;
+    	    if(a>vertex-1&&b>vertex-1){
+    	    	cout<<"envalid edge";
+    	    	
+			}
 
-	
-    g.addEdge(a, b);}
+
+    while(1){
+    
+    		
+cout<<" type the edge want to add, and If you want to stop addition in Edge type -1 -1 \n"; 
+    	cin>>a>>b;
+    	if(a==-1)
+    	break;
+if(a>vertex-1&&b>vertex-1){
+    	    	cout<<"envalid edge";
+    	    	break;
+			}
+ g.addEdge(a, b);
+	}
    int start;
     cout << "Enter the vertex from whic BFS start\n";
     cin>>start;
