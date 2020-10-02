@@ -2,8 +2,8 @@
 name: New Submission
 about: Add new submissions
 title: ''
-labels: C++, Hacktoberfest, New Submssion, TypeScript, first timer, good first issue,
-  java, javascript, python, ruby, scala
+labels: good first issue, C++, Hacktoberfest, first timer, python, java, javascript,
+  New Submssion, TypeScript, scala, ruby, php, swift, C#
 assignees: ''
 
 ---
@@ -26,4 +26,6 @@ Describe the Algo/DS/STL
 - [ ] TypeScript -
 - [ ] Golang -
 - [ ] Ruby -
-- [ ] Scala -
+- [ ] php -
+- [ ] Swift -
+- [ ] C# -
