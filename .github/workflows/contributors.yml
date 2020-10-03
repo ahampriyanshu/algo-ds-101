@@ -1,7 +1,7 @@
 name: Add contributors
 on:
   schedule:
-    - cron:  '22 10 * * *'
+    - cron:  '33 10 * * *'
 
 jobs:
   add-contributors:
@@ -11,7 +11,7 @@ jobs:
     - uses: BobAnkh/add-contributors@master
       with:
         REPO_NAME: 'BobAnkh/add-contributors'
-        CONTRIBUTOR: '### Contributors'
+        CONTRIBUTOR: '## Contributors'
         COLUMN_PER_ROW: '6'
         ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
         IMG_WIDTH: '100'
