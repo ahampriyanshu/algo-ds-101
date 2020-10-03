@@ -1,6 +1,8 @@
 
 <?php 
+//Author KevinMathewTh
 
+//FIFO
 class Node{
     
   public $value;
@@ -8,11 +10,7 @@ class Node{
 
 }
 
-/**
-  * Queue class that store Node in queue
-  * Remove Node from front
-  * Insert Node to back
-  */
+//Queue class that store Node in queue
 
 class Queue{
     private $front = null;
@@ -23,7 +21,7 @@ class Queue{
     return $this->front == null;
     }
 
-    //enqueue function
+    //Enqueue function
 
 public function enqueue($value){
     $oldBack = $this->back;
@@ -64,7 +62,7 @@ public function show(){
 }
 
 
-
+//Create a New Queue
 
 $queue = new Queue();
 
