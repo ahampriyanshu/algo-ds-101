@@ -147,7 +147,7 @@ namespace algo_ds
     Number factorial(Number n)
     {    
         auto result = "1"_N;
-        for(auto counter = "1"_N; counter != n; counter = counter + "1"_N)
+        for(auto counter = "1"_N; counter != n + "1"_N; counter = counter + "1"_N)
         {
             result = result * counter;
         }
