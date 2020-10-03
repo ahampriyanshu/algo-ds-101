@@ -1,7 +1,6 @@
 """
 LANGUAGE: PYTHON
-AUTHOR: Diadochokinetic
-GITHUB: https://github.com/Diadochokinetic
+
 """
 
 from math import sqrt
