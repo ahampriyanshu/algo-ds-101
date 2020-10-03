@@ -16,7 +16,7 @@ namespace algo_ds
 
     //implementation for a gcd function template in C++ 14
     template<typename T, typename U>
-    [[nodiscard]] constexpr std::common_type_t<T, U> gcd(const T& a, const U& b) noexcept(noexcept(std::is_integral<T>::value) && noexcept(std::is_integral<T>::value))
+    [[nodiscard]] constexpr std::common_type_t<T, U> gcd(const T& a, const U& b) noexcept(std::is_integral<T>::value && std::is_integral<U>::value)
     {
         if (a == 0)
         {
@@ -26,7 +26,7 @@ namespace algo_ds
     }
     //implementation for a lcm function template in C++ 14
     template<typename T, typename U>           
-    [[nodiscard]] constexpr std::common_type_t<T, U> lcm(const T& a, const U& b) noexcept(noexcept(std::is_integral<T>::value) && noexcept(std::is_integral<T>::value))
+    [[nodiscard]] constexpr std::common_type_t<T, U> lcm(const T& a, const U& b) noexcept(std::is_integral<T>::value && std::is_integral<U>::value)
     {
         return (a / gcd(a, b)) * b;
     }
