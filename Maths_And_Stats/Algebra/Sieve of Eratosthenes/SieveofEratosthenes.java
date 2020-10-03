@@ -8,25 +8,22 @@ public class SieveofEratosthenes {
     public static void main (String[] args)
     {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a 32-bit integer.");
+        System.out.println("Enter a number:");
         int limit = scanner.nextInt();
 
         if(limit < 2) {
-            System.out.println(String.format("There are no prime numbers less than or equal to %d", limit));
-            return;
-        }
-        if(limit > Integer.MAX_VALUE) {
-            System.out.println("Please enter a 32-bit integer.");
+            System.out.println(String.format("There are no prime numbers up to %d", limit));
             return;
         }
 
-        System.out.println(String.format("Prime numbers in the range 2 to %d are:", limit));
-        boolean[] isPrime = getPrimes(limit);
-        print(isPrime);
+        SieveofEratosthenes Sieve = new SieveofEratosthenes();
+        System.out.println(String.format("Prime numbers up to %d are:", limit));
+        boolean[] isPrime = Sieve.getPrimes(limit);
+        Sieve.printPrimes(isPrime);
     }
 
-    // Function to get the prime numbers under the limit.
-    public static boolean[] getPrimes(int limit) {
+    // Function to get the prime numbers up to the limit.
+    public boolean[] getPrimes(int limit) {
         boolean[] isPrime = new boolean[limit + 1];
 
         // Set all the values from 2 to max as primes.
@@ -48,7 +45,7 @@ public class SieveofEratosthenes {
     }
 
     // Function to print the obtained prime numbers.
-    public static void print(boolean[] isPrime) {
+    public void printPrimes(boolean[] isPrime) {
         for(int i = 2; i < isPrime.length; i++) {
             if(isPrime[i]) {
                 System.out.println(i);
