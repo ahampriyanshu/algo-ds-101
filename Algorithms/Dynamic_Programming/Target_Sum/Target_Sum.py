@@ -44,4 +44,3 @@ def findNumberOfSubsetsRecur(arr, n, i,sum, count):
     return count
 
 print('By Memo:', findNumberOfSubsetsMemo(arr, 0, targetSum, len(arr)))
-print('By Recurr:', findNumberOfSubsetsRecur(arr, len(arr), 0, targetSum, 0))
