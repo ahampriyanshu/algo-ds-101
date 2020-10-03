@@ -12,12 +12,16 @@ assignees: ''
 Bubble Sort/AVL Graph/Vector
 
 **Submission Type**
-Algorithm/Data Structure/STL/Mathematical
+Algorithm/Data Structure/STL/Maths_And_Stats
 
 **Submission Description**
 Describe the Algo/DS/STL
 
+**Folder Related To**
+Main_Folder => Sub_Folder => ... => ... => Filename.extension
+
 **Contributors**
+
 - [ ]  C++ -
 - [ ]  C -
 - [ ]  Python -
