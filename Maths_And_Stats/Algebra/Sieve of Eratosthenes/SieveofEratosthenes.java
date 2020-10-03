@@ -1,7 +1,11 @@
 /*
 This is a Java program to find prime numbers up to a limit
 using the Sieve of Eratosthenes approach.
+
+Time complexity: O(nlog(log n))
+Space complexity: O(n)
  */
+
 import java.util.*;
 
 public class SieveofEratosthenes {
