@@ -11,3 +11,4 @@ function fibonacci(n, memoizer) {
     }
     return memoizer[n] = fibonacci(n - 1, memoizer) + fibonacci(n - 2, memoizer);
   }
+  
