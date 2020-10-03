@@ -6,7 +6,6 @@ float convert(float *n, int _case);
 int main()
 {
     int _case = 0; //to indicate direction of the conversion
-    int usePi = 0;
     float value;
     printf("What do you want to do?\n");
     while(_case != 1 && _case != 2)
