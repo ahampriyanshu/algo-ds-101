@@ -18,4 +18,4 @@ int main() {
 	cout << ans << endl; // output
 
 	return 0;
- }
+}
