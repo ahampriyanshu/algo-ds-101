@@ -1,9 +1,15 @@
+const readline = require('readline');
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
 const lcm = (...arr) => {
+	let newArray = arr.toString().split(' ');
 	const gcd = (x, y) => (!y ? x : gcd(y, x % y));
 	const lcm = (x, y) => (x * y) / gcd(x, y);
-	return [...arr].reduce((a, b) => lcm(a, b));
+	return [...newArray].reduce((a, b) => lcm(a, b));
 };
-//prints the LCM value
-console.log(lcm(12, 7)); // returns 84
-console.log(lcm(10, 20)); // returns 20
-console.log(lcm(100, 90)); //returns 900
+rl.question('Enter space seperated positive Integers ', (input)=> {
+	console.log(lcm(input));
+	rl.close()
+})
