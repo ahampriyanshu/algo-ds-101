@@ -77,7 +77,7 @@ class Graph:
         # Sorting all the edges in non-decereasing order of the weights
         self.graph = sorted(self.graph, key=lambda item: item[2])
 
-        parent = [];
+        parent = []
         rank = []
 
         # Create V subsets with single elements
@@ -113,9 +113,5 @@ class Graph:
             print("%d \t-> %d \t\t|  %d" % (u, v, weight))
 
 
-"""
-graph = [[0,1,10],[0,2,6],[0,3,5],[1,3,15],[2,3,4]]
-g = Graph(4,graph)
-"""
-g = takeInput()
-g.KruskalMST()
+graph = takeInput()
+graph.KruskalMST()
