@@ -1,3 +1,5 @@
+// Credits: Code inspiration from Milos Gajdos on Cybernetist
+
 package main
 
 import (
@@ -74,4 +76,5 @@ func main() {
     
 
 }
+
 
