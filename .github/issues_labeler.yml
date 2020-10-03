@@ -1,0 +1,12 @@
+C:
+  - "( C )"
+C++:
+  - "(C-Plus-Plus|CPP|cpp)"
+Python:
+  - "(Python|PYTHON|python)"
+Java:
+  - "(Java|java)"
+JavaScript:
+  - "(JavaScript|JAVASCRIPT|Javascript|javascript|JS|js)"
+Go:
+  - "(Go|GO|Golang)"
