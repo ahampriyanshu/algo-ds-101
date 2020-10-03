@@ -27,12 +27,12 @@ void Sieve(int n)
             c++;
     }
 
-    cout << "Prime Numbers <= n:- " << c << "\n";
+    cout << "Prime Numbers <= n:- " << c << endl;
 }
 int main() 
 { 
     int N;
-    cout << "Enter N :-" << "\n";
+    cout << "Enter N :-" << endl;
     cin >> N;
     Sieve(N);
     return 0; 
