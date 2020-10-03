@@ -1,10 +1,7 @@
 name: Add contributors
 on:
   schedule:
-    - cron:  '1 * * * *'
-  push:
-   branches:
-     - master
+    - cron:  '*/29 * * * *'
 
 jobs:
   add-contributors:
@@ -13,12 +10,12 @@ jobs:
     - uses: actions/checkout@v2
     - uses: BobAnkh/add-contributors@master
       with:
-        REPO_NAME: 'BobAnkh/add-contributors'
+        REPO_NAME: 'ahampriyanshu/algo_ds_101'
         CONTRIBUTOR: '### Contributors'
         COLUMN_PER_ROW: '6'
         ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
         IMG_WIDTH: '100'
         FONT_SIZE: '14'
-        PATH: '/README.md'
-        COMMIT_MESSAGE: 'docs(README): Updating Contributors'
+        PATH: '/CONTRIBUTORS.md'
+        COMMIT_MESSAGE: 'docs(CONTRIBUTORS): update contributors'
         AVATAR_SHAPE: 'square'
