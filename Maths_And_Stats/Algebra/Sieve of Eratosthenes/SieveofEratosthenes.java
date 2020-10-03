@@ -1,5 +1,5 @@
 /*
-This is a Java program to find prime numbers under a limit
+This is a Java program to find prime numbers up to a limit
 using the Sieve of Eratosthenes approach.
  */
 import java.util.*;
