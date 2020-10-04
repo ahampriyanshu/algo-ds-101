@@ -1,9 +1,22 @@
-export function palindromeCheck(str: string): boolean {
+import { ReadLine, createInterface } from 'readline';
+
+const r1: ReadLine = createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+function palindromeCheck(str: string): boolean {
     return str.split('').reverse().join('') === str;
 };
 
-console.log(palindromeCheck('palindrome')); // should return false
-console.log(palindromeCheck('rotator')); // should return true
-console.log(palindromeCheck('malayalam')); // should return true
-console.log(palindromeCheck('racecar')); // should return true
-console.log(palindromeCheck('github')); // should return false
+r1.question('Input a word to check if it is a palindrome: ', (answer: string) => {
+    const isPalindrome: boolean = palindromeCheck(answer);
+
+    if (!isPalindrome) {
+        console.log('It is NOT a palindrome!')
+    } else {
+        console.log('It is a palindrome!');
+    }
+
+    process.exit(1);
+});
