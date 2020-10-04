@@ -2,6 +2,7 @@
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Scanner;
 
 public class BucketSort {
   public void bucketSort(float[] arr, int n) {
