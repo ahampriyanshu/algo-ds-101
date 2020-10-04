@@ -1,17 +1,22 @@
-function palindromeCheck(word)
-{
-  var length = word.length;
-  
-  for(var i = 0; i < length/2; i++)
-  {
-    if(word[i] !== word[length - 1 - i])
-    {
-      return false;
-    }
-  }
-  
-  return true
-}
+const readline = require('readline');
 
-console.log(palindromeCheck("Hello"));
-console.log(palindromeCheck("kayak"));
+const r1 = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+r1.question('Input a word to check if it is a palindrome: ', (word) => {
+  const isPalindrome = palindromeCheck(word);
+
+  if (!isPalindrome) {
+    console.log('It is NOT a palindrome!')
+  } else {
+    console.log('It is a palindrome!');
+  }
+
+  process.exit(1);
+});
+
+function palindromeCheck(word) {
+  return word.split('').reverse().join('') === word;
+}
