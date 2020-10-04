@@ -1,1 +1,2 @@
-## This folder is empty.
+
+Selection sort in go programming language.
