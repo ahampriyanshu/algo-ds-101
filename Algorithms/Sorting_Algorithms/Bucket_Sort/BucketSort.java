@@ -37,9 +37,17 @@ public class BucketSort {
   // Driver code
   public static void main(String[] args) {
     BucketSort b = new BucketSort();
-    float[] arr = { (float) 0.42, (float) 0.32, (float) 0.33, (float) 0.52, (float) 0.37, (float) 0.47,
-        (float) 0.51 };
-    b.bucketSort(arr, 7);
+    Scanner s = new Scanner(System.in);  // Create a Scanner object
+    System.out.println("Enter no of elemets");
+    int n=s.nextInt();
+    ArrayList<Float>[] arr = new ArrayList[n];
+    for(int i=0;i<n;i++){
+      System.out.println("Enter a number");
+      float num=s.nextFloat();
+      num.add(arr[]);
+    }
+    
+    b.bucketSort(arr, n);
 
     for (float i : arr)
       System.out.print(i + "  ");
