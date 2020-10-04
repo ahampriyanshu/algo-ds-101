@@ -31,7 +31,7 @@ function display(m) {
 const a = [[8, 3, 4], [2, 4, 5], [3, 6, 2]],
     b = [[1, 2, 3], [4, 6, 8], [3, 8, 1]];
 
-
+console.log("MATRIX MULTIPLICATION \n\n");
 console.log('matrix a:\n');
 display(a);
 console.log('matrix b:\n');
