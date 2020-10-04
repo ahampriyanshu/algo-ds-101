@@ -114,13 +114,6 @@
 </tr>
 <tr>
     <td align="center">
-        <a href=https://github.com/meghna25>
-            <img src=https://avatars0.githubusercontent.com/u/59365740?v=4 width="100;" alt=Meghna Saxena/>
-            <br />
-            <sub style="font-size:14px"><b>Meghna Saxena</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href=https://github.com/rushitote>
             <img src=https://avatars0.githubusercontent.com/u/31135699?v=4 width="100;" alt=Rushikesh Tote/>
             <br />
@@ -148,13 +141,20 @@
             <sub style="font-size:14px"><b>Harshal S Zodape </b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center">
         <a href=https://github.com/KKghub>
             <img src=https://avatars1.githubusercontent.com/u/25261656?v=4 width="100;" alt=KKghub/>
             <br />
             <sub style="font-size:14px"><b>KKghub</b></sub>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td align="center">
+        <a href=https://github.com/meghna25>
+            <img src=https://avatars0.githubusercontent.com/u/59365740?v=4 width="100;" alt=Meghna Saxena/>
+            <br />
+            <sub style="font-size:14px"><b>Meghna Saxena</b></sub>
         </a>
     </td>
     <td align="center">
