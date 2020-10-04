@@ -62,9 +62,8 @@ public class Main
             }
         }
     }
-     
-    /* Driver Code */
-    public static void main(String[] args)
+   
+  public static void main(String[] args)
     {
         String txt = "GEEKS FOR GEEKS";
         String pat = "GEEK";
