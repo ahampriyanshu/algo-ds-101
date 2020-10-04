@@ -1,7 +1,7 @@
 name: Add contributors
 on:
   schedule:
-    - cron: '00 7 * * *'
+    - cron: '*/20 * * * *'
 
 jobs:
   add-contributors:
@@ -12,10 +12,10 @@ jobs:
       with:
         REPO_NAME: 'ahampriyanshu/algo_ds_101'
         CONTRIBUTOR: '### Contributors'
-        COLUMN_PER_ROW: '6'
+        COLUMN_PER_ROW: '5'
         ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
         IMG_WIDTH: '100'
         FONT_SIZE: '14'
         PATH: '/CONTRIBUTORS.md'
-        COMMIT_MESSAGE: 'docs(CONTRIBUTORS): Update Contributors'
+        COMMIT_MESSAGE: 'Github Bot : Updating Contributors'
         AVATAR_SHAPE: 'square'
