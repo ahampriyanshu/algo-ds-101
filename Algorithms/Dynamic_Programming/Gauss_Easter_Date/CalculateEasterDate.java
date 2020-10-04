@@ -4,6 +4,7 @@ import java.util.Map;
 /**
  * @author Alessandro Arosio - 04/10/2020 08:39
  */
+
 public class CalculateEasterDate {
     private static final String LOCATION_OF_YEAR = "locationOfYear";
     private static final String LEAP_DAYS = "leapDays";
