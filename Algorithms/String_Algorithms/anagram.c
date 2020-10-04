@@ -1,54 +1,46 @@
 #include <stdio.h>
-#include <string.h>
 
-int main(void)
+int check_anagram(char [], char []);
+
+int main()
 {
-    // Test case
-    char s1[] = "recitals";
-    char s2[] = "articles";
-    char temp;
+  char a[1000], b[1000];
 
-    int i, j;
-    int n = strlen(s1);
-    int n1 = strlen(s2);
+  printf("Enter two strings\n");
+  gets(a);
+  gets(b);
 
-    // If both strings are of different length, then they are not anagrams
-    if (n != n1)
-    {
-        printf("%s and %s are not anagrams! \n", s1, s2);
-        return 0;
-    }
+  if (check_anagram(a, b))
+    printf("The strings are anagrams.\n");
+  else
+    printf("The strings aren't anagrams.\n");
 
-    // lets sort both strings first −
-    for (i = 0; i < n - 1; i++)
-    {
-        for (j = i + 1; j < n; j++)
-        {
-            if (s1[i] > s1[j])
-            {
-                temp = s1[i];
-                s1[i] = s1[j];
-                s1[j] = temp;
-            }
-            if (s2[i] > s2[j])
-            {
-                temp = s2[i];
-                s2[i] = s2[j];
-                s2[j] = temp;
-            }
-        }
-    }
+  return 0;
+}
 
-    // Compare both strings character by character
-    for (i = 0; i < n; i++)
-    {
-        if (s1[i] != s2[i])
-        {
-            printf("Strings are not anagrams! \n", s1, s2);
-            return 0;
-        }
-    }
+int check_anagram(char a[], char b[])
+{
+  int first[26] = {0}, second[26] = {0}, c=0;
 
-    printf("Strings are anagrams! \n");
-    return 0;
+  // Calculating frequency of characters of the first string
+
+  while (a[c] != '\0') {
+    first[a[c]-'a']++;
+    c++;
+  }
+
+  c = 0;
+
+  while (b[c] != '\0') {
+    second[b[c]-'a']++;
+    c++;
+  }
+
+  // Comparing the frequency of characters
+
+  for (c = 0; c < 26; c++)
+    if (first[c] != second[c])
+      return 0;
+
+  return 1;
 }
