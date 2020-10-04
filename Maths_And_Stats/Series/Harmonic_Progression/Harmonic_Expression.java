@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Harmonic{	
+public class Harmonic_Expression{	
 	public static void main(String args[]){
 		Scanner scan = new Scanner(System.in);
 		long difference, startTerm, numberOfTerms;
