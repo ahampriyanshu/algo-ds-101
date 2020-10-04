@@ -29,49 +29,32 @@ namespace DataStructures
             return queue.Count == 0;
         }
 
-        public IEnumerator GetEnumerator()
+        public void Print()
         {
-            return queue.GetEnumerator();
+            foreach (int i in queue) Console.Write(i + " ");
         }
 
         static void Main(string[] args)
         {
-            // QUEUE
-            // create a new queue object
             SimpleQueue myQueue = new SimpleQueue();
 
-            // formatting
-            Console.WriteLine("====================================");
-            Console.WriteLine("Queue:");
-            Console.WriteLine("====================================");
-
-            // enque 4 items to the queue
             myQueue.Enqueue(55);
             myQueue.Enqueue(33);
             myQueue.Enqueue(12);
             myQueue.Enqueue(77);
-            // print the contents of the queue
+            myQueue.Enqueue(25);
+
             Console.WriteLine("Current queue: ");
-            foreach (int i in myQueue) Console.Write(i + " ");
+            myQueue.Print();
             Console.WriteLine();
 
-            // remove first value from queue "A"
-            Console.WriteLine("Removing some values ");
             int n = myQueue.Dequeue();
-            Console.WriteLine("The removed value: {0}", n);
-            // remove newly first value from queue "M"
+            Console.WriteLine("The dequeued value: {0}", n);
             n = myQueue.Dequeue();
-            Console.WriteLine("The removed value: {0}", n);
-            // print the contents of the queue
+            Console.WriteLine("The dequeued value: {0}", n);
             Console.WriteLine("Current queue: ");
-            foreach (char i in myQueue) Console.Write(i + " ");
+             myQueue.Print();
             Console.WriteLine();
-
-            // formatting
-            Console.WriteLine("====================================");
-
-            // wait for user input to close program
-            Console.ReadLine();
         }
     }
 }
