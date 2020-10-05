@@ -2,4 +2,4 @@
 
 - [Python Implementation](heap-sort.py)
 
-- [C Implementation](head-sort.c)
+- [C Implementation](heap-sort.c)
