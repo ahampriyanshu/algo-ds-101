@@ -1,0 +1,25 @@
+// A recursive algorithm is an algorithm which calls itself with "smaller (or simpler)" input values, 
+// and which obtains the result for the current input by applying simple operations to the returned value for the smaller (or simpler) input.
+
+// A simple program describing the concept of Recursion Algorithm using C++.
+
+#include <iostream> 
+using namespace std; 
+  
+void printRec(int test) 
+{ 
+    if (test < 2) 
+        return; 
+    else { 
+        cout << test << " "; 
+        printRec(test - 2); 
+        cout << test << " "; 
+        return; 
+    } 
+} 
+  
+int main() 
+{ 
+    int test = 4; 
+    printRec(test); 
+}
