@@ -319,9 +319,9 @@
     </td>
     <td align="center">
         <a href=https://github.com/firehawk23>
-            <img src=https://avatars2.githubusercontent.com/u/53555104?v=4 width="100;" alt=firehawk23/>
+            <img src=https://avatars2.githubusercontent.com/u/53555104?v=4 width="100;" alt=Sai Suraj/>
             <br />
-            <sub style="font-size:14px"><b>firehawk23</b></sub>
+            <sub style="font-size:14px"><b>Sai Suraj</b></sub>
         </a>
     </td>
     <td align="center">
