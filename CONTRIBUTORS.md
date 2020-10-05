@@ -1294,9 +1294,9 @@
     </td>
     <td align="center">
         <a href=https://github.com/Mayankjha997>
-            <img src=https://avatars0.githubusercontent.com/u/57581165?v=4 width="100;" alt=Mayankjha997/>
+            <img src=https://avatars0.githubusercontent.com/u/57581165?v=4 width="100;" alt=Mayank Jha/>
             <br />
-            <sub style="font-size:14px"><b>Mayankjha997</b></sub>
+            <sub style="font-size:14px"><b>Mayank Jha</b></sub>
         </a>
     </td>
     <td align="center">
