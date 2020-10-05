@@ -1960,6 +1960,13 @@
         </a>
     </td>
     <td align="center">
+        <a href=https://github.com/solanki2899>
+            <img src=https://avatars0.githubusercontent.com/u/47880454?v=4 width="100;" alt=solanki2899/>
+            <br />
+            <sub style="font-size:14px"><b>solanki2899</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href=https://github.com/subSri>
             <img src=https://avatars1.githubusercontent.com/u/49086071?v=4 width="100;" alt=subSri/>
             <br />
@@ -1973,6 +1980,8 @@
             <sub style="font-size:14px"><b>subhadeep1912</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center">
         <a href=https://github.com/swagatikapanda123>
             <img src=https://avatars1.githubusercontent.com/u/39233686?v=4 width="100;" alt=Swagatika/>
@@ -1980,8 +1989,6 @@
             <sub style="font-size:14px"><b>Swagatika</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center">
         <a href=https://github.com/urjitasharma11>
             <img src=https://avatars1.githubusercontent.com/u/47599738?v=4 width="100;" alt=urjitasharma11/>
