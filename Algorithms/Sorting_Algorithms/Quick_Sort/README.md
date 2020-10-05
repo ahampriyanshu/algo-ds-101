@@ -1,10 +1,10 @@
 ## QUICK SORT
 
 Quick sorting is almost similar like merge sorting but in quick sorting the element named pivot is chose which can be any element of the array. There are many different versions of quicksort that pick pivot in different ways.
-•	Always pick first element as pivot.
-•	Always pick last element as pivot (implemented below)
-•	Pick a random element as pivot.
-•	Pick median as pivot.
+	a. Always pick first element as pivot.
+	b. Always pick last element as pivot (implemented below)
+	c. Pick a random element as pivot.
+	d. Pick median as pivot.
        
            After choosing pivot all the elements are compared with the pivot     element and if it satisfies the condition the two adjacent get swapped otherwise it remain as it is.
 
