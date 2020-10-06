@@ -1,5 +1,16 @@
-public class Euler_Approximation
+using System;
+
+class Program
 {
+    /// <summary>
+    /// Main application function.
+    /// </summary>
+    static void Main()
+    {
+        // approximates f(2) given dy/dx = x + y; y(-1) = 1
+        //  using 6 equal subdivisions
+        Console.WriteLine(Approximate(-1, 1, 2, 6));
+    }
     /// <summary>
     /// Uses Euler's method to approximate a point.
     /// </summary>
@@ -40,3 +51,4 @@ public class Euler_Approximation
         return (x + y);
     }
 }
+
