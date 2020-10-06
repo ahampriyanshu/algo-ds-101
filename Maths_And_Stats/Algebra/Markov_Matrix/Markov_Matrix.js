@@ -36,8 +36,19 @@ function isLeftMarkov(matrix) { //Each collumn summing to 1
 
 //EXAMPLE INPUT
 let example_matrix = [
-    [0.9, 0.1],
+    [0.9, 0.1],   //Right markov matrix example
     [0.5, 0.5],
+
+    /* [0.9, 0.5], //left markov matrix example
+    [0.1, 0.5],
+
+    [1, 0, 0,], //not markov matrix example
+    [0, 0, 2],
+    [0, 0, 1]
+
+    [1, 0, 0,], //doubly markov matrix example
+    [0, 1, 0],
+    [0, 0, 1] */
 ]
 
 //EXAMPLE OUTPUT
