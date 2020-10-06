@@ -1,0 +1,8 @@
+Recursion is a technique to call a function itself either directly or indirectly. Using recursion we can simplify complex problems.
+Some common problems that can be solved using recursion includes calculating factorial, Fibonacci Sequence, Depth First Search, Tree Traversals (Inorder, Preorder, Postorder).
+Many problems which involves Dynamic Programming uses recursion. 
+Recursion has two cases in it:
+  1.Base case (The case to end recursion)
+  2.Recursive Case (The case which calls the function recursively)
+
+Recursion uses 'call stack' to store the function calls. Call stack uses basic stack operations, push and pop.
