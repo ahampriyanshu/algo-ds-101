@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-// Two numbers are amicable if the first is equal to the sum of divisors of the second, 
+//Two numbers are amicable if the first is equal to the sum of divisors of the second, 
 //and if the second number is equal to the sum of divisors of the first.
 
 public class AmicableNumbersCS {
