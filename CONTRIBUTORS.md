@@ -288,6 +288,13 @@
         </a>
     </td>
     <td align="center">
+        <a href=https://github.com/M4rkoHR>
+            <img src=https://avatars3.githubusercontent.com/u/31570481?v=4 width="100;" alt=Marko/>
+            <br />
+            <sub style="font-size:14px"><b>Marko</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href=https://github.com/uV3301>
             <img src=https://avatars1.githubusercontent.com/u/43047036?v=4 width="100;" alt=Yuvraj Singh/>
             <br />
@@ -301,6 +308,8 @@
             <sub style="font-size:14px"><b>Mariothedog</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center">
         <a href=https://github.com/AjinkyaSahu>
             <img src=https://avatars1.githubusercontent.com/u/65594598?v=4 width="100;" alt=AjinkyaSahu/>
@@ -308,8 +317,6 @@
             <sub style="font-size:14px"><b>AjinkyaSahu</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center">
         <a href=https://github.com/DIV1SINGH>
             <img src=https://avatars3.githubusercontent.com/u/72353222?v=4 width="100;" alt=DIV1SINGH/>
@@ -345,6 +352,8 @@
             <sub style="font-size:14px"><b>Misha Kushka</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center">
         <a href=https://github.com/Dutta-SD>
             <img src=https://avatars3.githubusercontent.com/u/57990650?v=4 width="100;" alt=Sandip Dutta/>
@@ -352,8 +361,6 @@
             <sub style="font-size:14px"><b>Sandip Dutta</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center">
         <a href=https://github.com/shadab-me>
             <img src=https://avatars0.githubusercontent.com/u/38420725?v=4 width="100;" alt=Shadab Ali/>
@@ -389,20 +396,13 @@
             <sub style="font-size:14px"><b>prajwlr</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center">
         <a href=https://github.com/juneadkhan>
             <img src=https://avatars0.githubusercontent.com/u/54591708?v=4 width="100;" alt=Junead Khan/>
             <br />
             <sub style="font-size:14px"><b>Junead Khan</b></sub>
-        </a>
-    </td>
-</tr>
-<tr>
-    <td align="center">
-        <a href=https://github.com/M4rkoHR>
-            <img src=https://avatars3.githubusercontent.com/u/31570481?v=4 width="100;" alt=Marko/>
-            <br />
-            <sub style="font-size:14px"><b>Marko</b></sub>
         </a>
     </td>
     <td align="center">
