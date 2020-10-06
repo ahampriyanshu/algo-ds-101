@@ -17,7 +17,7 @@ Algorithm/Data Structure/STL/Maths_And_Stats
 **Submission Description**
 Describe the Algo/DS/STL
 
-**Folder Related To**
+**Submission Directory**
 Main_Folder => Sub_Folder => ... => ... => Filename.extension
 
 **Contributors**

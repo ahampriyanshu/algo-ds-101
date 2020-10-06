@@ -1,66 +1,58 @@
-# include <stdio.h>
-
-// to swap two numbers
-void swap(int* a, int* b)
-{
-    int t = *a;
-    *a = *b;
-    *b = t;
-}
-
-int partition (int arr[], int low, int high)
-{
-    int pivot = arr[high];  // selecting last element as pivot
-    int i = (low - 1);  // index of smaller element
- 
-    for (int j = low; j <= high- 1; j++)
-    {
-        // If the current element is smaller than or equal to pivot
-        if (arr[j] <= pivot)
-        {
-            i++;    // increment index of smaller element
-            swap(&arr[i], &arr[j]);
-        }
-    }
-    swap(&arr[i + 1], &arr[high]);
-    return (i + 1);
-}
-/*  
-    a[] is the array, p is starting index, that is 0, 
-    and r is the last index of array.  
-*/
-void quicksort(int a[], int p, int r)    
-{
-    if(p < r)
-    {
-        int q;
-        q = partition(a, p, r);
-        quicksort(a, p, q-1);
-        quicksort(a, q+1, r);
-    }
-}
-
-
-// function to print the array
-void printArray(int a[], int size)
-{
-    int i;
-    for (i=0; i < size; i++)
-    {
-        printf("%d ", a[i]);
-    }
-    printf("\n");
-}
-
-int main()
-{
-    int arr[] = {9, 7, 5, 11, 12, 2, 14, 3, 10, 6};
-    int n = sizeof(arr)/sizeof(arr[0]);
-    
-    // call quickSort function
-    quicksort(arr, 0, n-1);
-    
-    printf("Sorted array: \n");
-    printArray(arr, n);
-    return 0;
-}
+#include <stdio.h>
+int partition(int a[], int beg, int end);  
+void quickSort(int a[], int beg, int end);  
+void main()  
+{  
+    int i;  
+    int arr[10]={90,23,101,45,65,28,67,89,34,29};  
+    quickSort(arr, 0, 9);  
+    printf("\n The sorted array is: \n");  
+    for(i=0;i<10;i++)  
+    printf(" %d\t", arr[i]);  
+}  
+int partition(int a[], int beg, int end)  
+{  
+    int left, right, temp, loc, flag;     
+    loc = left = beg;  
+    right = end;  
+    flag = 0;  
+    while(flag != 1)  
+    {  
+        while((a[loc] <= a[right]) && (loc!=right))  
+        right--;  
+        if(loc==right)  
+        flag =1;  
+        else if(a[loc]>a[right])  
+        {  
+            temp = a[loc];  
+            a[loc] = a[right];  
+            a[right] = temp;  
+            loc = right;  
+        }  
+        if(flag!=1)  
+        {  
+            while((a[loc] >= a[left]) && (loc!=left))  
+            left++;  
+            if(loc==left)  
+            flag =1;  
+            else if(a[loc] < a[left])  
+            {  
+                temp = a[loc];  
+                a[loc] = a[left];  
+                a[left] = temp;  
+                loc = left;  
+            }  
+        }  
+    }  
+    return loc;  
+}  
+void quickSort(int a[], int beg, int end)  
+{  
+    int loc;  
+    if(beg<end)  
+    {  
+        loc = partition(a, beg, end);  
+        quickSort(a, beg, loc-1);  
+        quickSort(a, loc+1, end);  
+    }  
+}  
