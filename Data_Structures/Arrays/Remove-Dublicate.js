@@ -1,3 +1,5 @@
+// RemoveDuplicateItem
+
 function RemoveDuplicateItem(arr) {
     let newAr = [];
 
@@ -10,6 +12,3 @@ function RemoveDuplicateItem(arr) {
     return newAr
 }
 
-let ar = [5, 2, 6, 2, 3, 2, 8, 6]
-RemoveDuplicateItem(ar)
-//output [5,2,6,3,8]
