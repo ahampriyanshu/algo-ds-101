@@ -32,7 +32,7 @@ public class AmicableNumbersCS {
     }
     
     //https://codereview.stackexchange.com/a/237442
-    public static int[] GetDivisors(int n)
+    private int[] GetDivisors(int n)
         {
             if (n <= 0)
             {
