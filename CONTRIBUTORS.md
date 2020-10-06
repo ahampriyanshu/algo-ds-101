@@ -142,6 +142,13 @@
         </a>
     </td>
     <td align="center">
+        <a href=https://github.com/shadab-me>
+            <img src=https://avatars0.githubusercontent.com/u/38420725?v=4 width="100;" alt=Shadab Ali/>
+            <br />
+            <sub style="font-size:14px"><b>Shadab Ali</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href=https://github.com/manvendra3>
             <img src=https://avatars1.githubusercontent.com/u/60265986?v=4 width="100;" alt=manvendra3/>
             <br />
@@ -169,6 +176,8 @@
             <sub style="font-size:14px"><b>Happy singh</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center">
         <a href=https://github.com/meghna25>
             <img src=https://avatars0.githubusercontent.com/u/59365740?v=4 width="100;" alt=Meghna Saxena/>
@@ -176,8 +185,6 @@
             <sub style="font-size:14px"><b>Meghna Saxena</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center">
         <a href=https://github.com/rahulsunil2>
             <img src=https://avatars3.githubusercontent.com/u/22911414?v=4 width="100;" alt=Rahul Sunil/>
@@ -213,6 +220,8 @@
             <sub style="font-size:14px"><b>Sai Suraj</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center">
         <a href=https://github.com/AlessandroArosio>
             <img src=https://avatars0.githubusercontent.com/u/28343603?v=4 width="100;" alt=Alessandro Arosio/>
@@ -220,8 +229,6 @@
             <sub style="font-size:14px"><b>Alessandro Arosio</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center">
         <a href=https://github.com/DanielVip3>
             <img src=https://avatars2.githubusercontent.com/u/36603306?v=4 width="100;" alt=Daniele De Martino/>
@@ -248,13 +255,6 @@
             <img src=https://avatars1.githubusercontent.com/u/34417799?v=4 width="100;" alt=Rachel Leona/>
             <br />
             <sub style="font-size:14px"><b>Rachel Leona</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href=https://github.com/shadab-me>
-            <img src=https://avatars0.githubusercontent.com/u/38420725?v=4 width="100;" alt=Shadab Ali/>
-            <br />
-            <sub style="font-size:14px"><b>Shadab Ali</b></sub>
         </a>
     </td>
     <td align="center">
