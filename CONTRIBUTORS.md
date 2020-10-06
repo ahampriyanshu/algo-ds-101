@@ -1660,9 +1660,9 @@
     </td>
     <td align="center">
         <a href=https://github.com/TheOldTravellerNetwork>
-            <img src=https://avatars0.githubusercontent.com/u/47936262?v=4 width="100;" alt=TheOldTravellerNetwork/>
+            <img src=https://avatars0.githubusercontent.com/u/47936262?v=4 width="100;" alt=Barood/>
             <br />
-            <sub style="font-size:14px"><b>TheOldTravellerNetwork</b></sub>
+            <sub style="font-size:14px"><b>Barood</b></sub>
         </a>
     </td>
     <td align="center">
