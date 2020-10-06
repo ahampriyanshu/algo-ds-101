@@ -2232,7 +2232,7 @@
     </td>
     <td align="center">
         <a href=https://github.com/sharannyobasu>
-            <img src=https://avatars1.githubusercontent.com/u/55141861?s=400&u=81bcea5eb13995af1833ff684a78796ab798920c&v=4?v=4 width="100;" alt=zahin ekbal/>
+            <img src=https://avatars1.githubusercontent.com/u/55141861?s=400&u=81bcea5eb13995af1833ff684a78796ab798920c&v=4?v=4 width="100;" alt=Sharannyo Basu/>
             <br />
             <sub style="font-size:14px"><b>Sharannyo Basu</b></sub>
         </a>
