@@ -50,6 +50,7 @@ public class AmicableNumbersCS {
                     }
                 }
             }
+            divisors.Remove(n);
             divisors.Sort();
             return divisors.ToArray();
         }
