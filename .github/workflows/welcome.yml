@@ -14,16 +14,14 @@ jobs:
           FIRST_ISSUE: >
             👋 @${author}
             
-             Thanks for opening your first issue here! Be sure to follow the issue template! \n Regards @ahampriyanshu :v:
-
-
-          FIRST_PR: >
-            👋 @${author}
-            
-            Thanks for opening this pull request! Be sure to follow the PR template ! Please check out our contributing guidelines.  \n Regards @ahampriyanshu :v:
+             Thanks for opening your first issue here! Be sure to follow the issue template!
+             
+             Regards @ahampriyanshu :v:
 
 
           FIRST_PR_MERGED: >
             🎉 @${author}
             
-            Congrats on merging your first pull request! Happy Contributing!  \n Regards @ahampriyanshu :v:
+            Congrats on merging your first pull request! Happy Contributing!
+            
+            Regards @ahampriyanshu :v:

@@ -55,6 +55,9 @@ int main(){
 
  sort(v.begin(),v.end());
  removeDuplicates(v);
+for(int u =0;u<h;u++){
+    cout<<v[u];
+ }
  return 0;
 
 }
