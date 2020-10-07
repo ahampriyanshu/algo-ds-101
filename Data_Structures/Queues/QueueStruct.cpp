@@ -80,8 +80,7 @@ int main()
 	string q;
 	int x;
 	myQueue mq;
-	do
-    {
+	do {
         cin >> q;
         if(q == "push"){
             cin >> x;
