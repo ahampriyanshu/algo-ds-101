@@ -5,47 +5,48 @@ using namespace std;
 struct node
 {
 	int value;
-	node * next;
+	node * prev;
 
-	node(int x){
+	node(int x, node * pr){
 		value = x;
-		next = NULL;
+		prev = pr;
 	}
 };
 
-struct myQueue
+struct myStack
 {
 	private:
-		node * head;
-		node * tail;
+		node * top;
 		int cnt;
 
+
+
 	public:
-		myQueue()
+		myStack()
 		{
-			head = NULL;
-			tail = NULL;
+			top = NULL;
 			cnt = 0;
 		}
 
 		void push(int x) {
-			node * el = new node(x);
-			if(empty()){
-				head = el;
-			}
-			else{
-				tail->next = el;
-			}
+			/*
+			node * el = new node();
+			el->value = x;
+			el->prev = top;
+			top = el;
+			cnt++;
+			*/
 
-			tail = el;
 
+			node * el = new node(x, top);
+			top = el;
 			cnt++;
 		}
 		
 		void pop() {
 			if(!empty()) {
-				int res = head->value;
-				head = head->next;
+				int res = top->value;
+				top = top->prev;
 				cnt--;
 				cout << res;
 			}
@@ -54,9 +55,9 @@ struct myQueue
 				cout << "error";
 			}
 		}
-		void front() {
+		void back() {
 			if(!empty())
-				cout << head->value;
+				cout << top->value;
 			else
 				cout << "error";
 		}
@@ -65,8 +66,7 @@ struct myQueue
 			return cnt;
 		}
 		void clear() {
-			head = NULL;
-			tail = NULL;
+			top = NULL;
 			cnt = 0;
 		}
 		bool empty() {
@@ -79,26 +79,26 @@ int main()
 {
 	string q;
 	int x;
-	myQueue mq;
+	myStack st;
 	do
-    {
+    	{
         cin >> q;
         if(q == "push"){
             cin >> x;
-            mq.push(x);
+            st.push(x);
             cout << "ok";
         }
         if(q == "pop"){
-            mq.pop();
+            st.pop();
         }
-        if(q == "front"){
-            mq.front();
+        if(q == "back"){
+            st.back();
         }
         if(q == "size"){
-            cout << mq.size();
+            cout << st.size();
         }
         if(q == "clear"){
-            mq.clear();
+            st.clear();
             cout << "ok";
         }
         if(q == "exit"){
