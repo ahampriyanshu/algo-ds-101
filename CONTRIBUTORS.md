@@ -1748,9 +1748,9 @@
     </td>
     <td align="center">
         <a href=https://github.com/KritiGandotra>
-            <img src=https://avatars0.githubusercontent.com/u/52518026?v=4 width="100;" alt=KritiGandotra/>
+            <img src=https://avatars0.githubusercontent.com/u/52518026?v=4 width="100;" alt=Kriti Gandotra/>
             <br />
-            <sub style="font-size:14px"><b>KritiGandotra</b></sub>
+            <sub style="font-size:14px"><b>Kriti Gandotra</b></sub>
         </a>
     </td>
     <td align="center">
