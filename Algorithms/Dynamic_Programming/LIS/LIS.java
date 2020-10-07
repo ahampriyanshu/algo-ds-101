@@ -65,7 +65,9 @@ class Main
 	{
 		
 		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the number of elements of the array:"+"\n");
 		int n = sc.nextInt();
+	System.out.print("Enter the elements of the array:"+"\n");
         int array[] = new int[n];
         for (int i = 0; i < n; ++i)
         {
