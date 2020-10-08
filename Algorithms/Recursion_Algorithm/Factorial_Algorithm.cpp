@@ -1,6 +1,6 @@
 #include <iostream>
 //  Factorial Recursive Algorithm C++ Implementation
-int n{ 0 };
+int n{ 0 }; // Initialize
 int answer{ 0 };
 int recursiveFactorial(int n) { // takes int n, to calculate n!
 	if (n > 1) { // Since 1! = 1 and 0! = 1, and n must be positive;
