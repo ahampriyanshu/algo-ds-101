@@ -1,6 +1,6 @@
 #include <bits/stdc++.h> 
 using namespace std;
-// Function for giving maximum of 2 numbers
+// Function for returning maximum of 2 numbers
 int max(int a, int b) 
 { 
     return (a > b) ? a : b; 
