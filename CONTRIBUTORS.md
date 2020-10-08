@@ -2575,6 +2575,13 @@
             <sub style="font-size:14px"><b>zahin ekbal</b></sub>
         </a>
     </td>
+    <td align="center">
+        <a href=https://github.com/nayanika0208>
+            <img src=https://avatars3.githubusercontent.com/u/38004490?s=460&u=7341197e252c2b83fbcf13d4699bca095dba8a90&v=4 width="100;" alt=Nayanika ekbal/>
+            <br />
+            <sub style="font-size:14px"><b>Nayanika</b></sub>
+        </a>
+    </td>
 </tr>
 </table>
 
