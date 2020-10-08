@@ -7,6 +7,6 @@ def TowerOfHanoi(n , source, destination, auxiliary):
 	TowerOfHanoi(n-1, auxiliary, destination, source) 
 		
  
-n = 4
+n = int(input().strip())
 TowerOfHanoi(n,'A','B','C') 
 
