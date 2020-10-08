@@ -59,6 +59,5 @@ int main()
      root=inser(root,5);
      root=inser(root,30);
      levelorder(root);
-
 }
 
