@@ -5,7 +5,7 @@ using namespace std;
 
 class Fun{
   
-  public :
+  public:
      void operator()(string s){
          cout<<"Having Fun with "<<s;
      }
@@ -13,7 +13,7 @@ class Fun{
 
      // make functional object for priority queue
      class Person{
-     public :
+     public:
          string name;
          int age;
         Person(){
