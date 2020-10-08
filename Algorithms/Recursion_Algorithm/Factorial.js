@@ -9,3 +9,6 @@ function factorial(n) {
     return n * factorial(n - 1);
   }
 }
+
+var testNum = 7;
+console.log("The factorial of 7 (!" + testNum + "!) is: " + factorial(testNum));
