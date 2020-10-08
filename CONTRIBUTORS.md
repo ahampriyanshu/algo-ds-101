@@ -2276,9 +2276,9 @@
     </td>
     <td align="center">
         <a href=https://github.com/anshrathod>
-            <img src=https://avatars1.githubusercontent.com/u/32770069?v=4 width="100;" alt=ansh rathod/>
+            <img src=https://avatars1.githubusercontent.com/u/32770069?v=4 width="100;" alt=Ansh Rathod/>
             <br />
-            <sub style="font-size:14px"><b>ansh rathod</b></sub>
+            <sub style="font-size:14px"><b>Ansh Rathod</b></sub>
         </a>
     </td>
     <td align="center">
