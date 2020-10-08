@@ -11,6 +11,19 @@ The following method shows how recursion can be used to calculate the factorial 
 '''
 
 def factorial(n):
+    """(positive int) → int
+    
+    Returns factorial of any positive integer.
+    
+    >>> factorial(10)
+    3628800
+    
+    >>> factorial(0)
+    1
+    
+    >>> factorial(1)
+    1
+    """
     if(n == 1 or n == 0):
         return 1
     else:
@@ -20,12 +33,12 @@ def factorial(n):
 while True:
     try:
         user_input = int(input("Please enter the number to be computed: "))
-        if(user_input < 0):
+        if(user_input < 0):                                 #Case where user will input negative int
             print("The number cannot be negative!")
             continue
         else:
             print(factorial(user_input))
-    except ValueError:
+    except ValueError:                                       #Case where user's input won't be an int
         print("The number should be a integer!")
         continue
     else:
