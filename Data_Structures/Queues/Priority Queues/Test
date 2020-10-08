@@ -1,0 +1,17 @@
+1.
+Input                                Output
+5                                     D 50
+A 20                                  C 40
+B 3                                   A 20
+C 40
+D 50
+E 15
+
+
+2.
+Input                                Output
+4                                    D 40                         
+A 20                                 B 30
+B 30                                 A 20
+C 15
+D 40
