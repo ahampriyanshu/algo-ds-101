@@ -19,7 +19,7 @@ shellsort()
 }
 
 
-echo -n "Enter the Total numbers: "
+echo -n "Enter the total numbers: "
 read n
 echo "Enter numbers: "
 i=0
