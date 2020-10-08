@@ -1,41 +1,36 @@
-#include<bits/stdc++.h> 
-using namespace std; 
-
-int interpolationSearch(int arr[], int n, int x) 
-{ 
-    int lo = 0, hi = (n - 1);  
-    while (lo <= hi && x >= arr[lo] && x <= arr[hi]) 
-    { 
-        if (lo == hi) 
-        { 
-            if (arr[lo] == x) return lo; 
-            return -1; 
-        } 
-        int pos = lo + (((double)(hi - lo) / 
-            (arr[hi] - arr[lo])) * (x - arr[lo])); 
-            
-        if (arr[pos] == x) 
-            return pos; 
-   
-        if (arr[pos] < x) 
-            lo = pos + 1; 
-            
-        else
-            hi = pos - 1; 
-    } 
-    return -1; 
-} 
-
-int main() 
-{ 
-    int arr[] = {10, 12, 13, 16, 18, 19, 20, 21, 
-                 22, 23, 24, 33, 35, 42, 47}; 
-    int n = sizeof(arr)/sizeof(arr[0]); 
-    int x = 18; 
-    int index = interpolationSearch(arr, n, x); 
-    if (index != -1) 
-        cout << "Element found at index " << index; 
-    else
-        cout << "Element not found."; 
-    return 0; 
-} 
+#include<iostream>
+using namespace std;
+int interpolationSearch(int array[], int start, int end, int key) {
+   int dist, valRange, indexRange, estimate;
+   float fraction;
+   while(start <= end && key >= array[start] && key <= array[end]) {
+      dist = key - array[start];
+      valRange = array[end] - array[start];    
+      fraction = dist / valRange;
+      indexRange = end - start;
+      estimate = start + (fraction * indexRange);     
+       if(array[estimate] == key)
+         return estimate;
+      if(array[estimate] < key)
+         start = estimate +1;
+      else
+         end = estimate - 1;
+   }
+   return -1;
+}
+int main() {
+   int n, searchKey, loc;
+   cout << "Enter number of items: ";
+   cin >> n;
+   int arr[n];      
+   cout << "Enter items: " << endl;
+   for(int i = 0; i< n; i++) {
+      cin >> arr[i];
+   }
+   cout << "Enter search key to search in the list: ";
+   cin >> searchKey;
+   if((loc = interpolationSearch(arr, 0, n-1, searchKey)) >= 0)
+      cout << "Item found at location: " << loc << endl;
+   else
+      cout << "Item is not found in the list." << endl;
+}
