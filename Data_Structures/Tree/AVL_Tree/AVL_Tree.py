@@ -1,193 +1,148 @@
-'''
-Python Code for AVL Tree
-@ Author - Sandip Dutta
-------------------------------------------------------------------------
-$ AVL Tree:
+import sys
 
-AVL Tree is a special kind of Binary Search Tree. Each node in the
-tree, stores a variable called 'BalanceFactor'. Balance Factor
-is equal to the difference between the height of the left 
-subtree and the right subtree of the node.
+class TreeNode(object):
+    def __init__(self, key):
+        self.key = key
+        self.left = None
+        self.right = None
+        self.height = 1
 
-    BalanceFactor = (height(left_Subtree) - height(right_Subtree))
 
-In AVL Trees, it is always maintained that the Balance Factor of each 
-node is {-1, 0, 1}. This causes the tree to be balanced, that is not 
-skewed in one direction or the other.
+class AVLTree(object):
+    def insert_node(self, root, key):
 
-$ Example of AVL Tree:
-
-           10
-           / \
-          8  12
-         /  /  \
-        2  11  15
-
-If we calculate the balance factor for each node, it comes 
-out to be {0, 1, -1}.
-
-$ Usefulness:
-
-AVL trees have common operations such as min, max, search all in 
-O(log(n)) time complexity.
-
-$ How to maintain balance
-
-AVL achieve balance by using rotations. For more details, see Wikipedia.
-'''
-
-class Node(object):
-    '''Implement node of a tree.'''
-
-    def __init__(
-    self, 
-    value, 
-    left = None, 
-    right = None,    
-    height = 1):
-        '''Implements the node of the tree.
-        @ Args:
-        > value - (int) Value of the node
-        > left - (int, def - None) left node
-        > right - (int, def - None) right node
-        > height - (int, def - 1) height of the tree upto the node.
-                    Since we need to check height multiple times
-                    we store it
-        '''
-        self.value = value
-        self.left = left
-        self.right = right
-        self.height = height
-
-class AVL_Tree(object):
-    '''Implements AVL Tree.'''
-
-    # Helper/utility functions
-    def getHeight(self, node):
-        '''Returns the height of the node of AVL Tree.
-        @ Args:
-        > node - (Node) node of a tree. If empty tree, is None
-        '''
-        if not node:
-            return 0
-        return node.height
-    
-    def getBalanceFactor(self, node):
-        '''Returns the balance factor of the AVL Tree.
-        @ Args:
-        > node - (Node) node of a tree. If empty tree, is None
-        '''
-        if not node:
-            return 0
-        return self.getHeight(node.left) - self.getHeight(node.right)
-
-    def leftRotate(self, node):
-        ''' Performs left rotation on subtree of a node
-        rooted at @argument: node.
-        @ Args:
-        > node - (Node) node of AVL Tree. Empty == None
-        @ Return:
-        > finalNode - (Node) final Node after left rotation
-        '''
-        finalNode = node.right # final parent node after rotation
-        tempNode = finalNode.left
-
-        # Rotate
-        finalNode.left = node
-        node.right = tempNode
-
-        # update heights
-        node.height = 1 + max(
-            self.getHeight(node.left),
-            self.getHeight(node.right)
-        )
-        finalNode.height = 1 + max(
-            self.getHeight(finalNode.left),
-            self.getHeight(finalNode.right)
-        )
-
-        # return finalNode so that parent of 'node' knows 
-        # what to point to
-        return finalNode
-
-    def rightRotate(self, node):
-        ''' Performs right rotation on subtree of a node
-        rooted at @argument: node.
-        @ Args:
-        > node - (Node) node of AVL Tree. Empty == None
-        @ Return:
-        > finalNode - (Node) final Node after right rotation
-        '''
-        finalNode = node.left
-        tempNode = finalNode.right
-
-        # Rotate right
-        finalNode.left = node
-        node.right = tempNode
-
-        # Update heights
-        node.height = 1 + max(
-            self.getHeight(node.left),
-            self.getHeight(node.right)
-        )
-
-        finalNode.height = 1 + max(
-            self.getHeight(finalNode.left),
-            self.getHeight(finalNode.right)
-        )
-
-        # return finalNode so that parent of 'node' what to 
-        # point to
-        return finalNode
-
-    def insertNode(self, rootNode, value):
-        '''Inserts node in AVL tree as per standard BST rules
-        and performs necessary rotations to balance the tree.
-        @ Args:
-        > rootNode = (Node) The root node of the tree,
-                        Empty tree === None
-        > value = (int) The value to be inserted
-        @ Return:
-        > rootNode = (Node) The root node of the tree with value
-                    in it's final position
-        '''
-        if not rootNode: return Node(value) # Empty tree
-
-        # Insert as per BST rules
-        if value < rootNode.value:
-            rootNode.left = self.insertNode(rootNode.left, value)
+        # Find the correct location and insert the node
+        if not root:
+            return TreeNode(key)
+        elif key < root.key:
+            root.left = self.insert_node(root.left, key)
         else:
-            rootNode.right = self.insertNode(rootNode.right, value)
+            root.right = self.insert_node(root.right, key)
 
-        # Get balance factor
-        balanceFactor = self.getBalanceFactor(rootNode)
-
-        # Perform rotations after insertion
-        if balanceFactor > 1:            
-            # if below condition is true, we know
-            # as per BST rules, value is in left subtree
-            # of left subtree of rootNode.
-            # As insertion of value caused change in balance
-            # We will adjust that subtree so that balance is
-            # restored. 
-            if value < rootNode.left.value:
-                return self.rightRotate(rootNode)
+        root.height = 1 + max(self.getHeight(root.left),
+                              self.getHeight(root.right))
+        balanceFactor = self.getBalance(root)
+        if balanceFactor > 1:
+            if key < root.left.key:
+                return self.rightRotate(root)
             else:
-                # Left skewed tree after insertion
-                # but value is greater than value of rootNode
-                # Thus, value is the left node of the tree
-                # After rotation, update parent node with 
-                # new left node.
-                rootNode.left = self.leftRotate(root.left)
+                root.left = self.leftRotate(root.left)
                 return self.rightRotate(root)
 
         if balanceFactor < -1:
-            if value > rootNode.right.value:
-                # Adjust right sub tree
-                return self.leftRotate(rootNode)
+            if key > root.right.key:
+                return self.leftRotate(root)
             else:
-                # Update parent node
-                rootNode.right = self.rightRotate(root.right)
-                return self.leftRotate(rootNode)
+                root.right = self.rightRotate(root.right)
+                return self.leftRotate(root)
 
-        return rootNode
+        return root
+
+    def delete_node(self, root, key):
+        if not root:
+            return root
+        elif key < root.key:
+            root.left = self.delete_node(root.left, key)
+        elif key > root.key:
+            root.right = self.delete_node(root.right, key)
+        else:
+            if root.left is None:
+                temp = root.right
+                root = None
+                return temp
+            elif root.right is None:
+                temp = root.left
+                root = None
+                return temp
+            temp = self.getMinValueNode(root.right)
+            root.key = temp.key
+            root.right = self.delete_node(root.right,
+                                          temp.key)
+        if root is None:
+            return root
+        root.height = 1 + max(self.getHeight(root.left),
+                              self.getHeight(root.right))
+
+        balanceFactor = self.getBalance(root)
+        if balanceFactor > 1:
+            if self.getBalance(root.left) >= 0:
+                return self.rightRotate(root)
+            else:
+                root.left = self.leftRotate(root.left)
+                return self.rightRotate(root)
+        if balanceFactor < -1:
+            if self.getBalance(root.right) <= 0:
+                return self.leftRotate(root)
+            else:
+                root.right = self.rightRotate(root.right)
+                return self.leftRotate(root)
+        return root
+    def leftRotate(self, z):
+        y = z.right
+        T2 = y.left
+        y.left = z
+        z.right = T2
+        z.height = 1 + max(self.getHeight(z.left),
+                           self.getHeight(z.right))
+        y.height = 1 + max(self.getHeight(y.left),
+                           self.getHeight(y.right))
+        return y
+    def rightRotate(self, z):
+        y = z.left
+        T3 = y.right
+        y.right = z
+        z.left = T3
+        z.height = 1 + max(self.getHeight(z.left),
+                           self.getHeight(z.right))
+        y.height = 1 + max(self.getHeight(y.left),
+                           self.getHeight(y.right))
+        return y
+
+    
+    def getHeight(self, root):
+        if not root:
+            return 0
+        return root.height
+
+    def getBalance(self, root):
+        if not root:
+            return 0
+        return self.getHeight(root.left) - self.getHeight(root.right)
+
+    def getMinValueNode(self, root):
+        if root is None or root.left is None:
+            return root
+        return self.getMinValueNode(root.left)
+
+    def preOrder(self, root):
+        if not root:
+            return
+        print("{0} ".format(root.key), end="")
+        self.preOrder(root.left)
+        self.preOrder(root.right)
+
+ 
+    def printHelper(self, currPtr, indent, last):
+        if currPtr != None:
+            sys.stdout.write(indent)
+            if last:
+                sys.stdout.write("R----")
+                indent += "     "
+            else:
+                sys.stdout.write("L----")
+                indent += "|    "
+            print(currPtr.key)
+            self.printHelper(currPtr.left, indent, False)
+            self.printHelper(currPtr.right, indent, True)
+
+
+myTree = AVLTree()
+root = None
+nums = [33, 13, 52, 9, 21, 61, 8, 11]
+for num in nums:
+    root = myTree.insert_node(root, num)
+myTree.printHelper(root, "", True)
+key = 13
+root = myTree.delete_node(root, key)
+print("After Deletion: ")
+myTree.printHelper(root, "", True)
