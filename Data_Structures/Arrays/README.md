@@ -1,1 +1,1 @@
-## This folder is empty.
+## An array is a collection of items stored at contiguous memory locations
