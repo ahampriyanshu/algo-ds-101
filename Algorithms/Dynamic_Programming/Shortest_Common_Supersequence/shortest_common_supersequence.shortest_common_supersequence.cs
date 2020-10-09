@@ -1,8 +1,6 @@
 using System; 
 
-
 class LCSS
-
 { 
 
 
