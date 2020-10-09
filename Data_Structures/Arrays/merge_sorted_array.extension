@@ -1,0 +1,27 @@
+/*   1. Create an output array.
+     2. Create a min heap of size k and insert 1st element of all the given arrays into the heap.
+     3. Repeat following steps while heap is not empty.
+     …..a) Remove minimum element from heap (root) and store it in output array.
+     …..b) Insert next element from the array from which the element is extracted. If the array doesn’t have any more elements, then do nothing.    */
+     
+//code starts
+
+#include <bits/stdc++.h> 
+using namespace std; 
+typedef pair<int, pair<int, int> > ppi; 
+vector<int> mergeKArrays(vector<vector<int>> arr) { 
+    vector<int>ans; 
+    priority_queue<ppi, vector<ppi>, greater<ppi> > pq; 
+    for (int i=0; i<arr.size(); i++) 
+        pq.push(make_pair(arr[i][0], make_pair(i, 0))); 
+    while (!pq.empty()) { 
+        ppi curr = pq.top(); 
+        pq.pop();
+        int i = curr.second.first; 
+        int j = curr.second.second; 
+        ans.push_back(curr.first); 
+        if (j+1 < arr[i].size()) 
+            pq.push(make_pair(arr[i][j + 1], make_pair(i, j+1))); 
+    }
+    return ans; 
+} 
