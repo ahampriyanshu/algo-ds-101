@@ -1,30 +1,27 @@
 //Selection sort, sort the array by swapping the curr element with the smallest element from indexes curr+1 to len-1
 #include<iostream>
 using namespace std;
-void selectionsort(int arr[],int len){
-    for(int curr=0;curr<len;curr++){
-        int min_idx=curr;
-        for(int itr=curr+1;itr<len;itr++){
-            if(arr[itr]<arr[min_idx]){
-                min_idx=itr;
+void selection_sort(int a[],int n){
+    for(int i=0;i<n-1;i++){
+        int min_index=i;
+        for(int j=i+1;j<=n-1;j++){
+            if(a[j]<a[min_index]){
+                min_index=j;
             }
         }
-        swap(arr[curr],arr[min_idx]);
+      swap(a[i],a[min_index]);
     }
 }
 int main(){
-    int len;
-    cout<<"Enter the number of elements to sort: ";
-    cin>>len;
-    int arr[len]={0};
-    cout<<"Enter the elements to sort: \n";
-    for(int idx=0;idx<len;idx++){
-        cin>>arr[idx];
+    int n;
+    cin>>n;
+    int a[1000];
+    for(int i=0;i<n;i++){
+        cin>>a[i];
     }
-    selectionsort(arr,len);
-    cout<<"Sorted array: ";
-    for(int idx=0;idx<len;idx++){
-        cout<<arr[idx]<<" ";
+    selection_sort(a,n);
+    for(int i=0;i<n;i++){
+        cout<<a[i]<<",";
     }
     return 0;
 }
