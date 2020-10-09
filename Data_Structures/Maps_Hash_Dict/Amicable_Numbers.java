@@ -3,10 +3,11 @@
 
 import java.util.*;
 
+
 //Driver Class
 class AmicableNum{
 
-	//Check for valid Amicable Number
+	//Checks for valid Amicable Number
 	boolean findAmicable(int num1, int num2){
 		int sumofDiv1 =0;
 		int sumofDiv2 =0;
@@ -44,6 +45,7 @@ class AmicableNum{
 
 
 	}
+
 
 	//Driver Code
 	public static void main(String[] args) {
