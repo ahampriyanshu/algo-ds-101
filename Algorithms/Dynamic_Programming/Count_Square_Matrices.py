@@ -21,9 +21,15 @@ def countSquareMatrices(a, N, M):
 
     return count
 
+n = int(input())
+m = int(input())
 
-arr = [ [ 1, 0, 1],
-    [ 1, 1, 0 ],
-    [ 1, 1, 0 ] ]
-
-print(countSquareMatrices(arr, n, m))
+matrix = []
+print("Enter elements row-wise")
+for i in range(n):          # a for loop for row entries
+    a =[]
+    for j in range(m):      # a for loop for column entries
+         a.append(int(input()))
+    matrix.append(a)
+    
+print("\nNumber of square submatrices with all ones is",countSquareMatrices(matrix, n, m))
