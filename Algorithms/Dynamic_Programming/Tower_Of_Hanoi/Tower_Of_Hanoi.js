@@ -34,6 +34,14 @@ function Tower_Of_Hanoi () {
   return game;
 }
 
-// Example run with 7 discs
 const theGame = Tower_Of_Hanoi();
-theGame.play(7);
+
+const readline = require("readline");
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+rl.question("Please enter the number of discs ? ", function(n) {
+  theGame.play(n);
+  rl.close()
+});
