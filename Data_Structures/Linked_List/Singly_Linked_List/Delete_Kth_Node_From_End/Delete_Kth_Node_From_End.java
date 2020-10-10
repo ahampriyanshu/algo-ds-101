@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Delete_Kth_Node_From_End 
 { 
 
@@ -79,19 +81,19 @@ static void display(Node head)
 public static void main(String[] args) 
 { 
 	Node head = null; 
-	
-	head = create(head, 1); 
-	head = create(head, 2); 
-	head = create(head, 3); 
-	head = create(head, 4); 
-	head = create(head, 5); 
-	
-	int n = 2; 
-	
+	Scanner sc = new Scanner(System.in);
+	System.out.print("Enter number of nodes to be inserted: ");
+	int n = sc.nextInt(), p;
+	for(int i=0;i<n;++i) {
+	System.out.print("Enter node '" + i + "' data: ");
+		p = sc.nextInt();
+		head = create(head, p);
+	}
 	System.out.print("Linked list before modification: \n"); 
 	display(head); 
-
-	head = removeNthFromEnd(head, 2); 
+	System.out.print("Enter the value of K: ");
+	n = sc.nextInt();
+	head = removeNthFromEnd(head, n);
 	System.out.print("Linked list after modification: \n"); 
 	display(head); 
 } 
