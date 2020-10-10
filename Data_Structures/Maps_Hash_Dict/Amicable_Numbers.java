@@ -3,6 +3,8 @@
 
 import java.util.*;
 
+
+//Driver Class
 class AmicableNum{
 
 	//Checks for valid Amicable Number
@@ -44,6 +46,8 @@ class AmicableNum{
 
 	}
 
+
+	//Driver Code
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in); //Create object
