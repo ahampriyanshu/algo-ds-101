@@ -20,7 +20,7 @@ namespace LeetCode46
 			// returned value is ["abc", "acb", "bac", "bca", "cab", "cba"] 
         }
 
-        public static void GetPermutations(string item, SortedSet<string> hash, string stack, int len)
+        private static void GetPermutations(string item, SortedSet<string> hash, string stack, int len)
         {
 			// Checks length of stack if equal to that of item
             if (stack.Length == len)
