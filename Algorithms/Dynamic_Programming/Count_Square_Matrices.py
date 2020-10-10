@@ -1,7 +1,3 @@
-n = 3
-m = 3
-
-
 def countSquareMatrices(a, N, M):
 
     count = 0
