@@ -1,17 +1,20 @@
-const readline = require('readline')
-const reader = readline.createInterface(process.stdin, process.stdout); 
 
-function countDivisiblePairs(arr) {
-    let res = 0, n = arr.length
-    for(let i=0;i<n;++i)
-        for(let j=i+1;j<n;++j)
-            if(arr[i]%arr[j] === 0 || arr[j]%arr[i] === 0)
-                ++res
-    return res
+let DivisiblePairCount = (arr, n) => {
+    let count = 0; // set count = 0
+    for (let i = 0; i < n; i++) // iterate through the array from i = 0
+    {
+        for (let j = i + 1; j < n; j++) // iterate through the array start from the element next to arr[i]
+        {
+            if (
+                (arr[i] % arr[j] == 0)  
+                || (arr[j] % arr[i] == 0)
+                )
+                {
+                    count++; // increase count by 1, if it is under the condition
+                }
+        }
+    }
+    return count;    
 }
-
-reader.question('Enter array elements seperated by space: ', arr => {
-    let numbers = arr.split(" ")
-    console.log("There are " + countDivisiblePairs(numbers) + " divisible pairs in given array.")
-    reader.close()
-})
+let arr = [2,3,5,8,9];
+console.log(DivisiblePairCount(arr, arr.length));
