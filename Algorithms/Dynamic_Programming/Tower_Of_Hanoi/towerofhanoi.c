@@ -26,7 +26,7 @@ int main()
 
 	//Total time complexity : O(2^n)
 
-	TOH(n, 'A', 'C', 'B'); // A, B and C are names of the disks
+	TOH(n, 'A', 'B', 'C'); // A, B and C are names of the disks
 
 	return 0;
 }
