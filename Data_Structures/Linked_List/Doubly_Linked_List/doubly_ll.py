@@ -1,5 +1,5 @@
 
-#this file has complete implementation of doubly linked list using python language
+#this file has complete implementation of doubly linked list using python language and this class defined below has also reverse method which reverse given doubly linked list
 
 class Node(object):
     # Singly linked node
