@@ -251,12 +251,21 @@
         </a>
     </td>
     <td align="center">
+        <a href=https://github.com/Rudransh24>
+            <img src=https://avatars3.githubusercontent.com/u/55325635?v=4 width="100;" alt=Rudransh24/>
+            <br />
+            <sub style="font-size:14px"><b>Rudransh24</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href=https://github.com/rushitote>
             <img src=https://avatars0.githubusercontent.com/u/31135699?v=4 width="100;" alt=Rushikesh Tote/>
             <br />
             <sub style="font-size:14px"><b>Rushikesh Tote</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center">
         <a href=https://github.com/Dutta-SD>
             <img src=https://avatars3.githubusercontent.com/u/57990650?v=4 width="100;" alt=Sandip Dutta/>
@@ -264,8 +273,6 @@
             <sub style="font-size:14px"><b>Sandip Dutta</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center">
         <a href=https://github.com/Sanika1999>
             <img src=https://avatars0.githubusercontent.com/u/51399803?v=4 width="100;" alt=Sanika/>
@@ -301,6 +308,8 @@
             <sub style="font-size:14px"><b>Jayanta Saren</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center">
         <a href=https://github.com/AlessandroArosio>
             <img src=https://avatars0.githubusercontent.com/u/28343603?v=4 width="100;" alt=Alessandro Arosio/>
@@ -308,8 +317,6 @@
             <sub style="font-size:14px"><b>Alessandro Arosio</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center">
         <a href=https://github.com/DanielVip3>
             <img src=https://avatars2.githubusercontent.com/u/36603306?v=4 width="100;" alt=Daniele De Martino/>
@@ -336,13 +343,6 @@
             <img src=https://avatars1.githubusercontent.com/u/34417799?v=4 width="100;" alt=Rachel Leona/>
             <br />
             <sub style="font-size:14px"><b>Rachel Leona</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href=https://github.com/Rudransh24>
-            <img src=https://avatars3.githubusercontent.com/u/55325635?v=4 width="100;" alt=Rudransh24/>
-            <br />
-            <sub style="font-size:14px"><b>Rudransh24</b></sub>
         </a>
     </td>
     <td align="center">
