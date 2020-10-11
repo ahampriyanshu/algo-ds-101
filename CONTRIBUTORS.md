@@ -1667,9 +1667,9 @@
     </td>
     <td align="center">
         <a href=https://github.com/manishita24>
-            <img src=https://avatars1.githubusercontent.com/u/60927308?v=4 width="100;" alt=manishita24/>
+            <img src=https://avatars1.githubusercontent.com/u/60927308?v=4 width="100;" alt=Manishita Choudhary/>
             <br />
-            <sub style="font-size:14px"><b>manishita24</b></sub>
+            <sub style="font-size:14px"><b>Manishita Choudhary</b></sub>
         </a>
     </td>
 </tr>
