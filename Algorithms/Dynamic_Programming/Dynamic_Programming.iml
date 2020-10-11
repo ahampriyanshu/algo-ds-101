@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Shortest_Common_Supersequence" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Gold_Mine_Problem" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LIS" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/0-1_Knapsack_Problem" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Target_Sum" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Golomb_Sequence" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Egg_Drop" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Gauss_Easter_Date" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tower_Of_Hanoi" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Maximum_Achievable_Coins" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LCS" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sudoku_Solver" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

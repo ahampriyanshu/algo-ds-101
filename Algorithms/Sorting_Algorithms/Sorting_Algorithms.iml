@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Radix_Sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Circle_Sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Shell_Sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Counting Sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Heap_Sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Gnome_Sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Selection_Sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pigeonhole_Sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tree_Sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pancake_Sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Cocktail_Sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tim_Sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Insertion_Sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bitonic_Search" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Quick_Sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bubble_Sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bucket_Sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Merge_Sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Cycle_Sort" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

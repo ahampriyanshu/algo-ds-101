@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Maths_And_Stats/Algebra/Algebra.iml" filepath="$PROJECT_DIR$/Maths_And_Stats/Algebra/Algebra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Algorithms/Algorithms.iml" filepath="$PROJECT_DIR$/Algorithms/Algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Maths_And_Stats/Calculus/Calculus.iml" filepath="$PROJECT_DIR$/Maths_And_Stats/Calculus/Calculus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Algorithms/Cryptography_Algorithm/Cryptography_Algorithm.iml" filepath="$PROJECT_DIR$/Algorithms/Cryptography_Algorithm/Cryptography_Algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Data_Structures/Data_Structures.iml" filepath="$PROJECT_DIR$/Data_Structures/Data_Structures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Algorithms/Dynamic_Programming/Dynamic_Programming.iml" filepath="$PROJECT_DIR$/Algorithms/Dynamic_Programming/Dynamic_Programming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Maths_And_Stats/Geometry/Geometry.iml" filepath="$PROJECT_DIR$/Maths_And_Stats/Geometry/Geometry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Algorithms/Graph_Algorithms/Graph_Algorithms.iml" filepath="$PROJECT_DIR$/Algorithms/Graph_Algorithms/Graph_Algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Data_Structures/Linked_List/Linked_List.iml" filepath="$PROJECT_DIR$/Data_Structures/Linked_List/Linked_List.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Maths_And_Stats/Number_Theory/Number_Theory.iml" filepath="$PROJECT_DIR$/Maths_And_Stats/Number_Theory/Number_Theory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Algorithms/Pattern_Searching/Pattern_Searching.iml" filepath="$PROJECT_DIR$/Algorithms/Pattern_Searching/Pattern_Searching.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Algorithms/Search_Algorithms/Search_Algorithms.iml" filepath="$PROJECT_DIR$/Algorithms/Search_Algorithms/Search_Algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Algorithms/Selection_Algorithms/Selection_Algorithms.iml" filepath="$PROJECT_DIR$/Algorithms/Selection_Algorithms/Selection_Algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Maths_And_Stats/Series/Series.iml" filepath="$PROJECT_DIR$/Maths_And_Stats/Series/Series.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Algorithms/Sorting_Algorithms/Sorting_Algorithms.iml" filepath="$PROJECT_DIR$/Algorithms/Sorting_Algorithms/Sorting_Algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Maths_And_Stats/Statistics/Statistics.iml" filepath="$PROJECT_DIR$/Maths_And_Stats/Statistics/Statistics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Maths_And_Stats/Series/Sum_of_AP/Sum_of_AP.iml" filepath="$PROJECT_DIR$/Maths_And_Stats/Series/Sum_of_AP/Sum_of_AP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Data_Structures/Tree/Tree.iml" filepath="$PROJECT_DIR$/Data_Structures/Tree/Tree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algo_ds_101.iml" filepath="$PROJECT_DIR$/algo_ds_101.iml" />
+    </modules>
+  </component>
+</project>

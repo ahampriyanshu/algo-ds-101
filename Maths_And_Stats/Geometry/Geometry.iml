@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Pythagorean_theorem" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Polar_Cartesian_Conversion" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Manhattan_Distance" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Clock_Angle" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Radians_Degrees_Conversion" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Distance_Formula" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Scalar_Product" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
