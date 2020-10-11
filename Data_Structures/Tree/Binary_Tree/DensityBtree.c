@@ -15,12 +15,12 @@ struct Node* newNode(int data) {	//Function for defining a New Node
     return node; 
 } 
 
-int heighAndSize(struct Node* node, int *size) { 
+int heightAndSize(struct Node* node, int *size) { 
     if (node==NULL)	//Left node 
         return 0; 
 
-    int left_child_height = heighAndSize(node->left, size); 	//Recursively calls of the function for its left child
-    int right_child_height = heighAndSize(node->right, size); 	//Recursively calls of the function for its right child
+    int left_child_height = heightAndSize(node->left, size); 	//Recursively calls of the function for its left child
+    int right_child_height = heightAndSize(node->right, size); 	//Recursively calls of the function for its right child
 
     *size=*size+1; 	//Increments size by 1 on traversal of each node
     return (left_child_height > right_child_height) ? left_child_height + 1 : right_child_height + 1; //Returns the larger height among it's left and right child and adds 1 to account for itself
@@ -32,7 +32,7 @@ float density(struct Node* root){ 	//Function to calculate density by passing ro
 
     int size, tree_height;
     size = 0; 	//Initialize size of the tree as 0
-    tree_height = heighAndSize(root, &size); //Calls function to find height and size of the tree (returns height and increments size by address of parameter)
+    tree_height = heightAndSize(root, &size); //Calls function to find height and size of the tree (returns height and increments size by address of parameter)
     return (float)size/tree_height; 
 } 
 
