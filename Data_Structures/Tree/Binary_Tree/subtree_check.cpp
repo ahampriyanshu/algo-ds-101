@@ -80,13 +80,13 @@ int main()
     
 	// TREE 1 
 	/* Construct the following tree 
-			26 
-			/ \ 
-		10 3 
-		/ \ \ 
-	4 6 3 
-	\ 
-		30 
+		26 
+		/ \ 
+	      10   3 
+	      / \    \ 
+	    4    6    3 
+	     \ 
+	      30 
 	*/
 	node *T = newNode(26); 
 	T->right		 = newNode(3); 
@@ -100,8 +100,8 @@ int main()
 	/* Construct the following tree 
 		10 
 		/ \ 
-	4 6 
-	\ 
+	       4   6 
+	       \ 
 		30 
 	*/
 	node *S = newNode(10); 
