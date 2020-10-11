@@ -1,4 +1,11 @@
 #O(N) T | O(1) S
+heights = list()
+num = raw_input("Enter how many elements you want:")
+print 'Enter numbers in array: '
+for i in range(int(num)):
+    n = raw_input("num :")
+    heights.append(int(n))
+print 'ARRAY: ',heights
 
 def waterArea(heights):
 	water = 0	
@@ -25,3 +32,8 @@ def waterArea(heights):
 		else:	
 			water += 0
 	return water
+
+heights = input('Enter a list of non-negative numbers\n')
+heights_int = [int(height) for height in heights]
+water = waterArea(heights_int)
+print(water)
