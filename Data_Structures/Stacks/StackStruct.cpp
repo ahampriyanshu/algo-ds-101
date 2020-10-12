@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 struct node
@@ -80,6 +80,8 @@ int main()
 	string q;
 	int x;
 	myStack st;
+	cout<<"enter keyword: push , pop, back, size, clear, exit"<<endl;
+	getch();
 	do
     	{
         cin >> q;
