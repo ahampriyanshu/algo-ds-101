@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "Enter a number : "
+read a
+i=1
+while [ $((i)) -lt $((a)) ]
+do
+if [ $((a%i)) == 0 ]
+then
+let "$((sum+=i))"
+fi
+let "$((i+=1))"
+done
+if [ $((sum)) -eq $((a)) ]
+then 
+echo "$((a)) is a Perfet Number."
+else
+echo "$((a)) is not a Perfect Number."
+fi

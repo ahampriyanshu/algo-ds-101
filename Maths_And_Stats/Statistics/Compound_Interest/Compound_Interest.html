@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculating Compound Interest using JavaScript</title>
+
+	<!--Simple CSS snipets-->
+	<style>
+		div{
+			display: table-row; /*to form rows*/
+		}
+		label, input{
+			display: table-cell; /*to form cells*/
+		}
+	</style>
+</head>
+<body>
+
+	<!-- HTML components to acces input dynamically-->
+	<h1>Calculate Compound Interest</h1>
+
+	<!-- Takes amount from users-->
+	<div> 
+		<label> Principle Amount: </label> 
+		<input id="getPrinciple">
+	</div>
+
+	<!-- Takes rate from users-->
+	<div> 
+		<label> Rate of Interest (in %): </label> 
+		<input id="getRate">
+	</div>
+
+	<!-- Takes time from users-->
+	<div> 
+		<label> Number of Years: </label> 
+		<input id="getTime">
+	</div>
+
+	<!-- Takes no. of times interested compounded per year-->
+	<div> 
+		<label> No. of Times Compounded per Year: </label> <!--Interest Compounded daily, weekly, monthly or yearly basis--> 
+		<input id="getCompoundingTimes">
+	</div>
+
+	<button onclick="calcCompoundInterest()">Calculate</button>  <!-- Calls javascript function for calculating amount and compound interest-->
+
+
+	<p id="compoundInterestIs"></p> <!-- Displays the calculated amount and compound interest-->
+
+
+<script type="text/javascript">
+	
+	// Calculates amount and Compound Interest after given time
+	function calcCompoundInterest() {
+		
+		const principle = document.getElementById("getPrinciple").value;
+		const compoundedTimes = document.getElementById("getCompoundingTimes").value;
+		const time = document.getElementById("getTime").value;
+		const rate = document.getElementById("getRate").value;
+		compoundInterest = document.getElementById("compoundInterestIs");
+
+		//Calculates amount = P * ((1 + R/n) ^ (n * t))
+		var amountIs = principle * Math.pow((1 + ( rate /( compoundedTimes * 100))), (compoundedTimes * time));
+
+		//Calculates CI = amount - P
+		var compoundedInterestIs = amountIs - principle;
+
+		//Displays Amount and Compound Interest on web page
+		compoundInterest.innerHTML = "The total Amount is:" + amountIs.toFixed(2); //toFixed() is used for rounding decimal value upto second place
+		compoundInterest.innerHTML += "<br>The Compoud Interest is:" + compoundedInterestIs.toFixed(2);
+
+	}
+</script>
+</body>
+</html>

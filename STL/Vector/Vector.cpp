@@ -1,143 +1,68 @@
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
-
-template<typename T>
-ostream& operator<<(ostream& vout, const vector<T>& vec) {
-	for (T item : vec) {
-		vout << item << " ";
-	}
-	return vout;
-}
-
-template<typename u, typename v>
-ostream& operator<<(ostream& vout, const vector<pair<u, v>>& vec) {
-	for (pair<u, v> item : vec) {
-		vout << item.first << " " << item.second;
-	}
-	return vout;
-}
-
+//Vector are dyanmic arrays, internally they are normal C style arrays.
 int main() {
-	// A empty vector
-	vector<int> empty_vec;  // {}
 
-	empty_vec.push_back(1); // {1} creates a copy 
-	cout << empty_vec << endl;
+	// initilise empty vector
+	vector<int> empty_vec;  // {} ,empty vector
 
-	empty_vec.emplace_back(2); // {1, 2} constructs the object using the args given
-	cout << empty_vec << endl;
+	//make a vector with default values
+	vector<int> empty_vec = {12,23,45};  // {12,23,45}
 
-	
-	vector<pair<int, int>> pair_vec;
+	//make a vector with values from vector or array
+	int arr[] = {1,2,3,4,5};
+	vector<int> v1(arr,arr+n); //make a vector with array values
+	vector<int> v2(v1.begin(), v1.end()); //make a new vector with old vector
 
-	pair_vec.push_back({ 3, 4 }); // {3, 4} creates a copy 
-	cout << pair_vec << endl;
+	vector<int> v3(10,0);  //vector of size 10 with default value 0.
 
-	pair_vec.emplace_back(5, 6); // (5, 6) constructs the object using the args given
-	cout << pair_vec << endl;
+	//add a value to vector
+	v.push_back(45);  //insert value at the vector at end.
 
-	// Vector of size 5 with
-	// everyone as 100
-	vector<int> init_vec(5, 100); // {100, 100, 100, 100, 100}
-	cout << init_vec << endl;
+	//remove value from vector
+	v.pop_back();
 
-	// A vector of size 5
-	// initialized with 0
-	// might take garbage value,
-	// dependent on the vector
-	vector<int> zero_vec(5); // {0, 0, 0, 0, 0}
-	cout << zero_vec << endl;
+	//insert at a specific position.
+	v.insert(v.begin(), 101);  //v.insert(position, value)
 
-	vector<int> vec_20(5, 20); // {20, 20, 20, 20, 20}
-	cout << vec_20 << endl;
+	//print the value at ith position.
+	cout << v.at(i);
 
-	vector<int> vec_20_copy(vec_20); // {20, 20, 20, 20, 20} // copy constructor
-	cout << vec_20_copy << endl;
+	//insert at a specific position a number of times.
+	v.insert(v.begin(), 10, 5);  //v.insert(position, number of times to insert,
+		//value this insert 5, 10 times at the begin of vector.
 
-	// Take the vector to be {10, 20, 30, 40}
-	vector<int> v = { 10, 20, 30, 40 };
-	cout << v << endl;
 
-	vector<int>::iterator it = v.begin();
+	//copy a vector
+	vector<int> v1 = {1,2,3,4,5};
+	vector<int> v1(v1.begin(), v1.end(), v2.begin()); // (start address of copy, end address of copy
+											//starting address of where to copy)
 
-	it++;
-	cout << *(it) << " " << endl; // prints 20
+	//methord-2
+	vector<int> v5;
+	int arr[] = {1,2,3,4,5}
+	v5.assign(arr, arr+n);
 
-	it = it + 2;
-	cout << *(it) << " " << endl; // prints 40
-	
-	vector<int>::iterator it_end = v.end();
+	//methord -3
+	vector<int> v6;
+	v6.assign(10,0); //assign 10, 0s to vector v6. (size, value)
 
-	cout << *(--it_end) << endl;
+	//delete a value from vector.
+	v.erase(it); //it = iterator to that delete position.
 
-	cout << v[0] << " " << v.at(0) << endl;
+	//remove all values.
+	v.clear();
+	v = {};  //both methord works
 
-	cout << v.back() << endl; // last element
-	
-	// Ways to print the vector
+	//resize an vector.
+	vector<int> v = {1,2,3,4,4,4};
+	v.resize(4); //now it only contain 4 items from start rest all delets.
+	v.resize(10);// {1,2,3,4,4,4,0,0,0,0}
 
-	for (vector<int>::iterator it = v.begin(); it != v.end(); it++) {
-		cout << *(it) << " ";
-	}
-	cout << endl;
+	//how many items are in between 2 iterator.
+	auto it = v.begin();
+	auto it2 = v.end();
+	cout << distance(it, it2); // print number of items at vector v.
 
-	for (auto it = v.begin(); it != v.end(); it++) {
-		cout << *(it) << " ";
-	}
-	cout << endl;
-
-	for (auto it : v) {
-		cout << it << " ";
-	}
-	cout << endl;
-
-	// {10, 20, 12, 23}
-	v = { 10, 20, 12, 23 };
-	v.erase(v.begin() + 1);
-	cout << v << endl;
-
-	// {10, 20, 12, 23, 35}
-	v = { 10, 20, 12, 23, 35 };
-	v.erase(v.begin() + 2, v.begin() + 4); // // {10, 20, 35} [start, end)
-	cout << v << endl;
-
-	// Insert function
-
-	vector<int>v_100(2, 100); // {100, 100}
-	cout << v_100 << endl;
-
-	v_100.insert(v_100.begin(), 300); // {300, 100, 100};
-	cout << v_100 << endl;
-
-	v_100.insert(v_100.begin() + 1, 2, 10); // {300, 10, 10, 100, 100}
-	cout << v_100 << endl;
-
-	vector<int> copy(2, 50); // {50, 50}
-	cout << copy << endl;
-
-	v_100.insert(v_100.begin(), copy.begin(), copy.end()); // {50, 50, 300, 10, 10, 100, 100}
-	cout << v_100 << endl;
-
-	// {10, 20}
-	v_100 = { 10, 20 };
-	cout << v_100.size(); // 2
-	cout << v_100 << endl;
-
-	//{10, 20}
-	v_100 = { 10, 20 };
-	v_100.pop_back(); // {10}
-	cout << v_100 << endl;
-
-	// v1 -> {10, 20}
-	// v2 -> {30, 40}
-	vector<int> v1 = { 10, 20 };
-	vector<int> v2 = { 30, 40 };
-	v1.swap(v2); // v1 -> {30, 40} , v2 -> {10, 20}
-
-	v_100.clear(); // erases the entire vector
-
-	cout << v_100.empty();
-	
 	return 0;
 }
