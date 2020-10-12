@@ -1,0 +1,115 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+// A Linked List node 
+struct Node 
+{ 
+    int data; 
+    struct Node* next; 
+}; 
+
+int checkList(struct Node* a, struct Node* b) 
+{ 
+    struct Node* p1 = a, *p2 = b; 
+  
+    // If both linked lists are empty, return 1 
+    if (a == NULL && b == NULL) 
+        return 1; 
+  
+    // Else If one is empty and other is not return 0 
+    if ( a == NULL || 
+        (a != NULL && b == NULL)) 
+        return 0; 
+  
+    // Traverse the 2nd list by picking nodes 
+    // one by one 
+    while (b != NULL) 
+    { 
+        // Initialize p2 with current node of 2nd 
+        p2 = b; 
+  
+        // Start matching 1st list with 2nd list 
+        while (p1 != NULL) 
+        { 
+            // If 2nd list becomes empty and 1st 
+            // not then return false 
+            if (p2 == NULL) 
+                return 0; 
+  
+            // If data part is same, go to next 
+            // of both lists 
+            else if (p1->data == p2->data) 
+            { 
+                p1 = p1->next; 
+                p2 = p2->next; 
+            } 
+  
+            // If not equal then break the loop 
+            else break; 
+        } 
+  
+        // Return 1 if first list gets traversed 
+        // completely that means it is matched. 
+        if (p1 == NULL) 
+            return 1; 
+  
+        // Initialize p1 with first again 
+        p1 = a; 
+  
+        // And go to next node of 2nd list 
+        b = b->next; 
+    } 
+  
+    return 0; 
+} 
+
+/* Function to print nodes in a given linked list */
+void printList(struct Node* node) 
+{ 
+    while (node != NULL) 
+    { 
+        printf("->%d", node->data); 
+        node = node->next; 
+    } 
+    printf("\n");
+} 
+  
+// Function to add new node to linked lists 
+struct Node *newNode(int key) 
+{ 
+    struct Node *temp = (struct Node*) malloc(sizeof(struct Node*)); 
+    temp-> data= key; 
+    temp->next = NULL; 
+    return temp; 
+} 
+
+int main() 
+{ 
+    /* The Two Linked Lists are
+        a: 1->2->3->4 
+        b: 1->2->1->2->3->4*/
+    struct Node *a = newNode(1); 
+    a->next = newNode(2); 
+    a->next->next = newNode(3); 
+    a->next->next->next = newNode(4); 
+  
+    struct Node *b = newNode(1); 
+    b->next = newNode(2); 
+    b->next->next = newNode(1); 
+    b->next->next->next = newNode(2); 
+    b->next->next->next->next = newNode(3); 
+    b->next->next->next->next->next = newNode(4); 
+
+    printf("First List:");
+    printList(a);
+    
+    printf("Second List:");
+    printList(b);
+
+    if(checkList(a, b) == 1 )
+      printf("List Found");
+    else
+      printf("List Not Found");
+
+    return 0; 
+} 
