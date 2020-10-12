@@ -1,3 +1,5 @@
+#include<iostream>
+using namespace std;
 void solve(vector<int>& nums, vector<int>& curr, vector<vector<int>> &res, int i){
    if(curr.size()==nums.size())
         //one possible permutation obtained-
