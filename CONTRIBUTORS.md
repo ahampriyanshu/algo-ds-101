@@ -875,9 +875,9 @@
     </td>
     <td align="center">
         <a href=https://github.com/Athi223>
-            <img src=https://avatars1.githubusercontent.com/u/31766648?v=4 width="100;" alt=Athi223/>
+            <img src=https://avatars1.githubusercontent.com/u/31766648?v=4 width="100;" alt=Atharv Phadnis/>
             <br />
-            <sub style="font-size:14px"><b>Athi223</b></sub>
+            <sub style="font-size:14px"><b>Atharv Phadnis</b></sub>
         </a>
     </td>
 </tr>
