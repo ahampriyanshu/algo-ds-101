@@ -20,6 +20,7 @@ Node* newNode(int val)
 
 vector<int> rightView(struct Node *root);
 
+// Function to Build Tree
 Node* buildTree(string str)
 {
     // Corner Case
