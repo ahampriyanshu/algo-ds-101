@@ -3178,5 +3178,14 @@
         </a>
     </td>
 </tr>
-</table>
 
+<tr>
+    <td align="center">
+        <a href=https://github.com/math1312>
+            <img src=https://avatars1.githubusercontent.com/u/44298272?s=460&v=4 width="100;" alt="Margashi Thakur"/>
+            <br />
+            <sub style="font-size:14px"><b>Margashi Thakur</b></sub>
+        </a>
+    </td>
+</tr>
+</table>
