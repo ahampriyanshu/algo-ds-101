@@ -59,9 +59,9 @@ class BST
     end
 end
 
-# simple example
-b = BST.new(3)
-BST.insert(1, b.head)
-BST.insert(4, b.head)
+# simple integer input example, takes three int inputs
+b = BST.new((gets).to_i)
+BST.insert((gets).to_i, b.head)
+BST.insert((gets).to_i, b.head)
 BST.printTree(b.head)
 puts BST.rightSideView(b.head).inspect
