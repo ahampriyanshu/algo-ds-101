@@ -10,5 +10,6 @@ The complexity of the Bucket Sort Technique :
 Input:
 A list of unsorted data: 0.25 0.36 0.58 0.41 0.29 0.22 0.45 0.79 0.01 0.69
 Array before Sorting: 0.25 0.36 0.58 0.41 0.29 0.22 0.45 0.79 0.01 0.69
+
 Output:
 Array after Sorting: 0.01 0.22 0.25 0.29 0.36 0.41 0.45 0.58 0.69 0.79
