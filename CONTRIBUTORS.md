@@ -3178,5 +3178,14 @@
         </a>
     </td>
 </tr>
+<tr>
+    <td align="center">
+        <a href=https://github.com/parth93QA>
+            <img src=https://avatars1.githubusercontent.com/u/55730488?s=400&u=1b6e8bccfb1e36df4f739b1d871dfc6895fdbe65&v=4 width="100;" alt=parth93QA/>
+            <br />
+            <sub style="font-size:14px"><b>parth93QA</b></sub>
+        </a>
+    </td>
+</tr>
 </table>
 
