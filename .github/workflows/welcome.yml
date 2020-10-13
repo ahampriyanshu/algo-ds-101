@@ -19,14 +19,6 @@ jobs:
              Regards @ahampriyanshu :v:
 
 
-          FIRST_PR: >
-            👋 @${author}
-            
-            Thanks for opening this pull request! Be sure to follow the PR template ! Please check out our contributing guidelines.
-            
-            Regards @ahampriyanshu :v:
-
-
           FIRST_PR_MERGED: >
             🎉 @${author}
             
