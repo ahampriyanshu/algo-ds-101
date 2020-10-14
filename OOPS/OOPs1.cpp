@@ -9,7 +9,6 @@ public:
   OOPS(): x(0), y(0){     //initiliser list with default constructor.
     z = 0;
   }
-
   OOPS(int x, int y, int z){
     this->x = x;
     this->y = y;
