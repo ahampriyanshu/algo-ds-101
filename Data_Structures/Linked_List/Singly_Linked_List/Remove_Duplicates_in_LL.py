@@ -83,17 +83,15 @@ class LinkedList:
  
 # Driver Code 
 llist = LinkedList() 
- 
-llist.push(20) 
-llist.push(13) 
-llist.push(13)
-llist.push(11)
-llist.push(11)
-llist.push(11)
+print("Enter Number of Nodes in Linked List")
+N = int(input())
+print("Enter Values For Linked List:")
+for _ in range(N):
+    llist.push(int(input())) 
+
 print ("Created Linked List: ")
 llist.printList() 
 print()
-print("Linked List after removing", 
-             "duplicate elements:")
+print("Linked List after removing duplicate elements:")
 llist.removeDuplicates()
 llist.printList() 
