@@ -23,7 +23,7 @@ void display(Node *np)
     }
     cout << endl;
 }
-int findEle(int k)
+void KthfromEnd(int k)
 {
     int count=0;
     Node *temp=head;
@@ -34,13 +34,15 @@ int findEle(int k)
     }
     //number of elements=count. Kth from end=count-k from start
     int pos=count-k, cnt=0;
-    Node *cur=head;
+    Node *cur=head, *prev;
     while(cnt!=pos && cur!=NULL)
     {
         cnt++;
+        prev=cur;
         cur=cur->next;
     }
-    return cur->data;
+    prev->next=cur->next;
+    free(cur);
 }
 int main()
 {
@@ -55,5 +57,6 @@ int main()
     display(head);
     cout<<"Enter k: ";
     cin>>k;
-    cout<<"Kth from end is: "<<findEle(k)<<endl;
+    KthfromEnd(k);
+    display(head);
 }
