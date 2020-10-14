@@ -29,7 +29,7 @@ class SQRT {
 	 
 	public static void Main() 
 	{ 
-		int n = 50; 
+		int n = Console.ReadLine();
 		Console.Write("Square root of "
 					+ n + " is " + squareRoot(n)); 
 	} 
