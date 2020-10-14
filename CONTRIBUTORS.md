@@ -2525,7 +2525,7 @@
         </a>
     </td>
     <td align="center">
-        <a href=https://github.com/pavnesh2019>
+        <a href=https://github.com/pc-beast>
             <img src=https://avatars0.githubusercontent.com/u/56963647?v=4 width="100;" alt=Pavnesh Chaturvedi/>
             <br />
             <sub style="font-size:14px"><b>Pavnesh Chaturvedi</b></sub>
