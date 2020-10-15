@@ -42,9 +42,15 @@ function rotatedSearch(arr, target) {
 };
 
 // testing
+var testArray = [] ;
+var size = prompt('Enter the size of the array\n') ;
 
-console.log(rotatedSearch([5,6,7,8,1,2,3],2));
+for(var i = 0 ; i < size ; i++){
+	testArray[i] = prompt('Enter next element');
+}
+var target = prompt('Enter target number to be searched\n');
+
+console.log(rotatedSearch(testArray,target));
 // edge cases
-console.log(rotatedSearch([8,7,6,5,2,1],6));
-
-console.log(rotatedSearch([1,2,3,4,5,6],6));
+// console.log(rotatedSearch([8,7,6,5,2,1],6));
+// console.log(rotatedSearch([1,2,3,4,5,6],6));
