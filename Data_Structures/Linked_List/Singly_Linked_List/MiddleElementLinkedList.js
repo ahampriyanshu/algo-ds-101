@@ -142,9 +142,10 @@ function midpoint(list) {
   return slow.data;
  }
 const l = new LinkedList();
-l.insertLast("a");
-l.insertLast("b");
-l.insertLast("c");
-l.insertLast("d");
-l.insertLast("e");
-console.log(midpoint(l)); // returns 'c'
+var i,sizeofLinked=parseInt(prompt("enter the size of the linked list",0),10);
+for(i=0;i<sizeofLinked;i++)
+{
+var x=prompt("enter the element:if done enter DONE");
+l.insertLast(x);
+}
+alert("the middle element is: "+(midpoint(l)));
