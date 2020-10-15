@@ -17,8 +17,7 @@ static int exponentialSearch(int []arr, int len, int search)
 						
 } 
 
-static int binarySearch(int []arr, int left, 
-						int right, int search) 
+static int binarySearch(int []arr, int left, int right, int search) 
 { 
 	if (right >= left) 
 	{ 
@@ -41,10 +40,12 @@ public static void Main()
 	int []arr = {5,8,13,51,143,200}; 
 	int search = 10; 
 	int result = exponentialSearch(arr, arr.Length, search); 
-	if (result == -1) 
-			Console.Write("Element is not present in array"); 
-		else
-			Console.Write("Element is present at index "+ result); 
+	if (result == -1){ 
+		Console.Write("Element is not present in array"); 
+	}	
+	else{
+		Console.Write("Element is present at index "+ result); 
+	}	
 } 
 } 
 
