@@ -2986,14 +2986,21 @@
         </a>
     </td>
     <td align="center">
+        <a href=https://github.com/amal-majunu>
+            <img src=https://avatars1.githubusercontent.com/u/56107293?v=4 width="100;" alt=amal-majunu/>
+            <br />
+            <sub style="font-size:14px"><b>amal-majunu</b></sub>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td align="center">
         <a href=https://github.com/amogh2019>
             <img src=https://avatars0.githubusercontent.com/u/56151951?v=4 width="100;" alt=amogh2019/>
             <br />
             <sub style="font-size:14px"><b>amogh2019</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center">
         <a href=https://github.com/anshrathod>
             <img src=https://avatars1.githubusercontent.com/u/32770069?v=4 width="100;" alt=Ansh Rathod/>
@@ -3029,6 +3036,8 @@
             <sub style="font-size:14px"><b>bhagya</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center">
         <a href=https://github.com/dvrzan>
             <img src=https://avatars0.githubusercontent.com/u/42268759?v=4 width="100;" alt=Danijela Vrzan/>
@@ -3036,8 +3045,6 @@
             <sub style="font-size:14px"><b>Danijela Vrzan</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center">
         <a href=https://github.com/ggolubic>
             <img src=https://avatars0.githubusercontent.com/u/25390319?v=4 width="100;" alt=Gabrijel Golubić/>
@@ -3073,6 +3080,8 @@
             <sub style="font-size:14px"><b>jain13tushar</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center">
         <a href=https://github.com/jossiey>
             <img src=https://avatars2.githubusercontent.com/u/54179088?v=4 width="100;" alt=jossie/>
@@ -3080,8 +3089,6 @@
             <sub style="font-size:14px"><b>jossie</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center">
         <a href=https://github.com/js899>
             <img src=https://avatars0.githubusercontent.com/u/49071268?v=4 width="100;" alt=js899/>
@@ -3117,6 +3124,8 @@
             <sub style="font-size:14px"><b>Rahul Krishna</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center">
         <a href=https://github.com/Kukulim>
             <img src=https://avatars0.githubusercontent.com/u/55107540?v=4 width="100;" alt=Kukulim/>
@@ -3124,8 +3133,6 @@
             <sub style="font-size:14px"><b>Kukulim</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center">
         <a href=https://github.com/leli-1>
             <img src=https://avatars1.githubusercontent.com/u/72536009?v=4 width="100;" alt=leli-1/>
@@ -3152,13 +3159,6 @@
             <img src=https://avatars0.githubusercontent.com/u/25638688?v=4 width="100;" alt=duy quang/>
             <br />
             <sub style="font-size:14px"><b>duy quang</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href=https://github.com/immortal-j>
-            <img src=https://avatars1.githubusercontent.com/u/66135847?v=4 width="100;" alt=Rishikesh Joshi/>
-            <br />
-            <sub style="font-size:14px"><b>Rishikesh Joshi</b></sub>
         </a>
     </td>
 </tr>
