@@ -46,7 +46,7 @@ var testArray = [] ;
 var size = prompt('Enter the size of the array\n') ;
 
 for(var i = 0 ; i < size ; i++){
-	testArray[i] = prompt('Enter next element');
+	testArray[i] = prompt('Enter next element ');
 }
 var target = prompt('Enter target number to be searched\n');
 
