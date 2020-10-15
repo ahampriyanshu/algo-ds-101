@@ -37,8 +37,8 @@ static int binarySearch(int []arr, int left, int right, int search)
 
 public static void Main() 
 { 
-	int []arr = {5,8,13,51,143,200}; 
-	int search = 10; 
+	int []arr = {5,8,13,51,143,200,254}; 
+	int search = 100; 
 	int result = exponentialSearch(arr, arr.Length, search); 
 	if (result == -1){ 
 		Console.Write("Element is not present in array"); 
