@@ -200,10 +200,10 @@
         </a>
     </td>
     <td align="center">
-        <a href=https://github.com/devanshOrz>
-            <img src=https://avatars0.githubusercontent.com/u/71920782?v=4 width="100;" alt=devanshOrz/>
+        <a href=https://github.com/devanshxq>
+            <img src=https://avatars0.githubusercontent.com/u/71920782?v=4 width="100;" alt=Devansh Dhiman/>
             <br />
-            <sub style="font-size:14px"><b>devanshOrz</b></sub>
+            <sub style="font-size:14px"><b>Devansh Dhiman</b></sub>
         </a>
     </td>
     <td align="center">
