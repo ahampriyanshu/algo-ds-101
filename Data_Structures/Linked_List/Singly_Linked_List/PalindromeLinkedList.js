@@ -44,10 +44,16 @@
       return true;
     }
   }
-  //testing
-  console.log(new LinkedList(['a']).isPalindrome());
-  console.log(new LinkedList(['a', 'b']).isPalindrome());
-  console.log(new LinkedList(['a', 'b', 'a']).isPalindrome());
-  console.log(new LinkedList(['a', 'b', 'c', 'b', 'a']).isPalindrome());
-  console.log(new LinkedList(['a', 'b', 'c', 'd', 'a']).isPalindrome());
-  console.log(new LinkedList(['a','b','c', 'c', 'b', 'a']).isPalindrome());
+var list[];
+for(var i =0;i<1)
+{
+var x=window.prompt("enter the element: ",if done enter DONE);
+if(x!=='DONE')
+{
+ list.push(x);
+}
+ else{
+  i++;
+ }
+}
+  console.log(new LinkedList(list).isPalindrome());
