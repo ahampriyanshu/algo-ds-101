@@ -13,7 +13,7 @@ int main() {
 
     cout << "The first " << num_terms << " of the Lucas Series are:\n";
 
-    for (int i = 0; i <= num_terms; i++) {
+    for (int i = 1; i <= num_terms; i++) {
         cout << term_1 << "\t";
         next_term = term_1 + term_2;
         term_1 = term_2;

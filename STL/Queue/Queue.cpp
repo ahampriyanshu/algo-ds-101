@@ -3,28 +3,43 @@ Operations: empty(), size(), front(), back(), push(g), pop()*/
 
 #include<bits/stdc++.h>
 using namespace std;
+//QUEUE is a FIFO data structure, where insertion and deletion of element is done at opposite ends.
 
-void show_queue(queue<int> q){
-	while(!q.empty()){					// to check if queue is empty()
-		cout<<q.front()<<" ";				// FIFO this returns the first element that was inserted
-		q.pop();						// pops the first element
+void print(queue<int> q){
+	while(!q.empty()){
+		cout << q.front();
+		q.pop();
 	}
-	cout<<endl;
 }
 
-int main(){
-	queue<int> qu;
-	cout<<"IS empty? "<<qu.empty()<<endl;				// chekc if empty()
-	qu.push(1);							// current elements =  1
-	qu.push(2);							// current elements = 1,2
-	qu.push(3);							// current elements = 1,2,3
-	cout<<"Size "<<qu.size()<<endl;
-	cout<<"Queue Elements";
-	show_queue(qu);
-	qu.pop();							// will pop element from front
-	cout<<"Front element "<<qu.front()<<endl;		// will return element at the front of the queue
-	cout<<"Last element "<<qu.back()<<endl;		// will return last inserted element.
-	qu.pop();
-	cout<<"Queue Elements";
-	show_queue(qu);
+int main(int argc, char const *argv[]) {
+
+	//declaration of queue
+	queue<int> q;
+
+	//add element to QUEUE
+	q.push(1);
+
+	//print the front item of queue.
+	q.front();
+
+	//print the last item of queue.
+	q.back();
+
+	//delete item from queue.
+	q.pop();
+
+	//check if queue is empty.
+	q.empty();   //returns 0 or 1.
+
+	//check the size of queue.
+	q.size();
+
+	//iterator to queue.
+	auto it = q.begin();
+	queue<int> it = q.end();
+
+	//print queue, you can't use a normal for loop and iterator methord to print the queue.
+	print(q);
+	return 0;
 }
