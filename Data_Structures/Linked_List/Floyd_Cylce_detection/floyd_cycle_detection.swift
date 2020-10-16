@@ -17,20 +17,29 @@ class Node<T> {
     public init (value: T) {
         self.value = value
     }
+}
 
-    // Insert an element at the end of the list recursively
+// A class representing the list
+class LinkedList<T> {
+
+    // Current head of list
+    var head: Node<T>
+
+    // Create a new list with a given node
+    public init(node: Node<T>) {
+        head = node
+    }
+
+    // Create add a node at the start of the list
     public func insert(_ node: Node<T>) {
-        if next == nil {
-            next = node
-        } else {
-            next!.insert(node)
-        }
+        node.next = head
+        head = node
     }
 
     // Detects if there is a loop on the list using the Floyd`s Cycle-Finding Algorithm
     public func detectLoop() -> Bool {
-        var slowPointer = next
-        var fastPointer = next?.next 
+        var slowPointer = head.next
+        var fastPointer = head.next?.next 
 
         // Transverse the list with two pointers going on different speeds.
         // If there is a loop on the list, eventually the fastest pointer will catch up the slower, and they will be equal.
@@ -49,15 +58,25 @@ class Node<T> {
 /*********** Testing the detect loop method ***********/
 
 // Adding a print funcionality just so we can see the list elements
-extension Node {
-    public func description(maxElements n: Int) -> String {
-        let string = String(describing: value) + " -> " + (n > 0 ? (next?.description(maxElements: n-1) ?? "(End of list)") : " (list continues...) ")
-        return string
+extension LinkedList {
+    public func description(maxElements: Int) -> String {
+        var count = 0
+        var currentNode = Optional(head)
+        var listDescription = ""
+        while currentNode != nil {
+            listDescription += (String(describing: currentNode!.value) + " -> ")
+            count += 1
+            if count >= maxElements {
+                return listDescription + " (list continues...) "
+            }
+            currentNode = currentNode?.next
+        }
+        return listDescription + "(End of list)"
     }
 }
 
 // Populating a list without loop
-let linkedListWithoutLoop = Node(value: "1")
+let linkedListWithoutLoop = LinkedList(node: Node(value: "1"))
 linkedListWithoutLoop.insert(Node(value:"2"))
 linkedListWithoutLoop.insert(Node(value:"3"))
 linkedListWithoutLoop.insert(Node(value:"4"))
@@ -70,13 +89,14 @@ print("Loop detected: \(linkedListWithoutLoop.detectLoop())")
 
 
 // Populating a list with loop
-let linkedListWithLoop = Node(value: "A")
+let listTail = Node(value: "A")
+let linkedListWithLoop = LinkedList(node: listTail)
 linkedListWithLoop.insert(Node(value:"B"))
 linkedListWithLoop.insert(Node(value:"C"))
 linkedListWithLoop.insert(Node(value:"D"))
 linkedListWithLoop.insert(Node(value:"E"))
 linkedListWithLoop.insert(Node(value:"F"))
-linkedListWithLoop.insert(linkedListWithLoop)
+linkedListWithLoop.insert(listTail)
 
 print("List: \(linkedListWithLoop.description(maxElements: 20))")
 print("Loop detected: \(linkedListWithLoop.detectLoop())")
