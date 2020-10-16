@@ -22,7 +22,13 @@ public:
 int main() 
 { 
     gfg g; 
-    int n = 50; 
+    int n ;
+    cout<<"Enter a number to find Square Root :";
+    cin>>n;
+    while( n < 0 ){
+    cout<<"Square Root is not real for negative numbers. Enter Positive number. \n";
+    cin>>n;
+    }
     cout << "Square root of " << n << " is " << g.squareRoot(n); 
     getchar(); 
 } 
