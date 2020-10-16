@@ -1,66 +1,88 @@
 #include <iostream>
-#include <cstring>
-#include <queue> //added queue header file
 using namespace std;
-
-class Fun{
-  
-  public:
-     void operator()(string s){
-         cout<<"Having Fun with "<<s;
-     }
-     };
-
-     // make functional object for priority queue
-     class Person{
-     public:
-         string name;
-         int age;
-        Person(){
-
-
-        }
-
-        Person(string n, int a)
+struct node
+{
+    int data;
+    struct node *next;
+};
+typedef struct node *nodeptr;
+nodeptr getNode(int item)
+{
+    nodeptr p = (nodeptr)malloc(sizeof(struct node));
+    p->next = NULL;
+    p->data = item;
+    return p;
+}
+nodeptr insertNode(nodeptr start, int item)
+{
+    nodeptr p = getNode(item);
+    if (start == NULL)
+        start = p;
+    else
+    {
+        nodeptr temp = start;
+        nodeptr toBeInsertedAfter = NULL;
+        while (temp != NULL && item <= temp->data)
         {
-            name = n;
-            age = a;
+            toBeInsertedAfter = temp;
+            temp = temp->next;
         }
-     };
-    // make class of comparison of two person's age 
-     class PersonCompare { 
-     public:
-        bool operator()(Person A, Person B){
-            return A.age < B.age;  
+        if (toBeInsertedAfter == NULL)
+        {
+            p->next = start;
+            start = p;
         }
-     };
-
-
-     int main()
-     {
-         int n;
-         cin>>n;
-         // make priority for a person and in order to handle person compare we make another class Person compare instead of comparating function
-        priority_queue<Person,vector<Person>, PersonCompare > pq;
-
-        // make some  person object and takes data from user
-         for(int i=0;i<n;i++)
-         {
-            string name;
-            int age;
-            cin>>name>>age;
-            Person p(name,age);
-            pq.push(p);
-         }
-
-         int k = 3;
-         for(int i=0;i<k;i++){
-             Person p= pq.top();
-             cout<<p.name<<" "<<p.age<<endl;
-             pq.pop();
-            
-         }
-         return 0;
-     }
-
-
+        else
+        {
+            p->next = toBeInsertedAfter->next;
+            toBeInsertedAfter->next = p;
+        }
+    }
+    return start;
+}
+nodeptr deleteNode(nodeptr start)
+{
+    nodeptr temp = start;
+    start = start->next;
+    free(temp);
+    return start;
+}
+void display(nodeptr start)
+{
+    nodeptr temp = start;
+    while (temp != NULL)
+    {
+        cout << temp->data << " ";
+        temp = temp->next;
+    }
+    cout << endl;
+}
+typedef struct node *nodeptr;
+int main()
+{
+    nodeptr start = NULL;
+    nodeptr list2 = NULL;
+    nodeptr startSorted = NULL;
+    int choice, item, prio, i;
+    for (i = 1; i; i++)
+    {
+        cout << "1.ENQUEUE\n2.DEQUEUE\n3.DISPLAY\n4.EXIT" << endl;
+        cin >> choice;
+        switch (choice)
+        {
+        case 1:
+            cout << "ENTER ELEMENT TO BE INSERTED" << endl;
+            cin >> item;
+            start = insertNode(start, item);
+            break;
+        case 2:
+            start = deleteNode(start);
+            break;
+        case 3:
+            display(start);
+            break;
+        case 4:
+            return 0;
+        }
+    }
+}
