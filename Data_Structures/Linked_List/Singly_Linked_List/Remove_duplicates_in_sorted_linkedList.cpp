@@ -1,43 +1,80 @@
 //Assuming the Linked List is Sorted//
 
 
+#include <stdio.h>
+#include <stdlib.h>
 
- 
-struct ListNode {
-    int val;
-     ListNode *next;
-     ListNode() : val(0), next(nullptr) {}
-     ListNode(int x) : val(x), next(nullptr) {}
-     ListNode(int x, ListNode *next) : val(x), next(next) {}
- };
- 
-class Solution {
-public:
-    ListNode* deleteDuplicates(ListNode* head) {
-        vector<int> check;
-        ListNode *temp = head;
-        int count=0;
-        while(temp!=NULL){
-            if(check.empty()){
-                check.push_back(temp->val);
-            }else{
-                if(check.back()!=temp->val){
-                    check.push_back(temp->val);
-                }
-            }
-            temp=temp->next;
-        }
-        temp=head;
-        ListNode *temp2,*temp3;
-        for(int i=0;i<check.size();i++){
-            temp->val=check[i];
-            if(i==check.size()-1){
-                temp2=temp->next;
-                temp->next=NULL;
-                break;
-            }
-            temp=temp->next;
-        }
-        return head;
-    }
+
+struct Node
+{
+	int data;
+	struct Node* next;
 };
+
+
+void printList(struct Node* head)
+{
+	struct Node* ptr = head;
+	while (ptr)
+	{
+		printf("%d -> ", ptr->data);
+		ptr = ptr->next;
+	}
+
+	printf("null");
+}
+
+
+void push(struct Node** head, int data)
+{
+	struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+	newNode->data = data;
+	newNode->next = *head;
+	*head = newNode;
+}
+
+
+void RemoveDuplicates(struct Node* head)
+{
+	// do nothing if the list is empty
+	if (head == NULL)
+		return;
+
+	struct Node* current = head;
+
+	// Compare current node with next node
+	while (current->next != NULL)
+	{
+		if (current->data == current->next->data)
+		{
+			struct Node* nextNext = current->next->next;
+			free(current->next);
+			current->next = nextNext;
+		}
+		else {
+			current = current->next; 
+		}
+	}
+}
+
+
+int main(void)
+{
+	// input keys
+	int keys[] = {1, 2, 2, 2, 3, 4, 4, 5};
+	int n = sizeof(keys)/sizeof(keys[0]);
+
+
+	struct Node* head = NULL;
+
+	
+	for (int i = n-1; i >= 0; i--)
+		push(&head, keys[i]);
+
+	RemoveDuplicates(head);
+
+
+	printList(head);
+
+	return 0;
+}
