@@ -9,7 +9,7 @@
 // A class representing one node of the list
 class Node<T> {
 
-    // public properties
+    // Public properties
     public var value: T
     public var next: Node<T>?
 
@@ -30,7 +30,7 @@ class LinkedList<T> {
         head = node
     }
 
-    // Create add a node at the start of the list
+    // Insert a node at the start of the list
     public func insert(_ node: Node<T>) {
         node.next = head
         head = node
