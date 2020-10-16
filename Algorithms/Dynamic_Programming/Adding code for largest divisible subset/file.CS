@@ -31,8 +31,7 @@ public class DivSubset
             for (int j = 0; j < i; j++) 
             { 
   
-                // only increment the maximum index if  
-                // this iteration will increase it 
+                // only increment the maximum index if this iteration will increase it 
                 if (arr[i] % arr[j] == 0 &&  
                     divCount[i] < divCount[j] + 1)  
                 { 
@@ -60,8 +59,16 @@ public class DivSubset
     // Driver code 
     public static void Main(String[] args) 
     { 
-        int[] x = { 1, 2, 17, 4}; 
-  
+        int i;
+        int[] x = new int[5]; // 5 size array
+      
+        // Accepting value from user 
+        for (i = 0; i < 5; i++)
+          {
+                Console.Write("\nEnter your "+(i+1)+ " number: ");
+                //Storing value in an array
+                x[i] = Convert.ToInt32(Console.ReadLine());
+          }
         // sort the array 
         Array.Sort(x); 
   
