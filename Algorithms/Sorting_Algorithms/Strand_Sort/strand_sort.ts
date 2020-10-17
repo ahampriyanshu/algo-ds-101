@@ -1,5 +1,3 @@
-/* rodar: tsc strand_sort.ts && node strand_sort.js && rm strand_sort.js */
-
 function strandSort(arrin: number[]): number[] {
 
   /* if the array has no elements, then it dosent need to be sorted */
