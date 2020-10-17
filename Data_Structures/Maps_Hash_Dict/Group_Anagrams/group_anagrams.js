@@ -20,4 +20,10 @@ function groupAnagrams(stringValue) {
 };
 
 //Test
-console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]))
+let array = []
+let array_len = parseInt(prompt("Input number of words in string array:"))
+for(var i =0; i< array_len; i++){
+    let word = prompt("Enter a word");
+    array.push(word)
+}
+console.log(groupAnagrams(array))
