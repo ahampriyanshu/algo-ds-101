@@ -66,8 +66,14 @@ void show(const char *title, int *x, int len)
 }
  
 int main(void)
-{
-	int x[] = {-2,0,-2,5,5,3,-1,-3,5,5,0,2,-4,4,2};
+{       int n;
+        printf("Enter size of array ");
+        scanf("%d", &n);
+        int x[n];
+        for(int i = 0; i < n; ++i) {
+     scanf("%d", &x[i]);
+  }
+
 #	define SIZE sizeof(x)/sizeof(int)
  
 	show("before sort:", x, SIZE);
