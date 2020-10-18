@@ -82,10 +82,10 @@
         </a>
     </td>
     <td align="center">
-        <a href=https://github.com/CormacKrum>
-            <img src=https://avatars0.githubusercontent.com/u/54479676?v=4 width="100;" alt=Cormac Krum/>
+        <a href=https://github.com/JayantGoel001>
+            <img src=https://avatars0.githubusercontent.com/u/54479676?v=4 width="100;" alt=Jayant Goel/>
             <br />
-            <sub style="font-size:14px"><b>Cormac Krum</b></sub>
+            <sub style="font-size:14px"><b>Jayant Goel</b></sub>
         </a>
     </td>
 </tr>
