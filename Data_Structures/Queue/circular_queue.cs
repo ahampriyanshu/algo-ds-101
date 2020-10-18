@@ -1,9 +1,7 @@
 using System;
 using System.Collections;
 
-//for any bugs / doubts in this code feel free to contact Karam Chandra Bose
-//at karamcbose@yahoo.com
-namespace KaramCBose.DataStructures
+namespace belphegorS.DataStructures
 {
 	/// <summary>
 	/// Summary description for CsCircularQueue.
