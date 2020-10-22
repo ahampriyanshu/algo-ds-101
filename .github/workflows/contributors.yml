@@ -1,7 +1,7 @@
 name: Add contributors
 on:
   schedule:
-    - cron: '*/20 * * * *'
+    - cron: '0 0 * * *'
 
 jobs:
   add-contributors:
@@ -17,5 +17,5 @@ jobs:
         IMG_WIDTH: '100'
         FONT_SIZE: '14'
         PATH: '/CONTRIBUTORS.md'
-        COMMIT_MESSAGE: 'Github Bot : Updating Contributors'
+        COMMIT_MESSAGE: 'Updating Contributors'
         AVATAR_SHAPE: 'square'

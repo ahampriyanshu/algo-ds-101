@@ -1,23 +1,41 @@
-// Nothing Special
+#include<bits/stdc++.h> 
 
-#include <iostream>
-#include <cinttypes>
+using namespace std; 
 
-int main() {
-    std::ios_base::sync_with_stdio(false) , std::cin.tie(nullptr);
+int fib(int n) 
 
-    int32_t t1 = 0 , t2 = 1 , next_term;
+{ 
+
+    int a = 0, b = 1, c, i; 
+
+    if( n == 0) 
+
+        return a; 
+
+    for(i = 2; i <= n; i++) { 
+
+       c = a + b; 
+
+       a = b; 
+
+       b = c; 
+
+    } 
+
+    return b; 
+
+} 
+
+int main(){ 
+
+    int n;
     
-    int32_t n;  std::cin >> n;
+    cin>>n;
 
-    puts("Fibonacci Series ...");
+    cout << fib(n); 
 
-    for (int32_t i = 0; i <= n; i++) {
-        std::cout << t1 << "\t";
-        next_term = t1 + t2;
-        t1 = t2;
-        t2 = next_term;
-    }
-    std::cout << std::endl;
-    return 0;
-}
+    return 0; 
+
+} 
+
+

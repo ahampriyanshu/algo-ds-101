@@ -1,11 +1,8 @@
-A = ['t','u','t','o','r','i','a','l']
-for i in range(len(A)):
-   min_= i
-   for j in range(i+1, len(A)):
-      if A[min_] > A[j]:
-         min_ = j
-   #swap
-A[i], A[min_] = A[min_], A[i]
-# main
-for i in range(len(A)):
-   print(A[i])
+def selection_sort(lst):
+    for i in range(len(lst) - 1):
+        k = min(range(i, len(lst)), key=lst.__getitem__)
+        lst[i], lst[k] = lst[k], lst[i]
+    return lst
+         
+lst = [8,3,6,2]
+print(selection_sort(lst))

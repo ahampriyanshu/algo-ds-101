@@ -1,5 +1,5 @@
 ## Assigned Issue Number ?
-#007
+#Issue_Number(``#395``)
 
 ## Language Opted ?
 C/C++/Python/Java/...
@@ -7,14 +7,12 @@ C/C++/Python/Java/...
 ## Number of files added or updated ?
 1/2/3/4/...
 
-## Name of these files ?
-main folder => sub_folder => ... => ... => ... file.py
-
-example :
-Algorithm => Search_Algorithm => Linear_Search => Linear_Search.py
+## Name and location of the file ?
+Folder``(Algorithm/Data_Structures/...)`` => Sub_Folder``(Sorting_Algo/Trees/Algebra)`` => ... => ``File.extension``
 
 ### Checklist
 
-- [ ] I've read the contribution guidelines.
+- [ ] Input has been taken dynamically.
 - [ ] I've referred the correct issue number.
 - [ ] I've fill up this entire template correctly.
+- [ ] Comments have been added

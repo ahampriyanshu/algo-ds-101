@@ -11,7 +11,7 @@ def LucasSum(N):
 
 
 # Driver code 
-N = 10
+N = int(input())
 LucasSum(N)
 
 
