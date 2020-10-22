@@ -1,0 +1,68 @@
+Design and implement a program that will help a salesperson to keep track of customer records
+//============================================================================
+// Author : Jay Rawlani
+// Version :
+// Copyright : Your copyright notice
+// Description : Singly linked list example
+//============================================================================
+#include<iostream>
+using namespace std;
+class coustmer
+{
+private:
+int quantity, price, total;
+char name[100], product[100];
+public:
+ void getinfo();
+void display();
+};
+void coustmer::getinfo()
+{
+cout<<"Enter the name of coustmer :- ";
+cin>>name;
+cout<<"Enter the name of product :- ";
+cin>>product;
+cout<<"Enter the price of product :- ";
+cin>>price;
+cout<<"Enter the quantity of product :- ";
+cin>>quantity;
+}
+void coustmer::display()
+{
+cout<<name<<"\t"<<product<<"\t"<<price<<"\t"<<quantity<<"\t";
+total= price*quantity;
+cout<<total<<"\t"<<endl;
+}
+int main()
+{
+coustmer c[10];
+int i, n;
+cout<<"Enter the numbert of coustmer :- ";
+cin>>n;
+for(i=0; i<n; i++)
+{
+c[i].getinfo();
+}
+cout<<"Name"<<"\t"<<"Product"<<"\t"<<"Price"<<"\t"<<"Quantity"<<"\t"<<"Total"<<"\t"<<endl;
+for(i=0; i<n; i++)
+{
+c[i].display();
+}
+}
+/*Enter the numbert of coustmer :- 3
+Enter the name of coustmer :- j
+Enter the name of product :- p
+Enter the price of product :- 5
+Enter the quantity of product :- 10
+Enter the name of coustmer :- n
+Enter the name of product :- s
+Enter the price of product :- 6
+Enter the quantity of product :- 5
+Enter the name of coustmer :- r
+Enter the name of product :- c
+Enter the price of product :- 8
+Enter the quantity of product :- 5
+Name ProductPrice Quantity Total
+j p 5 10 50
+s d 6 5 30
+r c 8 5 40
