@@ -1,5 +1,5 @@
 //using dynamic programming approach to solve
-
+import java.util.Scanner;
 class Solution {
     public static String longestPalindrome(String s) {
         int n=s.length();
@@ -49,7 +49,10 @@ class Solution {
     }
     public static void main(String[] args)
     {
-           System.out.println(longestPalindrome("abbaca")); //alter statement acc to preferred input
+           System.out.print("\nEnter a String : ");
+	       Scanner scan = new Scanner(System.in);
+	       str = scan.next();
+           System.out.println(longestPalindrome(str)); 
     }
 }
     
