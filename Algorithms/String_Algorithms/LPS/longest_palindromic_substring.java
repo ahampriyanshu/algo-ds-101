@@ -49,10 +49,10 @@ class Solution {
     }
     public static void main(String[] args)
     {
-           System.out.print("\nEnter a String : ");
-	       Scanner scan = new Scanner(System.in);
-	       str = scan.next();
-           System.out.println(longestPalindrome(str)); 
+            System.out.print("\nEnter a String : ");
+	    Scanner scan = new Scanner(System.in);
+	    str = scan.next();
+            System.out.println(longestPalindrome(str)); 
     }
 }
     
