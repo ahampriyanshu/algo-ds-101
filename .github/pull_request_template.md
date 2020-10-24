@@ -1,5 +1,5 @@
 ## Assigned Issue Number ?
-#Issue_Number(``#395``)
+#Issue_Number
 
 ## Language Opted ?
 C/C++/Python/Java/...
