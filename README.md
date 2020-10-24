@@ -1,6 +1,6 @@
 <p align="center">
 <img width="450" height="450" src="https://user-images.githubusercontent.com/54521023/94943180-e676aa80-04f4-11eb-8842-9634c1e66fa4.png" /><br>
-<a href="https://github.com/ahampriyanshu/algo_ds_101/blob/master/LICENSE" target="_blank"><img src="https://img.shields.io/github/license/ahampriyanshu/algo_ds_101?style=for-the-badge" />  </a> <img src="https://img.shields.io/badge/HacktoberFest-2020-brightgreen.svg?style=for-the-badge" alt="HactoberFest 2020" />  <a href="https://github.com/ahampriyanshu/algo_ds_101/pulls" target="_blank"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/ahampriyanshu/algo_ds_101?style=for-the-badge" /></a>  <a href="https://github.com/ahampriyanshu/algo_ds_101/issues" target="_blank"><img alt="GitHub issues" src="https://img.shields.io/github/issues/ahampriyanshu/algo_ds_101?style=for-the-badge" /></a>
+<img src="https://img.shields.io/github/license/ahampriyanshu/algo_ds_101?style=for-the-badge" />  <img src="https://img.shields.io/github/repo-size/ahampriyanshu/algo_ds_101?style=for-the-badge" />  <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/ahampriyanshu/algo_ds_101?style=for-the-badge" />  <img alt="GitHub issues" src="https://img.shields.io/github/issues/ahampriyanshu/algo_ds_101?style=for-the-badge" />   <img src="https://img.shields.io/github/languages/count/ahampriyanshu/competitive_programming?style=for-the-badge" />
 </p>
 
 ## Hello Everyone :wave:
@@ -83,10 +83,6 @@
 ### 18. Congrats :grin:
 ![19](https://user-images.githubusercontent.com/54521023/94943163-e4145080-04f4-11eb-8237-c0b2a6c75393.png)
 
-### HacktoberFest 2020
-
-Just create four PRs , wait till they mature and get limited edition T-shirt or plant a tree.
-Pleas don't spam
 
 ### How To Commit In CLI
 
