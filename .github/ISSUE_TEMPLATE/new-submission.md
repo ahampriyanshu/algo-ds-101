@@ -2,8 +2,8 @@
 name: New Submission
 about: Add new submissions
 title: ''
-labels: good first issue, C++, Hacktoberfest, first timer, python, java, javascript,
-  New Submssion, TypeScript, scala, ruby, php, swift, C#
+labels: C#, C++, Hacktoberfest, New Submssion, TypeScript, first timer, good first
+  issue, java, javascript, php, python, ruby, scala, swift
 assignees: ''
 
 ---
@@ -18,18 +18,18 @@ Algorithm/Data Structure/STL/Maths_And_Stats
 Describe the Algo/DS/STL
 
 **Submission Directory**
-Main_Folder => Sub_Folder => ... => ... => Filename.extension
+Folder``(Algorithm/Data_Structures/...)`` => Sub_Folder``(Sorting_Algo/Trees/Algebra)`` => ... => ``File.extension``
 
 **Contributors**
 
-- [ ]  C++ -
-- [ ]  C -
-- [ ]  Python -
-- [ ] Java - 
-- [ ] JavaScript -
-- [ ] TypeScript -
-- [ ] Golang -
-- [ ] Ruby -
-- [ ] php -
-- [ ] Swift -
-- [ ] C# -
+- [ ]  C++ 
+- [ ]  C 
+- [ ]  Python 
+- [ ] Java 
+- [ ] JavaScript
+- [ ] TypeScript
+- [ ] Golang
+- [ ] Ruby
+- [ ] php 
+- [ ] Swift 
+- [ ] C#
