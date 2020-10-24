@@ -2,13 +2,13 @@
 // algorithm
 #include <bits/stdc++.h>
 
-void computeLPSArray(char* pat, int M, int* lps);
+void computeLPSArray(string pat, int M, string lps);
 
 // Prints occurrences of txt[] in pat[]
-void KMPSearch(char* pat, char* txt)
+void KMPSearch(string pat, string txt)
 {
-	int M = strlen(pat);
-	int N = strlen(txt);
+	int M = pat.size();
+	int N = txt.size();
 
 	// create lps[] that will hold the longest prefix suffix
 	// values for pattern
@@ -43,7 +43,7 @@ void KMPSearch(char* pat, char* txt)
 }
 
 // Fills lps[] for given patttern pat[0..M-1]
-void computeLPSArray(char* pat, int M, int* lps)
+void computeLPSArray(string pat, int M, string lps)
 {
 	// length of the previous longest prefix suffix
 	int len = 0;
@@ -81,8 +81,8 @@ void computeLPSArray(char* pat, int M, int* lps)
 // Driver program to test above function
 int main()
 {
-	char txt[] = "ABABDABACDABABCABAB";
-	char pat[] = "ABABCABAB";
+	string txt,pat;
+	cin>>txt>>pat;
 	KMPSearch(pat, txt);
 	return 0;
 }
