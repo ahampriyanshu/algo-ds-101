@@ -8,6 +8,7 @@ public class EqualSubsetSumPartition {
 		int elementsSum = Arrays.stream(array).mapToInt(Integer::intValue)
 				.sum();
 		int startIndex = 0;
+		//If sum is odd, we can not have two subsets with equal sum
 		if (isOddNumber(elementsSum)) {
 			return false;
 		}
@@ -26,6 +27,7 @@ public class EqualSubsetSumPartition {
 		if ((array.length == 0) || (currentIndex >= (array.length - 1))) {
 			return false;
 		}
+    	// if the value at currentIndex exceeds the sum then  shouldn't process this
 		if (array[currentIndex] <= elementsSum) {
 			if (verifyPartion(array, elementsSum - array[currentIndex],
 					currentIndex + 1)) {
@@ -47,6 +49,7 @@ public class EqualSubsetSumPartition {
 		}
 
 		EqualSubsetSumPartition ps = new EqualSubsetSumPartition();
+		//This array must contains a set of positive numbers
 		System.out.println(ps.isPartion(array));
 	}
 
