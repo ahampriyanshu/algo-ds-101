@@ -28,4 +28,8 @@ It  turns  out  that  this  strategy  is  more  reasonable:  provided  that  the
 
 The  way  of  how  the  A*  Search  works  is  illustrated  in the figure below. Each  time,  the  node  having  the  lowest  f(n)  value  is  the  node  expanded.  The  targets  nodes  will  be  expanded  until  reaching  the  goal  destination,  which  is  Bucharest.
 
+## How it works 
+![A Star Search](algo.png)
 
+## Demo
+![A Star Search](screenshot.png)
