@@ -30,7 +30,7 @@ typedef struct {
  * the structure received should be deleted after use by
  * using function hs_delete
  * Params :
- * size : Initial size allocated to hasmap
+ * size : Initial size allocated to hashset
  * hashfn : A function which takes in a void pointer (key)
  *          and returns an long representing the hash of that key
  * Returns : A struct Hashset.
@@ -56,7 +56,7 @@ Hashset make_hashset(int size, long (*hashfn)(void *)) {
  * Internal function to rehash a Hashset and reallocate the keys and values
  * Should not be exposed
  *
- * this increases the current size of hashset by HM_REHASH_FAC factor,
+ * this increases the current size of hashset by HS_REHASH_FAC factor,
  * and then rehashes all keys and puts then in this newly allocated memory
  * then frees the old memory
  */
@@ -69,14 +69,14 @@ static void rehash(Hashset *hs) {
   }
   hashpair *newstart = temp;
   hashpair *oldstart = hs->start;
-  // Change the HM info
+  // Change the HS info
   hs->start = newstart;
   hs->size = size * HS_REHASH_FAC;
   hs->used = 0;
 
   hashpair *iter = oldstart;
 
-  // move all key-value pairs to new locations, using the hm_add function
+  // move all key-value pairs to new locations, using the hs_add function
   while (iter < oldstart + size) {
     // As we have calloc-ed the memory, both key and value being zero
     // means that the location was not allocated
@@ -95,7 +95,7 @@ static void rehash(Hashset *hs) {
  * this internally rehashes and reallocates the whole hashset
  *
  * Params :
- * hm : pointer to the hashset in which the pair is to be added
+ * hs : pointer to the hashset in which the pair is to be added
  * value : pointer to value / value (must be typecasted to void *)
  *
  * Returns : int : 0 if succeeded
@@ -105,7 +105,7 @@ int hs_add(Hashset *hs, void *value) {
   long key = hs->hash(value);
   int hash = key % hs->size;  // bound the hash inside the size
 
-  // If the used capacity of HM is more than max used allowed, reshah
+  // If the used capacity of HS is more than max used allowed, reshah
   if (hs->used >= HS_REHASH_LIM(hs->size)) {
     rehash(hs);
   }
@@ -131,7 +131,7 @@ int hs_add(Hashset *hs, void *value) {
  * Function to check if given value exists in hashset
  *
  * Params :
- * hm : pointer to the hashmap from which the value is to be retrieved
+ * hs : pointer to the hashset from which the value is to be retrieved
  *
  * Returns : 0 if value is not found in given hashset
  *           1 if value is found in hashset
@@ -164,7 +164,7 @@ int hs_contains(Hashset *hs, void *value) {
  *        which if were manually allocated, must be manually freed by user.
  *
  * Params :
- * hm : A pointer to hashset from which value is to be deleted
+ * hs : A pointer to hashset from which value is to be deleted
  * value : the value as void *, which is to be removed
  *
  * Returns : if value is found : value as void* as given to hs_add
@@ -201,7 +201,7 @@ void *hs_delete_key(Hashset *hs, void *value) {
  * A function to delete the hashset
  * frees the memory allocated to the hashset
  * Params :
- * hs : Hashset structure as returned by the make_hashset function
+ * hs : pointer to Hashset structure as returned by the make_hashset function
  * delfn : A function which takes in a void pointer (value)
  *         This will be called on each value in Hashset.
  *         Should be used to free the memory allocated to value, if
@@ -221,7 +221,7 @@ void hs_delete(Hashset *hs, void (*delfn)(void *)) {
     }
     ++iter;
   }
-  // Finally free the memory that was allocated to the HM
+  // Finally free the memory that was allocated to the HS
   free(start);
   hs->size = 0;
   hs->start = NULL;
