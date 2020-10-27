@@ -2,8 +2,9 @@
 
 test();
 
+// Fills lps[] for given patttern pattern[0..M-1]
 function buildLPSArray(pattern, M) {
-  let lps = [0];
+  let lps = [0]; // First element is always 0
   let prefixIndex = 0;
   let suffixIndex = 1;
 
@@ -23,10 +24,13 @@ function buildLPSArray(pattern, M) {
   return lps;
 }
 
+// Mathc the pattern in a given text
 function KMPSearch(text, pattern) {
   const M = pattern.length;
   const N = text.length;
 
+  // Create lps[] (longest proper prefix which is also suffix) that will hold the longest prefix suffix
+  // and preprocess it
   const lps = buildLPSArray(pattern, M);
 
   let textIndex = 0;
@@ -49,6 +53,7 @@ function KMPSearch(text, pattern) {
   return false;
 }
 
+// Test
 function test() {
   let text = [..."ABCABBCABABBABB"];
   let pattern = [..."ABB"];
