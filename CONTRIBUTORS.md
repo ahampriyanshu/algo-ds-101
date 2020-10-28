@@ -268,9 +268,9 @@
 <tr>
     <td align="center">
         <a href=https://github.com/g-jindal2001>
-            <img src=https://avatars1.githubusercontent.com/u/54766681?v=4 width="100;" alt=g-jindal2001/>
+            <img src=https://avatars1.githubusercontent.com/u/54766681?v=4 width="100;" alt=Geetansh Jindal/>
             <br />
-            <sub style="font-size:14px"><b>g-jindal2001</b></sub>
+            <sub style="font-size:14px"><b>Geetansh Jindal</b></sub>
         </a>
     </td>
     <td align="center">
