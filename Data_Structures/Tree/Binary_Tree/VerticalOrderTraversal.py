@@ -130,15 +130,22 @@ class BinaryTree:
         return self.vot
 
 def main():
-    nums = [3,9,20,1,-5,15,7]
+    nums = []
+    print("Input numbers in to the array, the first number you put in will be the root of the tree. \nIf you input a non integer value, the Vertical Order Traversal will start.")
+    while True:
+        to_input = input(">: ")
+        try:
+            nums.append(float(to_input))
+        except Exception as e:
+            print("Bad value")
+            break
     tree = BinaryTree()
     for num in nums:
         tree.insertNode(TreeNode(num))
 
-    tree.head.traverse()
+	#tree.head.traverse()
 
     print(tree.vertical_order_traverse())
 
 if __name__ == "__main__":
     main()
-    
