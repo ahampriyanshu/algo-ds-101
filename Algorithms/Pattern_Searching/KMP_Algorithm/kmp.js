@@ -55,7 +55,7 @@ function KMPSearch(text, pattern) {
 
 // Test
 function test() {
-  let text = [..."ABCABBCABABBABB"];
-  let pattern = [..."ABB"];
+  let text = prompt("Write the text:").split("");
+  let pattern = prompt("Write the pattern:").split("");
   console.log(KMPSearch(text, pattern));
 }
