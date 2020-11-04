@@ -2430,7 +2430,7 @@
         </a>
     </td>
     <td align="center">
-        <a href=https://github.com/Chitresh13>
+        <a href=https://github.com/cgoxo>
             <img src=https://avatars1.githubusercontent.com/u/50276480?v=4 width="100;" alt=Chitresh Goel/>
             <br />
             <sub style="font-size:14px"><b>Chitresh Goel</b></sub>
