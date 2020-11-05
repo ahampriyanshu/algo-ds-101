@@ -2430,7 +2430,7 @@
         </a>
     </td>
     <td align="center">
-        <a href=https://github.com/Chitresh13>
+        <a href=https://github.com/cgoxo>
             <img src=https://avatars1.githubusercontent.com/u/50276480?v=4 width="100;" alt=Chitresh Goel/>
             <br />
             <sub style="font-size:14px"><b>Chitresh Goel</b></sub>
@@ -2739,9 +2739,9 @@
     </td>
     <td align="center">
         <a href=https://github.com/mjavier2k>
-            <img src=https://avatars3.githubusercontent.com/u/22145?v=4 width="100;" alt=Marvin/>
+            <img src=https://avatars3.githubusercontent.com/u/22145?v=4 width="100;" alt=Marvin Javier/>
             <br />
-            <sub style="font-size:14px"><b>Marvin</b></sub>
+            <sub style="font-size:14px"><b>Marvin Javier</b></sub>
         </a>
     </td>
     <td align="center">
