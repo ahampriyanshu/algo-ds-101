@@ -192,7 +192,7 @@ int main()
 
         default:
             system("clear");
-            cout << "Please enter a valid number otherwise fuckoff "<<endl;
+            cout << "Please enter a valid number "<<endl;
             break;
         }
 
