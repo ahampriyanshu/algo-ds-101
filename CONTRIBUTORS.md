@@ -2123,9 +2123,9 @@
     </td>
     <td align="center">
         <a href=https://github.com/Veguinho>
-            <img src=https://avatars1.githubusercontent.com/u/26579048?v=4 width="100;" alt=Veguinho/>
+            <img src=https://avatars1.githubusercontent.com/u/26579048?v=4 width="100;" alt=Rafael Vieira Rosenzvaig/>
             <br />
-            <sub style="font-size:14px"><b>Veguinho</b></sub>
+            <sub style="font-size:14px"><b>Rafael Vieira Rosenzvaig</b></sub>
         </a>
     </td>
     <td align="center">
