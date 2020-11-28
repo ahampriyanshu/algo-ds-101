@@ -919,9 +919,9 @@
     </td>
     <td align="center">
         <a href=https://github.com/hemangdtu>
-            <img src=https://avatars1.githubusercontent.com/u/55807508?v=4 width="100;" alt=hemangsinha/>
+            <img src=https://avatars1.githubusercontent.com/u/55807508?v=4 width="100;" alt=Hemang Sinha/>
             <br />
-            <sub style="font-size:14px"><b>hemangsinha</b></sub>
+            <sub style="font-size:14px"><b>Hemang Sinha</b></sub>
         </a>
     </td>
 </tr>
