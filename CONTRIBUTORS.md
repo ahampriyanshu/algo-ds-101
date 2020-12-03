@@ -1044,9 +1044,9 @@
     </td>
     <td align="center">
         <a href=https://github.com/Abijit-chettri>
-            <img src=https://avatars2.githubusercontent.com/u/56419995?v=4 width="100;" alt=Abijit-chettri/>
+            <img src=https://avatars2.githubusercontent.com/u/56419995?v=4 width="100;" alt=Sidhanth chettri/>
             <br />
-            <sub style="font-size:14px"><b>Abijit-chettri</b></sub>
+            <sub style="font-size:14px"><b>Sidhanth chettri</b></sub>
         </a>
     </td>
     <td align="center">
