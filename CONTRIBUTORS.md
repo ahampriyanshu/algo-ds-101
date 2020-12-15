@@ -47,6 +47,13 @@
 </tr>
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/JayantGoel001>
+            <img src=https://avatars0.githubusercontent.com/u/54479676?v=4 width="100;"  alt=Jayant Goel/>
+            <br />
+            <sub style="font-size:14px"><b>Jayant Goel</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/monishamandal02>
             <img src=https://avatars3.githubusercontent.com/u/56168558?v=4 width="100;"  alt=MONISHA MANDAL/>
             <br />
@@ -79,13 +86,6 @@
             <img src=https://avatars0.githubusercontent.com/u/55917516?v=4 width="100;"  alt=AnshMishra2001/>
             <br />
             <sub style="font-size:14px"><b>AnshMishra2001</b></sub>
-        </a>
-    </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/JayantGoel001>
-            <img src=https://avatars0.githubusercontent.com/u/54479676?v=4 width="100;"  alt=Jayant Goel/>
-            <br />
-            <sub style="font-size:14px"><b>Jayant Goel</b></sub>
         </a>
     </td>
 </tr>
@@ -1998,9 +1998,9 @@
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/aroradhruv2308>
-            <img src=https://avatars3.githubusercontent.com/u/67088080?v=4 width="100;"  alt=aroradhruv2308/>
+            <img src=https://avatars3.githubusercontent.com/u/67088080?v=4 width="100;"  alt=Dhruv Arora/>
             <br />
-            <sub style="font-size:14px"><b>aroradhruv2308</b></sub>
+            <sub style="font-size:14px"><b>Dhruv Arora</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -3159,13 +3159,6 @@
             <img src=https://avatars1.githubusercontent.com/u/62212027?v=4 width="100;"  alt=Xerena/>
             <br />
             <sub style="font-size:14px"><b>Xerena</b></sub>
-        </a>
-    </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/XoMute>
-            <img src=https://avatars3.githubusercontent.com/u/38501955?v=4 width="100;"  alt=Dmytro/>
-            <br />
-            <sub style="font-size:14px"><b>Dmytro</b></sub>
         </a>
     </td>
 </tr>
