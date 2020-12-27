@@ -2512,9 +2512,9 @@
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/GitanshKapoor>
-            <img src=https://avatars0.githubusercontent.com/u/72307552?v=4 width="100;"  alt=GitanshKapoor/>
+            <img src=https://avatars0.githubusercontent.com/u/72307552?v=4 width="100;"  alt=Gitansh Kapoor/>
             <br />
-            <sub style="font-size:14px"><b>GitanshKapoor</b></sub>
+            <sub style="font-size:14px"><b>Gitansh Kapoor</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
