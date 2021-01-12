@@ -1059,7 +1059,7 @@
 </tr>
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/Singh-Aishwarya>
+        <a href=https://github.com/threedotspast>
             <img src=https://avatars0.githubusercontent.com/u/56748230?v=4 width="100;"  alt=Aishwarya Singh/>
             <br />
             <sub style="font-size:14px"><b>Aishwarya Singh</b></sub>
@@ -1852,9 +1852,9 @@
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/SumitKuSahu>
-            <img src=https://avatars0.githubusercontent.com/u/72408755?v=4 width="100;"  alt=SumitKuSahu/>
+            <img src=https://avatars0.githubusercontent.com/u/72408755?v=4 width="100;"  alt=Sumit Kumar Sahu/>
             <br />
-            <sub style="font-size:14px"><b>SumitKuSahu</b></sub>
+            <sub style="font-size:14px"><b>Sumit Kumar Sahu</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
