@@ -986,9 +986,9 @@
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Procoder16>
-            <img src=https://avatars3.githubusercontent.com/u/71066110?v=4 width="100;"  alt=Procoder16/>
+            <img src=https://avatars3.githubusercontent.com/u/71066110?v=4 width="100;"  alt=Soumik Mukherjee/>
             <br />
-            <sub style="font-size:14px"><b>Procoder16</b></sub>
+            <sub style="font-size:14px"><b>Soumik Mukherjee</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
