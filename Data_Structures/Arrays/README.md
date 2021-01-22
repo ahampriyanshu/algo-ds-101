@@ -24,10 +24,7 @@ arrayName [ indexValue ]
 ```bash
 datatype arrayName [ rowSize ] [ columnSize ] ;
 ```
-## Initialization of Two Dimensional Array
-```bash
-datatype arrayName [rows][colmns] = {{r1c1value, r1c2value, ...},{r2c1, r2c2,...}} ;
-```
+
 ## Accessing Individual Elements of Two Dimensional Array
 ```bash
 arrayName [ rowIndex ] [ columnIndex ]
