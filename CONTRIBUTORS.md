@@ -735,7 +735,7 @@
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/Aryan-dev007>
+        <a href=https://github.com/aa-ryan>
             <img src=https://avatars.githubusercontent.com/u/61882780?v=4 width="100;"  alt=Aryan/>
             <br />
             <sub style="font-size:14px"><b>Aryan</b></sub>
