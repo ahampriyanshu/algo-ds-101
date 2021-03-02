@@ -3141,7 +3141,7 @@
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/Kwehdev>
+        <a href=https://github.com/KwehDev>
             <img src=https://avatars.githubusercontent.com/u/69157145?v=4 width="100;"  alt=Tom Whiting/>
             <br />
             <sub style="font-size:14px"><b>Tom Whiting</b></sub>
