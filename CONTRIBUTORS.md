@@ -647,10 +647,10 @@
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/aish0007>
-            <img src=https://avatars.githubusercontent.com/u/45160006?v=4 width="100;"  alt=aish0007/>
+        <a href=https://github.com/aishuo07>
+            <img src=https://avatars.githubusercontent.com/u/45160006?v=4 width="100;"  alt=aishuo07/>
             <br />
-            <sub style="font-size:14px"><b>aish0007</b></sub>
+            <sub style="font-size:14px"><b>aishuo07</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
