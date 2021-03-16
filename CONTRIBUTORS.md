@@ -106,9 +106,9 @@
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Mr-Destructive>
-            <img src=https://avatars.githubusercontent.com/u/40317114?v=4 width="100;"  alt=MeetGor/>
+            <img src=https://avatars.githubusercontent.com/u/40317114?v=4 width="100;"  alt=Meet Gor/>
             <br />
-            <sub style="font-size:14px"><b>MeetGor</b></sub>
+            <sub style="font-size:14px"><b>Meet Gor</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
