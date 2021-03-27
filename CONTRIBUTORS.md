@@ -223,7 +223,7 @@
 </tr>
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/inflictt>
+        <a href=https://github.com/devansh-hehe>
             <img src=https://avatars.githubusercontent.com/u/71920782?v=4 width="100;"  alt=Devansh Dhiman/>
             <br />
             <sub style="font-size:14px"><b>Devansh Dhiman</b></sub>
@@ -2438,9 +2438,9 @@
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/chiragjagad>
-            <img src=https://avatars.githubusercontent.com/u/68422478?v=4 width="100;"  alt=chiragjagad/>
+            <img src=https://avatars.githubusercontent.com/u/68422478?v=4 width="100;"  alt=Chirag Jagad/>
             <br />
-            <sub style="font-size:14px"><b>chiragjagad</b></sub>
+            <sub style="font-size:14px"><b>Chirag Jagad</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
