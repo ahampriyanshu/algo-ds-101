@@ -2790,9 +2790,9 @@
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/NEERAJAP2001>
-            <img src=https://avatars.githubusercontent.com/u/65017645?v=4 width="100;"  alt=NEERAJ ADITYANANTH POLAMPALLI/>
+            <img src=https://avatars.githubusercontent.com/u/65017645?v=4 width="100;"  alt=Neeraj Ap/>
             <br />
-            <sub style="font-size:14px"><b>NEERAJ ADITYANANTH POLAMPALLI</b></sub>
+            <sub style="font-size:14px"><b>Neeraj Ap</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
