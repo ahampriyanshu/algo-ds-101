@@ -303,9 +303,9 @@
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Aj12345616>
-            <img src=https://avatars.githubusercontent.com/u/68468062?v=4 width="100;"  alt=Aj12345616/>
+            <img src=https://avatars.githubusercontent.com/u/68468062?v=4 width="100;"  alt=Akshat Jain/>
             <br />
-            <sub style="font-size:14px"><b>Aj12345616</b></sub>
+            <sub style="font-size:14px"><b>Akshat Jain</b></sub>
         </a>
     </td>
 </tr>
