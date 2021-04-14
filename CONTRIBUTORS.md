@@ -201,9 +201,9 @@
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/adaugochi>
-            <img src=https://avatars.githubusercontent.com/u/43061141?v=4 width="100;"  alt=Maryfaith Mgbede/>
+            <img src=https://avatars.githubusercontent.com/u/43061141?v=4 width="100;"  alt=Adaa Mgbede/>
             <br />
-            <sub style="font-size:14px"><b>Maryfaith Mgbede</b></sub>
+            <sub style="font-size:14px"><b>Adaa Mgbede</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
