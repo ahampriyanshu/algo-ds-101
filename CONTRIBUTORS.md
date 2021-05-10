@@ -362,7 +362,7 @@
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/Mr-Yash-Sharma>
+        <a href=https://github.com/yashsharma8415>
             <img src=https://avatars.githubusercontent.com/u/65597694?v=4 width="100;"  alt=Yash Sharma/>
             <br />
             <sub style="font-size:14px"><b>Yash Sharma</b></sub>
