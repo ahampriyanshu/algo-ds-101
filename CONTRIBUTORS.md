@@ -194,9 +194,9 @@
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Samkit-shah>
-            <img src=https://avatars.githubusercontent.com/u/65543606?v=4 width="100;"  alt=Samkit-shah/>
+            <img src=https://avatars.githubusercontent.com/u/65543606?v=4 width="100;"  alt=Samkit Shah/>
             <br />
-            <sub style="font-size:14px"><b>Samkit-shah</b></sub>
+            <sub style="font-size:14px"><b>Samkit Shah</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
