@@ -1060,9 +1060,9 @@
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Amanj2000>
-            <img src=https://avatars.githubusercontent.com/u/54628038?v=4 width="100;"  alt=Amanj2000/>
+            <img src=https://avatars.githubusercontent.com/u/54628038?v=4 width="100;"  alt=Aman/>
             <br />
-            <sub style="font-size:14px"><b>Amanj2000</b></sub>
+            <sub style="font-size:14px"><b>Aman</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
