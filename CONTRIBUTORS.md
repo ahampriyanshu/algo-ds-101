@@ -223,7 +223,7 @@
 </tr>
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/26zoro>
+        <a href=https://github.com/26xoro>
             <img src=https://avatars.githubusercontent.com/u/71920782?v=4 width="100;"  alt=Devansh Dhiman/>
             <br />
             <sub style="font-size:14px"><b>Devansh Dhiman</b></sub>
