@@ -1323,7 +1323,7 @@
 </tr>
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/piratelicorne>
+        <a href=https://github.com/melissahuerta>
             <img src=https://avatars.githubusercontent.com/u/52439373?v=4 width="100;"  alt=Melissa H/>
             <br />
             <sub style="font-size:14px"><b>Melissa H</b></sub>
