@@ -1338,9 +1338,9 @@
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/rohg007>
-            <img src=https://avatars.githubusercontent.com/u/32675945?v=4 width="100;"  alt=rohg007/>
+            <img src=https://avatars.githubusercontent.com/u/32675945?v=4 width="100;"  alt=Rohan Gupta/>
             <br />
-            <sub style="font-size:14px"><b>rohg007</b></sub>
+            <sub style="font-size:14px"><b>Rohan Gupta</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
