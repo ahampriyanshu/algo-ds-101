@@ -911,7 +911,7 @@
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/gabriel21henrique>
+        <a href=https://github.com/gabrielhs1357>
             <img src=https://avatars.githubusercontent.com/u/50048495?v=4 width="100;"  alt=Gabriel Silva/>
             <br />
             <sub style="font-size:14px"><b>Gabriel Silva</b></sub>
