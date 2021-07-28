@@ -2019,9 +2019,9 @@
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/deepampriyadarshi>
-            <img src=https://avatars.githubusercontent.com/u/65447610?v=4 width="100;"  alt=deepampriyadarshi/>
+            <img src=https://avatars.githubusercontent.com/u/65447610?v=4 width="100;"  alt=Deepam Priyadarshi/>
             <br />
-            <sub style="font-size:14px"><b>deepampriyadarshi</b></sub>
+            <sub style="font-size:14px"><b>Deepam Priyadarshi</b></sub>
         </a>
     </td>
 </tr>
