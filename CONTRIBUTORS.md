@@ -1873,9 +1873,9 @@
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Swatigupta-droid>
-            <img src=https://avatars.githubusercontent.com/u/64798478?v=4 width="100;"  alt=Swatigupta-droid/>
+            <img src=https://avatars.githubusercontent.com/u/64798478?v=4 width="100;"  alt=Swati Gupta/>
             <br />
-            <sub style="font-size:14px"><b>Swatigupta-droid</b></sub>
+            <sub style="font-size:14px"><b>Swati Gupta</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
