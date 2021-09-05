@@ -223,7 +223,7 @@
 </tr>
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/26xoro>
+        <a href=https://github.com/devanshxq>
             <img src=https://avatars.githubusercontent.com/u/71920782?v=4 width="100;"  alt=Devansh Dhiman/>
             <br />
             <sub style="font-size:14px"><b>Devansh Dhiman</b></sub>
@@ -1880,9 +1880,9 @@
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/TechnoPhasePRO>
-            <img src=https://avatars.githubusercontent.com/u/59903104?v=4 width="100;"  alt=TechnoPhasePRO/>
+            <img src=https://avatars.githubusercontent.com/u/59903104?v=4 width="100;"  alt=Yash Raj Singh Bisht/>
             <br />
-            <sub style="font-size:14px"><b>TechnoPhasePRO</b></sub>
+            <sub style="font-size:14px"><b>Yash Raj Singh Bisht</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
