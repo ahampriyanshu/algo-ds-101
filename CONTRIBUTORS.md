@@ -1271,9 +1271,9 @@
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Sj-001>
-            <img src=https://avatars.githubusercontent.com/u/50135847?v=4 width="100;"  alt=Sj-001/>
+            <img src=https://avatars.githubusercontent.com/u/50135847?v=4 width="100;"  alt=Shruti Jain/>
             <br />
-            <sub style="font-size:14px"><b>Sj-001</b></sub>
+            <sub style="font-size:14px"><b>Shruti Jain</b></sub>
         </a>
     </td>
 </tr>
