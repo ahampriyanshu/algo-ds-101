@@ -1,1 +1,5 @@
 theme: jekyll-theme-cayman
+github:
+  is_project_page: false
+name: ALGO DS 101
+title: null
