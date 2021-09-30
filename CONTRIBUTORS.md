@@ -2357,9 +2357,9 @@
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/ArpitDarklord>
-            <img src=https://avatars.githubusercontent.com/u/56078545?v=4 width="100;"  alt=ArpitDarklord/>
+            <img src=https://avatars.githubusercontent.com/u/56078545?v=4 width="100;"  alt=ARPIT MALLICK/>
             <br />
-            <sub style="font-size:14px"><b>ArpitDarklord</b></sub>
+            <sub style="font-size:14px"><b>ARPIT MALLICK</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
