@@ -1,88 +1,113 @@
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
+
+// Node Declaration
 struct node
 {
-    int data;
-    struct node *next;
+	int priority;
+	int info; // info stands for the value or the item to be added
+	struct node *link;
 };
-typedef struct node *nodeptr;
-nodeptr getNode(int item)
+// Class Priority Queue
+class Priority_Queue
 {
-    nodeptr p = (nodeptr)malloc(sizeof(struct node));
-    p->next = NULL;
-    p->data = item;
-    return p;
-}
-nodeptr insertNode(nodeptr start, int item)
-{
-    nodeptr p = getNode(item);
-    if (start == NULL)
-        start = p;
-    else
-    {
-        nodeptr temp = start;
-        nodeptr toBeInsertedAfter = NULL;
-        while (temp != NULL && item <= temp->data)
+    private:
+        node *front; //front node of queue
+    public:
+        Priority_Queue()
         {
-            toBeInsertedAfter = temp;
-            temp = temp->next;
+            front = NULL;
         }
-        if (toBeInsertedAfter == NULL)
+        // Insert into Priority Queue
+        void insert(int item, int priority)
         {
-            p->next = start;
-            start = p;
+            node *tmp, *q;
+            tmp = new node; // make a temprory node
+            tmp->info = item; //set the value
+            tmp->priority = priority; //set the priority
+            if (front == NULL || priority < front->priority) // if priority of current element less than front elemnt priority.
+            {
+                tmp->link = front;
+                front = tmp;
+            }
+            //else if greater priority
+            else
+            {
+                q = front;
+                while (q->link != NULL && q->link->priority <= priority)
+                    q=q->link;
+                tmp->link = q->link;
+                q->link = tmp;
+            }
         }
-        else
+        // Delete from Priority Queue
+        void del()
         {
-            p->next = toBeInsertedAfter->next;
-            toBeInsertedAfter->next = p;
+            node *tmp;
+            if(front == NULL)
+                cout<<"Queue Underflow\n";
+            else
+            {
+                tmp = front;
+                cout<<"Deleted item is: "<<tmp->info<<endl;
+                front = front->link;
+                free(tmp);
+            }
         }
-    }
-    return start;
-}
-nodeptr deleteNode(nodeptr start)
-{
-    nodeptr temp = start;
-    start = start->next;
-    free(temp);
-    return start;
-}
-void display(nodeptr start)
-{
-    nodeptr temp = start;
-    while (temp != NULL)
-    {
-        cout << temp->data << " ";
-        temp = temp->next;
-    }
-    cout << endl;
-}
-typedef struct node *nodeptr;
+        //Print Priority Queue
+    
+        void display()
+        {
+            node *ptr;
+            ptr = front;
+            if (front == NULL)
+                cout<<"Queue is empty\n";
+            else
+            {	cout<<"Queue is :\n";
+                cout<<"Priority       Item\n";
+                while(ptr != NULL)
+                {
+                    cout<<ptr->priority<<"                 "<<ptr->info<<endl;
+                    ptr = ptr->link;
+                }
+            }
+        }
+};
+
+
 int main()
 {
-    nodeptr start = NULL;
-    nodeptr list2 = NULL;
-    nodeptr startSorted = NULL;
-    int choice, item, prio, i;
-    for (i = 1; i; i++)
+    int choice, item, priority;
+    Priority_Queue pq; 
+    do
     {
-        cout << "1.ENQUEUE\n2.DEQUEUE\n3.DISPLAY\n4.EXIT" << endl;
-        cin >> choice;
-        switch (choice)
+        cout<<"1.Insert\n";
+        cout<<"2.Delete\n";
+        cout<<"3.Display\n";
+        cout<<"4.Quit\n";
+        cout<<"Enter your choice : "; 
+        cin>>choice;
+        switch(choice)
         {
         case 1:
-            cout << "ENTER ELEMENT TO BE INSERTED" << endl;
-            cin >> item;
-            start = insertNode(start, item);
+            cout<<"Input the item value to be added in the queue : ";
+            cin>>item;
+            cout<<"Enter its priority : ";
+            cin>>priority;
+            pq.insert(item, priority);
             break;
         case 2:
-            start = deleteNode(start);
+            pq.del();
             break;
         case 3:
-            display(start);
+            pq.display();
             break;
         case 4:
-            return 0;
+            break;
+        default :
+            cout<<"Wrong choice\n";
         }
     }
+    while(choice != 4);
+    return 0;
 }

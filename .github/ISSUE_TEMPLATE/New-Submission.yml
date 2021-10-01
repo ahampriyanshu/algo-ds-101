@@ -2,7 +2,8 @@ name: New Submission
 description: Select this to submit new Algorithm/Data-Structure/Maths/STL/Collection
 title: "Title of the Submission"
 labels: ["Hacktoberfest2021", "Hacktoberfest", "new submssion", "first timer", "good first issue", 
-"c", "c++", "c#", "java", "javascript", "typescript", "php", "python", "ruby", "scala", "swift", "go"]
+"c", "c++", "c#", "java", "javascript", "typescript", "php", "python", "ruby", "scala", "swift", "go",
+"haskell", "bash"]
 assignees:
   - octocat
 body:
@@ -10,12 +11,33 @@ body:
     attributes:
       value: |
         Thanks for contributing
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: Type of the submission
+      options:
+        - Algorithm
+        - Data-Structure
+        - Maths
+        - STL
+        - Collection
+    validations:
+      required: true
   - type: input
     id: directory
     attributes:
       label: Directory
       description: Location of the new file
       placeholder: Algorithm => Sorting => Merge-Sort => Merge-Sort.ext
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the submission
+      placeholder: A linked list is a linear collection of data elements whose ...
     validations:
       required: true
   - type: checkboxes
@@ -26,13 +48,16 @@ body:
       options:
         - label: c++
         - label: c
-        - label: c#
-        - label: java
         - label: python
+        - label: java
+        - label: kotlin
         - label: javascript
         - label: typescript
-        - label: ruby
+        - label: c#
         - label: swift
+        - label: ruby
         - label: scala
         - label: go
         - label: php
+        - label: haskell
+        - label: bash

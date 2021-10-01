@@ -1,9 +1,9 @@
 # Index
 
 * [Arrays](Arrays/)
-* [Hash_Set](Hash_Set/)   
-* [Linked_List](Linked_List/) 
-* [Maps_Hash_Dict](Maps_Hash_Dict/) 
+* [Hash-Set](Hash-Set/)   
+* [Linked-List](Linked-List/) 
+* [Map](Map/) 
 * [Queue](Queue/) 
 * [Stacks](Stacks/) 
 * [Graph](Graph/)

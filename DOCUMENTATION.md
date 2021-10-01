@@ -27,17 +27,20 @@
 
 # Implementation
 
-| Language | - | - 
+| Language | View | Code
 |:--: |:--: |:--:
-| c++ | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.cpp)
-| c | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.c)
-| java | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.java)
-| js | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.js)
-| ts | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.ts)
-| py | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.py)
-| cs | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.cs)
-| rb | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.rb)
-| php | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.php)
-| go | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.go)
-| scala | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.scala)
-| swift | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.swift)
+| c++ | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.cpp)
+| c | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.c)
+| java | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.java)
+| js | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.js)
+| ts | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.ts)
+| py | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.py)
+| cs | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.cs)
+| rb | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.rb)
+| php | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.php)
+| go | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.go)
+| scala | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.scala)
+| swift | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.swift)
+| haskell | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.haskell)
+| bash | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.bash)
+| kotlin | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.kotlin)

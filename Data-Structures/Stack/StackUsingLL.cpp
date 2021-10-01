@@ -29,15 +29,6 @@ struct myStack
 		}
 
 		void push(int x) {
-			/*
-			node * el = new node();
-			el->value = x;
-			el->prev = top;
-			top = el;
-			cnt++;
-			*/
-
-
 			node * el = new node(x, top);
 			top = el;
 			cnt++;

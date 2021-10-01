@@ -30,25 +30,25 @@
 
 ## Using Linked List
 
-| Language | - | - 
+| Language | View | Code
 |:--: |:--: |:--:
-| c++ | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingLL.cpp) | [Raw](QueueUsingLL.cpp)
-| c | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingLL.c) | [Raw](QueueUsingLL.c)
-| cs | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingLL.cs) | [Raw](QueueUsingLL.cs)
-| php | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingLL.cpp) | [Raw](QueueUsingLL.php)
+| c++ | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingLL.cpp) | [Raw](QueueUsingLL.cpp)
+| c | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingLL.c) | [Raw](QueueUsingLL.c)
+| cs | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingLL.cs) | [Raw](QueueUsingLL.cs)
+| php | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingLL.cpp) | [Raw](QueueUsingLL.php)
 
 ## Using Array
 
-| Language | - | - 
+| Language |  | Code 
 |:--: |:--: |:--:
-| c++ | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.cpp) | [Raw](QueueUsingArray.cpp)
-| c | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.c) | [Raw](QueueUsingArray.c)
-| java | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.java) | [Raw](QueueUsingArray.java)
-| js | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.js) | [Raw](QueueUsingArray.js)
-| py | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.py) | [Raw](QueueUsingArray.py)
-| cs | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.cs) | [Raw](QueueUsingArray.cs)
-| rb | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.rb) | [Raw](QueueUsingArray.rb)
-| php | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.php) | [Raw](QueueUsingArray.php)
-| go | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.go) | [Raw](QueueUsingArray.go)
-| scala | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.scala) | [Raw](QueueUsingArray.scala)
-| swift | [View](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.swift) | [Raw](QueueUsingArray.swift)
+| c++ | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.cpp) | [Raw](QueueUsingArray.cpp)
+| c | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.c) | [Raw](QueueUsingArray.c)
+| java | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.java) | [Raw](QueueUsingArray.java)
+| js | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.js) | [Raw](QueueUsingArray.js)
+| py | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.py) | [Raw](QueueUsingArray.py)
+| cs | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.cs) | [Raw](QueueUsingArray.cs)
+| rb | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.rb) | [Raw](QueueUsingArray.rb)
+| php | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.php) | [Raw](QueueUsingArray.php)
+| go | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.go) | [Raw](QueueUsingArray.go)
+| scala | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.scala) | [Raw](QueueUsingArray.scala)
+| swift | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingArray.swift) | [Raw](QueueUsingArray.swift)
