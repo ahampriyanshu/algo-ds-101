@@ -1,0 +1,51 @@
+name: Documentation
+description: Select this to document the repo
+title: "Title of the submission"
+labels: ["Hacktoberfest2021", "Hacktoberfest", "new submssion", "first timer", "good first issue", 
+"documentation"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before starting please take a look at [this](https://github.com/ahampriyanshu/algo_ds_101/tree/main/DOCUMENTATION.md), [this](https://dsa.ahampriyanshu.com/DOCUMENTATION) and [this](https://dsa.ahampriyanshu.com/Data-Structures/Queue/).
+  - type: input
+    id: directory
+    attributes:
+      label: Submission Directory
+      description: Location of the new file
+      placeholder: Algorithm => Sorting => Merge-Sort => Merge-Sort.ext
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: Type of the submission
+      options:
+        - Algorithm
+        - Data-Structure
+        - Maths
+        - STL
+        - Collection
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the submission
+      placeholder: A linked list is a linear collection of data elements whose ...
+    validations:
+      required: true
+  - type: checkboxes
+    id: language
+    attributes:
+      label: Things To Remember
+      description: Please check the following
+      options:
+        - label: The content added isn't directly copied from any sources like gfg, tutorialpoint, etc. For definition use can use open-source alternatives like WikiPedia.
+        - label: I have used github flavoured md syntax only.
+        - label: All the relative links are working.
+        - label: All the absolute links are working.

@@ -5,9 +5,9 @@
 
 ## Index
 
-* [Data Structures](Data_Structures/)
+* [Data Structures](Data-Structures/)
 * [Algorithms](Algorithms/)
-* [Maths And Stats](Maths_And_Stats/)
+* [Maths And Stats](Maths/)
 * [STL](STL/)
 * [Collections](Collections/)
 

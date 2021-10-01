@@ -1,6 +1,6 @@
 name: New Submission
-description: Selct this to submit new Algorithm/Data-Structure/Maths/STL/Collection
-title: "Title of the submission"
+description: Select this to submit new Algorithm/Data-Structure/Maths/STL/Collection
+title: "Directory You Purpose to Document"
 labels: ["Hacktoberfest2021", "Hacktoberfest", "new submssion", "first timer", "good first issue", 
 "c", "c++", "c#", "java", "javascript", "typescript", "php", "python", "ruby", "scala", "swift", "go"]
 assignees:
@@ -13,30 +13,9 @@ body:
   - type: input
     id: directory
     attributes:
-      label: Submission Directory
-      description: Location of the new file
-      placeholder: Algorith => Sorting => Merge-Sort => Merge-Sort.ext
-    validations:
-      required: true
-  - type: dropdown
-    id: type
-    attributes:
-      label: Type
-      description: Type of the submission
-      options:
-        - Algorithm
-        - Data-Structure
-        - Maths
-        - STL
-        - Collection
-    validations:
-      required: true
-  - type: textarea
-    id: description
-    attributes:
-      label: What happened?
-      description: Describe the submission
-      placeholder: A linked list is a linear collection of data elements whose ...
+      label: Directory
+      description: Path to the readme file
+      placeholder: Algorithm => Sorting => Merge-Sort => README.md
     validations:
       required: true
   - type: checkboxes
