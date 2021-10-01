@@ -14,8 +14,8 @@ body:
     id: directory
     attributes:
       label: Directory
-      description: Path to the readme file
-      placeholder: Algorithm => Sorting => Merge-Sort => README.md
+      description: Location of the new file
+      placeholder: Algorithm => Sorting => Merge-Sort => Merge-Sort.ext
     validations:
       required: true
   - type: checkboxes
