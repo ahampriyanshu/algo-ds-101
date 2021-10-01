@@ -7,7 +7,7 @@
 
 | Example | |
 |-- |--
-| heapsort.cpp | ❌
+| heapsort.cpp  | ❌
 | Heap-sort.cpp | ❌
 | heap_sort.cpp | ❌
 | heap sort.cpp | ❌❌❌

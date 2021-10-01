@@ -1,5 +1,5 @@
 ## Assigned Issue Number ?
-#Issue_Number ``#35``
+#Issue_Number
 
 ## Language(s) Opted ?
 C/C++/Python/Java ...
@@ -9,7 +9,6 @@ C/C++/Python/Java ...
 
 ## Name and location of the file(s) ?
 Folder => Sub_Folder => ... => File.extension
-``Algorithm => Sorting-Algo => Merge-Sort => Merge-Sort.ext``
 
 ### Checklist
 
