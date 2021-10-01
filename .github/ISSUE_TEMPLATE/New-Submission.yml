@@ -1,6 +1,6 @@
-name: New-Submission
-description: Add new Algorithm/Data-Structure/Maths/STL/Collection
-title: "Add New Submission"
+name: New Submission
+description: Selct this to submit new Algorithm/Data-Structure/Maths/STL/Collection
+title: "Title of the submission"
 labels: ["Hacktoberfest2021", "Hacktoberfest", "new submssion", "first timer", "good first issue", 
 "c", "c++", "c#", "java", "javascript", "typescript", "php", "python", "ruby", "scala", "swift", "go"]
 assignees:
@@ -9,13 +9,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for contributing
   - type: input
-    id: title
+    id: directory
     attributes:
-      label: Submission Title
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: Submission Directory
+      description: Location of the new file
+      placeholder: Algorith => Sorting => Merge-Sort => Merge-Sort.ext
     validations:
       required: true
   - type: dropdown
@@ -31,6 +31,14 @@ body:
         - Collection
     validations:
       required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the submission
+      placeholder: A linked list is a linear collection of data elements whose ...
+    validations:
+      required: true
   - type: checkboxes
     id: language
     attributes:
@@ -42,16 +50,10 @@ body:
         - label: c#
         - label: java
         - label: python
-        - label: js
-        - label: ts
+        - label: javascript
+        - label: typescript
+        - label: ruby
+        - label: swift
         - label: scala
         - label: go
         - label: php
-  - type: textarea
-    id: description
-    attributes:
-      label: What happened?
-      description: Describe the submission
-      placeholder: A linked list is a linear collection of data elements whose ...
-    validations:
-      required: true
