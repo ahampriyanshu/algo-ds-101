@@ -77,7 +77,7 @@ class Priority_Queue
 
 int main()
 {
-	int choice, item, priority;
+    int choice, item, priority;
     Priority_Queue pq; 
     do
     {
