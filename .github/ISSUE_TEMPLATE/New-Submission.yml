@@ -2,7 +2,8 @@ name: New Submission
 description: Select this to submit new Algorithm/Data-Structure/Maths/STL/Collection
 title: "Title of the Submission"
 labels: ["Hacktoberfest2021", "Hacktoberfest", "new submssion", "first timer", "good first issue", 
-"c", "c++", "c#", "java", "javascript", "typescript", "php", "python", "ruby", "scala", "swift", "go"]
+"c", "c++", "c#", "java", "javascript", "typescript", "php", "python", "ruby", "scala", "swift", "go",
+"haskell", "bash"]
 assignees:
   - octocat
 body:
@@ -47,13 +48,15 @@ body:
       options:
         - label: c++
         - label: c
-        - label: c#
-        - label: java
         - label: python
+        - label: java
         - label: javascript
         - label: typescript
-        - label: ruby
+        - label: c#
         - label: swift
+        - label: ruby
         - label: scala
         - label: go
         - label: php
+        - label: haskell
+        - label: bash
