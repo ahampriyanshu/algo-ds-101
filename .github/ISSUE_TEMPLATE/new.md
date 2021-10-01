@@ -1,5 +1,5 @@
 ---
-name: New Submission
+name: New Submission Legacy
 about: Add new submissions
 title: ''
 labels: C#, C++, Hacktoberfest, New Submssion, TypeScript, first timer, good first
