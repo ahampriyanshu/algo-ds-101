@@ -10,12 +10,33 @@ body:
     attributes:
       value: |
         Thanks for contributing
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: Type of the submission
+      options:
+        - Algorithm
+        - Data-Structure
+        - Maths
+        - STL
+        - Collection
+    validations:
+      required: true
   - type: input
     id: directory
     attributes:
       label: Directory
       description: Location of the new file
       placeholder: Algorithm => Sorting => Merge-Sort => Merge-Sort.ext
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the submission
+      placeholder: A linked list is a linear collection of data elements whose ...
     validations:
       required: true
   - type: checkboxes
