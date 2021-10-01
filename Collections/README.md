@@ -2,7 +2,7 @@
 
 * [Array](Array/)
 * [Deque](Deque/)
-* [Map](Map/)   
+* [HashMap](HashMap/)   
 * [Queue](Queue/) 
 * [Set](Set/) 
 * [Stack](Stack/) 

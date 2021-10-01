@@ -11,6 +11,15 @@
 * [STL](STL/)
 * [Collections](Collections/)
 
+## HacktoberFest 2021
+
+![hacktoberfest 2021](https://user-images.githubusercontent.com/54521023/135562921-ce70f204-4e49-4278-b1e0-62cf13a385e3.png)
+
+* [Sign up via Github or Gitlab](https://hacktoberfest.digitalocean.com/register)
+* Create four PRs and wait till they get merged.
+* [Check your stats](https://hacktoberfest.digitalocean.com/profile)
+* Please don't spam.
+
 ## How To Contribute
 
 ### 1. Go The Issue Section
@@ -79,15 +88,14 @@
 ### 18. Congrats 🎉
 ![19](https://user-images.githubusercontent.com/54521023/94943163-e4145080-04f4-11eb-8237-c0b2a6c75393.png)
 
-
 ## How To Commit In CLI
 
 ```bash
 $ git clone git@github.com:your_username/algo_ds_101.git
-$ git checkout -b Branch_Name
+$ git checkout -b BranchName
 $ git add .
 $ git commit -m 'message'
-$ git push -u origin Branch_Name
+$ git push -u origin BranchName
 ```
 
 ## Sync Your Forked Repository
