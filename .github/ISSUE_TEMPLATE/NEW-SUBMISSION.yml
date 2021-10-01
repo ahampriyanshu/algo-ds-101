@@ -1,0 +1,56 @@
+name: New Submission
+description: Add new Algorithm/Data-Structure/Maths/STL/Collection
+title: "Add New Submission"
+labels: [Hacktoberfest, New Submssion, TypeScript, first timer, good first issue, 
+c, c++, c#, java, javascript, php, python, ruby, scala, swift, go]
+assignees: ''
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: title
+    attributes:
+      label: Submission Title
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: Type of the submission
+      options:
+        - Algorithm
+        - Data-Structure
+        - Maths
+        - STL
+        - Collection
+    validations:
+      required: true
+  - type: checkboxes
+    id: language
+    attributes:
+      label: Programming Language
+      description: programming language
+      options:
+        - label: c++
+        - label: c
+        - label: c#
+        - label: java
+        - label: python
+        - label: js
+        - label: ts
+        - label: scala
+        - label: go
+        - label: php
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the submission
+      placeholder: A linked list is a linear collection of data elements whose ...
+    validations:
+      required: true

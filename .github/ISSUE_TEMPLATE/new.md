@@ -12,7 +12,7 @@ assignees: ''
 Bubble Sort/AVL Graph/Vector
 
 **Submission Type**
-Algorithm/Data Structure/STL/Maths_And_Stats
+Algorithm/Data-Structure/Maths/STL/Collection
 
 **Submission Description**
 Describe the Algo/DS/STL
