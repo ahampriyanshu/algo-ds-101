@@ -30,7 +30,7 @@
 
 ## Using Linked List
 
-| Language |  | Code
+| Language | View | Code
 |:--: |:--: |:--:
 | c++ | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingLL.cpp) | [Raw](QueueUsingLL.cpp)
 | c | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/Data-Structures/Queue/QueueUsingLL.c) | [Raw](QueueUsingLL.c)

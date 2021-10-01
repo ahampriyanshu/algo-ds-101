@@ -1,6 +1,21 @@
-## Contributing Guidelines
+# Contributing Guidelines
 
 Here are some suggestions you should be following while contributing to this repository:
+
+## Naming Convention
+
+* Title Case (not camel case, lowercase or uppercase)
+*  ``-`` in between the word (not ``_`` , whitespace, or anything else)
+
+| Example | |
+|-- |--
+| heapsort.cpp | ❌
+| HeapSort.cpp | ❌
+| Heap-sort.cpp | ❌
+| heap_sort.cpp | ❌
+| heap sort.cpp | ❌❌❌
+| Heap-Sort.cpp | ✅
+
 
 * Always verify if the issue you wish to create already exists or not.
 * Ask for the issue that you plan to complete.

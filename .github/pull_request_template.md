@@ -18,3 +18,4 @@ Folder => Sub_Folder => ... => File.extension
 - [ ] Comments have been added
 - [ ] I've  synced-up my forked repo.
 - [ ] Ain't pushing from the main branch.
+- [ ] I've followed the [naming convention](https://github.com/ahampriyanshu/algo_ds_101/blob/main/CONTRIBUTING.md)

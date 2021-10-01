@@ -27,7 +27,7 @@
 
 # Implementation
 
-| Language |  | Code
+| Language | View | Code
 |:--: |:--: |:--:
 | c++ | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.cpp)
 | c | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.c)
