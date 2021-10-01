@@ -1,8 +1,8 @@
-name: New Submission
+name: New-Submission
 description: Add new Algorithm/Data-Structure/Maths/STL/Collection
 title: "Add New Submission"
-labels: [Hacktoberfest, New Submssion, TypeScript, first timer, good first issue, 
-c, c++, c#, java, javascript, php, python, ruby, scala, swift, go]
+labels: ["Hacktoberfest2021", "Hacktoberfest", "new submssion", "first timer", "good first issue", 
+"c", "c++", "c#", "java", "javascript", "typescript", "php", "python", "ruby", "scala", "swift", "go"]
 assignees: ''
 body:
   - type: markdown
