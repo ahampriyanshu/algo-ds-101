@@ -9,7 +9,7 @@
 * [Algorithms](Algorithms/)
 * [Maths And Stats](Maths/)
 * [STL](STL/)
-* [Collections](Collections/)
+* [Collection](Collection/)
 
 ## HacktoberFest 2021
 

@@ -50,6 +50,7 @@ body:
         - label: c
         - label: python
         - label: java
+        - label: kotlin
         - label: javascript
         - label: typescript
         - label: c#

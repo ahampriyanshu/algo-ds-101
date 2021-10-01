@@ -41,3 +41,6 @@
 | go | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.go)
 | scala | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.scala)
 | swift | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.swift)
+| haskell | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.haskell)
+| bash | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.bash)
+| kotlin | [Github](https://github.com/ahampriyanshu/algo_ds_101/blob/main/folder/subfolder/filename.ext) | [Raw](filename.kotlin)
