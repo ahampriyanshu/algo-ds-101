@@ -3,7 +3,8 @@ description: Add new Algorithm/Data-Structure/Maths/STL/Collection
 title: "Add New Submission"
 labels: ["Hacktoberfest2021", "Hacktoberfest", "new submssion", "first timer", "good first issue", 
 "c", "c++", "c#", "java", "javascript", "typescript", "php", "python", "ruby", "scala", "swift", "go"]
-assignees: ''
+assignees:
+  - octocat
 body:
   - type: markdown
     attributes:
