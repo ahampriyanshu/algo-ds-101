@@ -1,6 +1,6 @@
 name: New Submission
 description: Select this to submit new Algorithm/Data-Structure/Maths/STL/Collection
-title: "Directory You Purpose to Document"
+title: "Title of the Submission"
 labels: ["Hacktoberfest2021", "Hacktoberfest", "new submssion", "first timer", "good first issue", 
 "c", "c++", "c#", "java", "javascript", "typescript", "php", "python", "ruby", "scala", "swift", "go"]
 assignees:

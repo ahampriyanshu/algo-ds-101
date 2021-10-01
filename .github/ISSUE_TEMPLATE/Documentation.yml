@@ -24,7 +24,9 @@ body:
       label: Things To Remember
       description: Please check the following
       options:
-        - label: The content added isn't directly copied from any sources like gfg, tutorialpoint, etc. For definition use can use open-source alternatives like WikiPedia.
+        - label: The content added isn't directly copied from any sources like gfg, tutorialpoint, etc. For theory, use open-source alternatives like WikiPedia.
         - label: I have used github flavoured md syntax only.
         - label: All the relative links are working.
         - label: All the absolute links are working.
+        - label: I have synced-up my forked repo.
+        - label: Ain't pushing from the main branch.

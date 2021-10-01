@@ -1,4 +1,4 @@
-# Title
+# Queue
 * Queue is a linear data structure that follows the FIFO (First-In-First-Out) policy.Meaning, one end is always used to insert data and the other is used to remove data.
 
 # Sub-Topics
@@ -7,6 +7,7 @@
 * [Circular-Queue](Circular-Queue/)
 
 # Methods
+
 | Operation | Description 
 |:--|:--
 |Enqueue | Add a new element  
@@ -16,6 +17,7 @@
 |Size | Returns the total number of elements 
 
 # Time Complexity
+
 | Operation | Complexity 
 |:--|:--
 |Access | O(n) 

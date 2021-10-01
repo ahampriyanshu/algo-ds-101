@@ -9,6 +9,7 @@
 
 <!-- For Data Structures Only -->
 # Methods
+
 | Operation | Description
 |:--|:--
 | Name | Desc
@@ -16,6 +17,7 @@
 | Name | Desc
 
 # Time Complexity
+
 | Operation | Complexity
 |:--|:--
 |Access | O() 
