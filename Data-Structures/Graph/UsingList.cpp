@@ -1,110 +1,33 @@
-#include <iostream>
-#include <cstdlib>
+#include<iostream>
+#include<list>
+#include<iterator>
 using namespace std;
-int n =5;
-typedef struct node{
-    int data;
-    struct node *next;
-}node;
-
-
-void sortedInsert(node **p, int v){
-    node *newnode;
-    newnode = (node *) malloc (sizeof(node));
-    newnode->data = v;
-    newnode->next=0;
-
-    if(*p == 0 || (*p)->data > v){
-        newnode->next = (*p);
-        *p =newnode;
-    }
-    else{
-        node *temp;
-        temp=*p;
-        while (temp->next != 0  && temp->next->data  < v) {
-            temp = temp->next;
-        }
-        newnode->next = temp->next;
-        temp->next = newnode;
-    }
-
+void displayAdjList(list<int> adj_list[], int v) {
+   for(int i = 0; i<v; i++) {
+      cout << i << "--->";
+      list<int> :: iterator it;
+      for(it = adj_list[i].begin(); it != adj_list[i].end(); ++it) {
+         cout << *it << " ";
+      }
+      cout << endl;
+   }
 }
-void display(node *p){
-    while(p!=0){
-        cout<<p->data<<" ";
-        p=p->next;
-    }
-    cout<<endl;
+void add_edge(list<int> adj_list[], int u, int v) {    //add v into the list u, and u into list v
+   adj_list[u].push_back(v);
+   adj_list[v].push_back(u);
 }
-
-void BSFll(node* a[], int visit[], int row=0){
-    int queue[n];
-    int top =-1, i, bottom =-1;
-    visit[row]=1;
-    queue[++bottom] = row;
-    cout<<(char)(row+65)<<" ";
-    while(top != bottom){
-        row= queue[++top];
-        node * temp;
-        temp = a[row];
-        while(temp != NULL){
-            i = temp->data;
-            if(!visit[i]){
-                visit[i]=1;
-                cout<<(char)(i+65)<<" ";
-                queue[++bottom] =i;
-            }
-            temp = temp->next;
-        }
-    }
+main(int argc, char* argv[]) {
+   int v = 6;    //there are 6 vertices in the graph
+   //create an array of lists whose size is 6
+   list<int> adj_list[v];
+   add_edge(adj_list, 0, 4);
+   add_edge(adj_list, 0, 3);
+   add_edge(adj_list, 1, 2);
+   add_edge(adj_list, 1, 4);
+   add_edge(adj_list, 1, 5);
+   add_edge(adj_list, 2, 3);
+   add_edge(adj_list, 2, 5);
+   add_edge(adj_list, 5, 3);
+   add_edge(adj_list, 5, 4);
+   displayAdjList(adj_list, v);
 }
-void DSFll(node* a[], int visit[], int row=0){
-    int stack[n];
-    int top = -1,i;
-    visit[row]=1;
-    stack[++top]= row;
-    cout<<(char)(row+65)<<" ";
-    while(top!= -1){
-        row= stack[top];
-         node * temp;
-         temp = a[row];
-         while(temp != NULL){
-            i = temp->data;
-            if(!visit[i]){
-                visit[i]=1;
-                cout<<(char)(i+65)<<" ";
-                stack[++top]=i;
-                break;
-            }
-            temp = temp->next;
-        }
-        if(temp == NULL){
-            top--;
-        }
-    }
-}
-
-
-void createGraph(node *a[], int s, int d){
-    sortedInsert(&a[s], d);
-    // condition for directed
-    sortedInsert(&a[d], s);
-}
-int main()
-{
-    node* a[5]= {NULL};
-    node *first =0, *second=0, *third=0, *fourth=0, *fifth=0;
-    a[2] = third;
-    a[1] = second;
-    a[0] = first;
-    a[3] = fourth;
-    a[4] = fifth;
-    int visit[5] ={0};
-    createGraph(a, 0, 2);
-    createGraph(a,1,2);
-    createGraph(a,2,3);
-    createGraph(a,3,4);
-    BSFll(a,visit);
-    return 0;
-}
-//Contributed by Vaishnavi Shah
