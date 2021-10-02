@@ -6,14 +6,19 @@ struct Node
 {
 	int data;
 	struct Node *next;
-} * head[100], *curr;
+} * head[100], *curr /*points to the current node*/;
 
+/*initialize hash table i.e., head[] with null*/
 void init()
 {
 	for (int i = 0; i < 100; i++)
 		head[i] = NULL;
 }
 
+/*
+* given the data and hash
+* add a new Node with given data in the hash table
+*/
 void add(int x, int h)
 {
 	struct Node *temp = new Node;
@@ -33,6 +38,10 @@ void add(int x, int h)
 	}
 }
 
+/*
+* given the mod
+* prints the hash table in console
+*/
 void display(int mod)
 {
 	struct Node *temp;
@@ -58,11 +67,16 @@ void display(int mod)
 	}
 }
 
-int hash(int x, int mod)
+/*return hash*/
+int get_hash(int x, int mod)
 {
 	return x % mod;
 }
 
+/*
+* given the data and hash
+* finds the Node in the hash table
+*/
 void find(int x, int h)
 {
 	struct Node *temp = head[h];
@@ -87,7 +101,8 @@ void find(int x, int h)
 int main(void)
 {
 	init();
-	int c, x, mod, h;
+	int choice, x /*buffer to store user input in each switch case*/;
+	int  mod /*size of the hash table*/, h;
 	cout << "Enter the size of Hash Table. = ";
 	cin >> mod;
 	bool loop = true;
@@ -100,26 +115,26 @@ int main(void)
 		cout << "3. Generate Hash." << endl;
 		cout << "4. Display Hash table." << endl;
 		cout << "5. Exit." << endl;
-		cin >> c;
-		switch (c)
+		cin >> choice;
+		switch (choice)
 		{
 		case 1:
 			cout << "Enter element to add = ";
 			cin >> x;
-			h = hash(x, mod);
+			h = get_hash(x, mod);
 			h = fabs(h);
 			add(x, h);
 			break;
 		case 2:
 			cout << "Enter element to search = ";
 			cin >> x;
-			h = hash(x, mod);
+			h = get_hash(x, mod);
 			find(x, h);
 			break;
 		case 3:
 			cout << "Enter element to generate hash = ";
 			cin >> x;
-			cout << "Hash of " << x << " is = " << hash(x, mod);
+			cout << "Hash of " << x << " is = " << get_hash(x, mod);
 			break;
 		case 4:
 			display(mod);
