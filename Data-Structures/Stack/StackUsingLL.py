@@ -20,20 +20,21 @@ class Stack:
             self.head=Node(data)
              
         else:
-            newnode = Node(data)
-            newnode.next = self.head
-            self.head = newnode
+            new_node = Node(data)
+            new_node.next = self.head
+            self.head = new_node
 
     def pop(self):
          
         if self.isempty():
+            print("Stack Underflow!")
             return None
              
         else:
-            poppednode = self.head
+            pop_node = self.head
             self.head = self.head.next
-            poppednode.next = None
-            return poppednode.data
+            pop_node.next = None
+            return pop_node.data
      
     def peek(self):
          
@@ -45,31 +46,31 @@ class Stack:
         
     def display(self):
          
-        iternode = self.head
+        iter_node = self.head
         if self.isempty():
-            print("Stack Underflow")
+            print("Stack Underflow!")
          
         else:
              
-            while(iternode != None):
+            while(iter_node != None):
                  
-                print(iternode.data,"->",end = " ")
-                iternode = iternode.next
+                print(iter_node.data,"->",end = " ")
+                iter_node = iter_node.next
             return
          
 # Driver code
 MyStack = Stack()
  
-MyStack.push(11)
-MyStack.push(22)
-MyStack.push(33)
-MyStack.push(44)
+MyStack.push(1)
+MyStack.push(2)
+MyStack.push(3)
+MyStack.push(4)
  
 # Display stack elements
 MyStack.display()
  
 # Print top element of stack
-print("\nTop element is ",MyStack.peek())
+print("\nStack Top: ",MyStack.peek())
  
 # Delete top elements of stack
 MyStack.pop()
@@ -78,10 +79,10 @@ MyStack.pop()
 # Display stack elements
 MyStack.display()
  
-print("\nTop element is ", MyStack.peek())
+print("\nStack Top: ", MyStack.peek())
 
 # Output:
-# 44 -> 33 -> 22 -> 11 -> 
-# Top element is  44
-# 22 -> 11 ->       
-# Top element is  22
+#     4 -> 3 -> 2 -> 1 -> 
+#     Stack Top:  4
+#     2 -> 1 ->
+#     Stack Top:  2
