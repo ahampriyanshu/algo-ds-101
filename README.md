@@ -88,6 +88,9 @@
 ### 18. Congrats 🎉
 ![19](https://user-images.githubusercontent.com/54521023/94943163-e4145080-04f4-11eb-8237-c0b2a6c75393.png)
 
+## Want To Document The Repo ?
+* Click [here](https://github.com/ahampriyanshu/algo_ds_101/issues/new?assignees=octocat&labels=Hacktoberfest2021%2CHacktoberfest%2Cnew+submssion%2Cfirst+timer%2Cgood+first+issue%2Cdocumentation&template=Documentation.yml&title=Directory+You+Purpose+to+Document) to know more
+
 ## How To Commit In CLI
 
 ```bash

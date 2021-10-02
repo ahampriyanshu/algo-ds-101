@@ -1,11 +1,10 @@
 # Index
 
 * [Arrays](Arrays/)
-* [Hash-Set](Hash-Set/)   
-* [Linked-List](Linked-List/) 
+* [HashSet](HashSet/)   
+* [LinkedList](LinkedList/) 
 * [Map](Map/) 
 * [Queue](Queue/) 
 * [Stacks](Stacks/) 
 * [Graph](Graph/)
 * [Tree](Tree/) 
-* [Trie](Trie/) 
