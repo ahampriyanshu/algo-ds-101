@@ -1,155 +1,225 @@
-#include <iostream>
-#include <math.h>
-using namespace std;
+#include<stdlib.h>
+#include<iostream>
+#include<functional>
+#include<string>
+#include<cmath>
 
-struct Node
-{
-	int data;
-	struct Node *next;
-} * head[100], *curr /*points to the current node*/;
+using std::endl;
+using std::cout;
+using std::cin;
+using std::string;
 
-/*initialize hash table i.e., head[] with null*/
-void init()
-{
-	for (int i = 0; i < 100; i++)
-		head[i] = NULL;
+// fwd declarations
+struct Entry;
+bool putProber(Entry entry, int key);
+bool searchingProber(Entry entry, int key);
+void add(int key);
+
+// globals
+int notPresent;
+struct Entry* table;
+int totalSize;
+int tomb = -1;
+int size;
+bool rehashing;
+
+// Node that holds key
+struct Entry {
+    explicit Entry(int key = notPresent) : key(key) {}
+    int key;
+};
+
+// Hash a key
+int hashFxn(int key) {
+    std::hash<int> hash;
+    return hash(key);
 }
 
-/*
-* given the data and hash
-* add a new Node with given data in the hash table
-*/
-void add(int x, int h)
-{
-	struct Node *temp = new Node;
-	temp->data = x;
-	temp->next = NULL;
-	if (!head[h])
-	{
-		head[h] = temp;
-		curr = head[h];
-	}
-	else
-	{
-		curr = head[h];
-		while (curr->next)
-			curr = curr->next;
-		curr->next = temp;
-	}
+// Performs linear probing to resolve collisions
+int linearProbe(int key, bool searching) {
+    int hash = static_cast<int>(fabs(hashFxn(key)));
+    int i = 0;
+    Entry entry;
+    do {
+        int index = static_cast<int>(fabs((hash + i) % totalSize));
+        entry = table[index];
+        if (searching) {
+            if (entry.key == notPresent) {
+                return notPresent;
+            }
+            if (searchingProber(entry, key)) {
+                cout << "Found key!" << endl;
+                return index;
+            }
+            cout << "Found tombstone or equal hash, checking next" << endl;
+            i++;
+        } else {
+            if (putProber(entry, key)) {
+                if (!rehashing) cout << "Spot found!" << endl;
+                return index;
+            }
+            if (!rehashing) cout << "Spot taken, looking at next" << endl;
+            i++;
+        }
+        if (i == totalSize) {
+            cout << "Linear probe failed" << endl;
+            return notPresent;
+        }
+    } while (entry.key != notPresent);
+    return notPresent;
 }
 
-/*
-* given the mod
-* prints the hash table in console
-*/
-void display(int mod)
-{
-	struct Node *temp;
-	int i;
-	for (i = 0; i < mod; i++)
-	{
-		if (!head[i])
-		{
-			cout << "Key " << i << " is empty" << endl;
-		}
-		else
-		{
-			cout << "Key " << i << " has values = ";
-			temp = head[i];
-			while (temp->next)
-			{
-				cout << temp->data << " ";
-				temp = temp->next;
-			}
-			cout << temp->data;
-			cout << endl;
-		}
-	}
+// Finds empty spot
+bool putProber(Entry entry, int key) {
+    if (entry.key == notPresent || entry.key == tomb) {
+        return true;
+    }
+    return false;
 }
 
-/*return hash*/
-int get_hash(int x, int mod)
-{
-	return x % mod;
+// Looks for a matching key
+bool searchingProber(Entry entry, int key) {
+    if (entry.key == key) return true;
+    return false;
 }
 
-/*
-* given the data and hash
-* finds the Node in the hash table
-*/
-void find(int x, int h)
-{
-	struct Node *temp = head[h];
-	if (!head[h])
-	{
-		cout << "Element not found";
-		return;
-	}
-	while (temp->data != x && temp->next)
-		temp = temp->next;
-	if (temp->next)
-		cout << "Element found";
-	else
-	{
-		if (temp->data == x)
-			cout << "Element found";
-		else
-			cout << "Element not found";
-	}
+// Displays the table
+void display() {
+    for (int i = 0; i < totalSize; i++) {
+        if (table[i].key == notPresent) {
+            cout << " Empty ";
+        } else if (table[i].key == tomb) {
+            cout << " Tomb ";
+        } else {
+            cout << " ";
+            cout << table[i].key;
+            cout << " ";
+        }
+    }
+    cout << endl;
 }
 
-int main(void)
-{
-	init();
-	int choice, x /*buffer to store user input in each switch case*/;
-	int  mod /*size of the hash table*/, h;
-	cout << "Enter the size of Hash Table. = ";
-	cin >> mod;
-	bool loop = true;
-	while (loop)
-	{
-		cout << endl;
-		cout << "PLEASE CHOOSE -" << endl;
-		cout << "1. Add element." << endl;
-		cout << "2. Find element." << endl;
-		cout << "3. Generate Hash." << endl;
-		cout << "4. Display Hash table." << endl;
-		cout << "5. Exit." << endl;
-		cin >> choice;
-		switch (choice)
-		{
-		case 1:
-			cout << "Enter element to add = ";
-			cin >> x;
-			h = get_hash(x, mod);
-			h = fabs(h);
-			add(x, h);
-			break;
-		case 2:
-			cout << "Enter element to search = ";
-			cin >> x;
-			h = get_hash(x, mod);
-			find(x, h);
-			break;
-		case 3:
-			cout << "Enter element to generate hash = ";
-			cin >> x;
-			cout << "Hash of " << x << " is = " << get_hash(x, mod);
-			break;
-		case 4:
-			display(mod);
-			break;
-		default:
-			loop = false;
-			break;
-		}
-		cout << endl;
-	}
-	/*add(1,&head1);
-	add(2,&head1);
-	add(3,&head2);
-	add(5,&head1);
-	display(&head1);
-	display(&head2);*/
-	return 0;
+// Rehashes the table into a bigger table
+void rehash() {
+    // Necessary so wall of add info isn't printed all at once
+    rehashing = true;
+    int oldSize = totalSize;
+    Entry* oldTable = table;
+    // Really this should use the next prime number greater than totalSize * 2
+    table = new Entry[totalSize * 2];
+    totalSize *= 2;
+    for (int i = 0; i < oldSize; i++) {
+        if (oldTable[i].key != -1 && oldTable[i].key != notPresent) {
+            size--;  // Size stays the same (add increments size)
+            add(oldTable[i].key);
+        }
+    }
+    delete[] oldTable;
+    rehashing = false;
+    cout << "Table was rehashed, new size is: " << totalSize << endl;
+}
+
+// Adds entry using linear probing. Checks for load factor here
+void add(int key) {
+    Entry * entry = new Entry();
+    entry->key = key;
+    int index = linearProbe(key, false);
+    table[index] = *entry;
+    // Load factor greater than 0.5 causes resizing
+    if (++size/ static_cast<double>(totalSize) >= 0.5) {
+        rehash();
+    }
+}
+
+// Removes key. Leaves tombstone upon removal.
+void remove(int key) {
+    int index = linearProbe(key, true);
+    if (index == notPresent) {
+        cout << "key not found" << endl;
+    }
+    cout << "Removal Successful, leaving tomb" << endl;
+    table[index].key = tomb;
+    size--;
+}
+
+// Information about the adding process
+void addInfo(int key) {
+    cout << "Initial table: ";
+    display();
+    cout << endl;
+    cout << "hash of " << key << " is " << hashFxn(key) << " % "
+        << totalSize << " == " << fabs(hashFxn(key) % totalSize);
+    cout << endl;
+    add(key);
+    cout << "New table: ";
+    display();
+}
+
+// Information about removal process
+void removalInfo(int key) {
+    cout << "Initial table: ";
+    display();
+    cout << endl;
+    cout << "hash of " << key << " is " << hashFxn(key)
+        << " % " << totalSize << " == " << hashFxn(key) % totalSize;
+    cout << endl;
+    remove(key);
+    cout << "New table: ";
+    display();
+}
+
+// I/O
+int main(void) {
+    int cmd, hash, key;
+    cout << "Enter the initial size of Hash Table. = ";
+    cin >> totalSize;
+    table = new Entry[totalSize];
+    bool loop = true;
+    while (loop) {
+        system("pause");
+        cout << endl;
+        cout << "PLEASE CHOOSE -" << endl;
+        cout << "1. Add key. (Numeric only)" << endl;
+        cout << "2. Remove key." << endl;
+        cout << "3. Find key." << endl;
+        cout << "4. Generate Hash. (Numeric only)" << endl;
+        cout << "5. Display Hash table." << endl;
+        cout << "6. Exit." << endl;
+        cin >> cmd;
+        switch (cmd) {
+        case 1:
+            cout << "Enter key to add = ";
+            cin >> key;
+            addInfo(key);
+            break;
+        case 2:
+            cout << "Enter key to remove = ";
+            cin >> key;
+            removalInfo(key);
+            break;
+        case 3: {
+            cout << "Enter key to search = ";
+            cin >> key;
+            Entry entry = table[linearProbe(key, true)];
+            if (entry.key == notPresent) {
+                cout << "Key not present";
+            }
+            break;
+        }
+        case 4:
+            cout << "Enter element to generate hash = ";
+            cin >> key;
+            cout << "Hash of " << key << " is = " << fabs(hashFxn(key));
+            break;
+        case 5:
+            display();
+            break;
+        default:
+            loop = false;
+            break;
+            delete[] table;
+        }
+        cout << endl;
+    }
+    return 0;
 }

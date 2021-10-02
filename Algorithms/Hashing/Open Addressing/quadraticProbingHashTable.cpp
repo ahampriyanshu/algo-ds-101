@@ -1,5 +1,3 @@
-// Copyright 2019
-
 #include<stdlib.h>
 #include<iostream>
 #include<functional>
