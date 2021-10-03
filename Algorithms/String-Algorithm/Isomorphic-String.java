@@ -1,7 +1,4 @@
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
  
 class Main
 {
@@ -56,8 +53,12 @@ class Main
  
     public static void main(String[] args)
     {
-        String X = "ACAB";
-        String Y = "XCXY";
+        Scanner sc= new Scanner(System.in); 
+        System.out.println("Enter string x");
+        String X = sc.nextLine(); 
+        sc.nextLine();
+        System.out.println("Enter string y");
+        String Y = sc.nextLine(); 
  
         if (isIsomorphic(X, Y)) {
             System.out.print(X + " and " + Y + " are Isomorphic");
@@ -67,6 +68,7 @@ class Main
         }
     }
 }
+
 
 
 
