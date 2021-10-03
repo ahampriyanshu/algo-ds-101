@@ -399,6 +399,7 @@ int main() //main function
    dll *root=NULL,*z=NULL; 
    bool b; 
    int n,p,x; 
+   
    cout<<"[1] BST INSERT\n"; 
    cout<<"[2] DELETE \n"; 
    cout<<"[3] SEARCH AN ELEMENT'S PRESENCE \n"; 
@@ -415,7 +416,8 @@ int main() //main function
    cout<<"[14] DISPLAY LEAF NODES \n"; 
    cout<<"[15] LEVEL ORDER DISPLAY\n"; 
    cout<<"[16] FIND MINIMUM \n"; 
-   cout<<"[17] FIND MAXIMUM \n"; 
+   cout<<"[17] FIND MAXIMUM \n";
+   
    do 
    { 
        cout<<"\nEnter your choice: "; 
@@ -494,8 +496,11 @@ int main() //main function
            break; 
        } 
    } 
+   
    while(n<18); 
+   
    cout<<"\nOPERATION COMPLETED!! THANK YOU"; 
+   
    return 0; 
 }
 
