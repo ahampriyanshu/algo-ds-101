@@ -44,9 +44,8 @@
 
 * ``Language In Which You Will Contribute => Time Required By You To Push The Changes``
 * Ask for the issue that you plan to complete.
-* Please don't ask for **same the language twice.( or more)**
 * Do not wait to get assigned.
-* Please try to push the changes in less than or equal to the stated(by you only) time period. Failing to that, your comment will be discarded and the language will be made available to other participants.
+* Please try to push the changes in less than or equal to the stated(by you only) time period. Failing to do that, your comment will be discarded and the language will be made available to other participants.
 * Try to avoid any casual communication.
 
 ### 6 Create A New Branch 
