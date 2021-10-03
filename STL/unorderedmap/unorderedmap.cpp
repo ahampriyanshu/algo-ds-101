@@ -11,9 +11,16 @@ int main()
 	unordered_map<string, int> umap;
 
 	// inserting values by using [] operator
-	umap["GeeksforGeeks"] = 10;
-	umap["Practice"] = 20;
-	umap["Contribute"] = 30;
+	string s1, s2 ,s3;
+	cin>>s1>>s2>>s3;
+    
+	int a,b,c;
+	
+	cin>>a>>b>>c;
+
+	umap[s1] = a;
+	umap[s2] = b;
+	umap[s3] = c;
 
 	// Traversing an unordered map
 	for (auto x : umap)
