@@ -11,9 +11,14 @@ int main()
 	{
 		cin >> arr[i]; // input the elements
 	}
-	for(int i=0;i<n;i++)
+	/*for(int i=0;i<n;i++)
 	{
 		cout << arr[i] << " ";//traverse the array and print the elements
+	}*/
+	sort(arr, arr + n); //Here we sorted the arrray
+	for (int i = 0; i < n; ++i){
+		cout << arr[i] << " ";
 	}
+
 	return 0;
 }
