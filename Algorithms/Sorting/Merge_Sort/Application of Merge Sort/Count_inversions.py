@@ -89,7 +89,12 @@ def merge(arr, temp_arr, left, middle, right):
     return inversion_count
 
 #Code start
-arr = [1, 20, 6, 4, 5]
-n = len(arr)
+arr = []
+print("Enter the number of elements")
+n = int(input())
+print("Enter the elements one by one")
+for i in range(n):
+    x = int(input())
+    arr.append(x)
 result = mergeSort(arr, n)
 print("Number of inversions are", result)
