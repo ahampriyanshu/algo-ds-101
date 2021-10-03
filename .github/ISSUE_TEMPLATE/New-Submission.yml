@@ -1,7 +1,7 @@
 name: New Submission
 description: Select this to submit new Algorithm/Data-Structure/STL/...
 title: "Title of the Submission"
-labels: ["Hacktoberfest", "new submssion", "first timer", "good first issue"]
+labels: ["Hacktoberfest", "new submission", "first timer", "good first issue"]
 assignees:
   - octocat
 body:
