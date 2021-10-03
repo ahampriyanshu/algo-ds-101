@@ -7,4 +7,4 @@
 * [Queue](Queue/) 
 * [Stacks](Stacks/) 
 * [Graph](Graph/)
-* [Tree](Tree/) 
+* [Tree](Tree/)
