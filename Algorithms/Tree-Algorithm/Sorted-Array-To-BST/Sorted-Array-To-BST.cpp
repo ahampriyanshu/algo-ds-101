@@ -62,10 +62,13 @@ void preOrder(TNode* node)
 // Driver Code
 int main()
 {
-	int arr[];
-	cin>>arr;
-	int n = sizeof(arr) / sizeof(arr[0]);
+	int n;
 	cin>>n;
+	int arr[n];
+	for(i=0;i<n:i++)
+	{
+	  cin>>arr;
+	}
 
 	/* Convert List to BST */
 	TNode *root = sortArrayToBST(arr, 0, n-1);
