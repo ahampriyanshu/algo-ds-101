@@ -42,9 +42,9 @@
 ### 4. Comment In The Stated Syntax
 ![6](https://user-images.githubusercontent.com/54521023/135754330-be6aa099-2ccf-44c7-aebe-e9348c23ae82.png)
 
-### ``Language In Which You Will Contribute => Time Required By You To Push The Changes``
-* **Ask for the issue that you plan to complete.**
-* **Please don't comment for same language twice or more.**
+* ``Language In Which You Will Contribute => Time Required By You To Push The Changes``
+* Ask for the issue that you plan to complete.
+* Please don't ask for **same the language twice.( or more)**
 * Do not wait to get assigned.
 * Please try to push the changes in less than or equal to the stated(by you only) time period. Failing to that, your comment will be discarded and the language will be made available to other participants.
 * Try to avoid any casual communication.
@@ -60,25 +60,26 @@
 ![9](https://user-images.githubusercontent.com/54521023/135753421-9420757f-1a7d-47fa-b5a3-7943ab96ec39.png)
 
 ### 8. Commit The File
-![10](https://user-images.githubusercontent.com/54521023/135753480-d8e5ec12-6e51-42ee-a0e2-ff050d508fc3.png)
-
-![11](https://user-images.githubusercontent.com/54521023/94943121-dc54ac00-04f4-11eb-8cf5-c93fedf73f35.png)
+![10](https://user-images.githubusercontent.com/54521023/135758806-f9c0a445-4553-475d-a02f-0f1d7e5b802c.png)
 
 ### 10. Compare And Pull
-![12](https://user-images.githubusercontent.com/54521023/135753640-38554923-9dd3-43a7-bd5a-ab3c33dbac05.png)
+![11](https://user-images.githubusercontent.com/54521023/135753640-38554923-9dd3-43a7-bd5a-ab3c33dbac05.png)
 
 * [Before pulling make sure your branch is up-to-date](#sync-your-forked-repository)
 
 ### 11. Give Relevant PR Message
-![13](https://user-images.githubusercontent.com/54521023/135753639-bcf2b0d2-763c-49fd-be9f-9b4175d29c3d.png)
+![12](https://user-images.githubusercontent.com/54521023/135753639-bcf2b0d2-763c-49fd-be9f-9b4175d29c3d.png)
+
+### 12. Enter Related Issue No
+![13](https://user-images.githubusercontent.com/54521023/94943135-dfe83300-04f4-11eb-8db8-639077cf8b9c.png)
 
 ### 13. Fill Up The Checkboxe(s)
 ![14](https://user-images.githubusercontent.com/54521023/135755940-ef41a77d-2e4b-4518-96f2-2a6643b8def7.png)
 
-### 17. Create A Pull Request
+### 14. Create A Pull Request
 ![15](https://user-images.githubusercontent.com/54521023/94943157-e37bba00-04f4-11eb-8d5e-cd65c93bf842.png)
 
-### 19. Congrats 🎉. 
+### 15. Congrats 🎉
 ![16](https://user-images.githubusercontent.com/54521023/135753630-0d898e7e-1533-4278-9288-25ec08a3836e.png)
 
 ### 20. Wait Till Your PR Gets Merged
