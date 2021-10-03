@@ -35,3 +35,11 @@ def searchMatrix(matrix:list,target:int)->bool:
     # If the element was not found in the selected row.
     return False
 
+r,c=map(int,input().split())
+matrix=[[]]*r
+for i in range(r):
+    for j in range(c):
+        matrix[i].append(int(input()))
+target=int(input())
+print("Target Found" if searchMatrix(matrix,target) else "Target Not Found")
+   
