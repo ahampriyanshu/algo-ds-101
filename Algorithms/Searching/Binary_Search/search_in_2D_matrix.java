@@ -1,10 +1,10 @@
 public class search_in_2D_matrix {
     public static boolean searchMatrix(int[][] matrix, int target) {
-    int colLength = matrix[0].length-1;
-        for(int i = 0; i < matrix.length; i++) {
-            if(target > matrix[i][colLength]) continue;
+        int colLength = matrix[0].length-1; // each row length
+        for(int i = 0; i < matrix.length; i++) { // iterate over every row
+            if(target > matrix[i][colLength]) continue; // if target is greater than the highest number in that row then skip that row
             int start = 0, end = colLength;
-            while(start <= end) {
+            while(start <= end) { // using binary search algorithm to search through the row for the target
                 int mid = start + (end-start)/2;
                 if(matrix[i][mid] == target) return true;
                 if(matrix[i][mid] > target) end = mid-1;
