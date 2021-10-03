@@ -1,51 +1,43 @@
-class Generic_Tree_Implementation{
-class Node{
-    int key;
-    Vector<Node >child = new Vector<>();
-};
- Node newNode(int key)
-{
-    Node temp = new Node();
-    temp.key = key;
-    return temp;
-}
-  void LevelOrderTraversal(Node root)
-{
-    if (root == null)
-        return;
-    Queue<Node > q = new LinkedList<>(); 
-    q.add(root); 
-    while (!q.isEmpty())
-    {
-        int n = q.size();
-        while (n > 0)
-        {
-            Node p = q.peek();
-            q.remove();
-            System.out.print(p.key + " ");
-            for (int i = 0; i < p.child.size(); i++)
-                q.add(p.child.get(i));
-            n--;
-        } 
-        System.out.println();
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+GenericTreeImplementation tree= new GenericTreeImplementation();
     }
 }
-public static void main(String[] args)
-{
-    Node root = newNode(10);
-    (root.child).add(newNode(2));
-    (root.child).add(newNode(34));
-    (root.child).add(newNode(56));
-    (root.child).add(newNode(100));
-    (root.child.get(0).child).add(newNode(77));
-    (root.child.get(0).child).add(newNode(88));
-    (root.child.get(2).child).add(newNode(1));
-    (root.child.get(3).child).add(newNode(7));
-    (root.child.get(3).child).add(newNode(8));
-    (root.child.get(3).child).add(newNode(9));
- 
-    System.out.println("Level order traversal " +
-                            "Before Mirroring ");
-    LevelOrderTraversal(root);
-}
+class GenericTreeImplementation {
+    class Node {
+        int d;
+        ArrayList<Node> child;
+
+        Node(int d) {
+            this.d = d;
+            child = new ArrayList<>();
+        }
+    }
+
+    private Node r;
+
+    GenericTreeImplementation() {
+        Scanner s = new Scanner(System.in);
+        this.r = good(s, null, 0);
+    }
+
+    private Node good(Scanner s, Node parent, int i) {
+        if (parent == null) {
+            System.out.println("Enter info for root node");
+        } else {
+            System.out.println("Enter info for " + i + "th child of " + parent.d);
+        }
+        int d = s.nextInt();
+        Node node = new Node(d);
+        System.out.println("Enter the number of child for" + node.d);
+        int n = s.nextInt();
+
+        for (int k = 0; k < n; k++) {
+            Node children = good(s, node, k);
+            node.child.add(children);
+        }
+        return node;
+    }
 }
