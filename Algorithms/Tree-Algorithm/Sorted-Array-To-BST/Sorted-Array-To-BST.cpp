@@ -14,8 +14,7 @@ TNode* newNode(int data);
 
 /* A function that constructs Balanced
 Binary Search Tree from a sorted array */
-TNode* sortArrayToBST(int arr[],
-						int start, int end)
+TNode* sortArrayToBST(int arr[], int start, int end)
 {
 	/* Base Case */
 	if (start > end)
@@ -27,8 +26,7 @@ TNode* sortArrayToBST(int arr[],
 
 	/* Recursively construct the left subtree
 	and make it left child of root */
-	root->left = sortArrayToBST(arr, start,
-									mid - 1);
+	root->left = sortArrayToBST(arr, start, mid - 1);
 
 	/* Recursively construct the right subtree
 	and make it right child of root */
@@ -64,8 +62,10 @@ void preOrder(TNode* node)
 // Driver Code
 int main()
 {
-	int arr[] = {1, 2, 3, 4, 5, 6, 7};
+	int arr[];
+	cin>>arr;
 	int n = sizeof(arr) / sizeof(arr[0]);
+	cin>>n;
 
 	/* Convert List to BST */
 	TNode *root = sortArrayToBST(arr, 0, n-1);
