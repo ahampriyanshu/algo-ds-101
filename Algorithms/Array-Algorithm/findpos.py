@@ -1,20 +1,18 @@
-def findFirstAndLast(arr, n, x) :
-    first = -1
-    last = -1
-    for i in range(0, n) :
+def findposition(arr, x) :
+    flag = True
+    for i in range(0, len(arr)) :
         if (x != arr[i]) :
             continue
-        if (first == -1) :
+        if (flag==True) :
             first = i
         last = i
+        flag = False
      
-    if (first != -1) :
-        print( "First Occurrence = ", first,
-               " \nLast Occurrence = ", last)
+    if (flag==False) :
+        print( "First Occurrence in array = ", first , "\n" + " Last Occurrence in array = ", last)
     else :
-        print("Not Found")
+        print("Element Not Found")
          
-# Driver code
 arr = [1, 2, 2, 2, 2, 3, 4, 7, 8, 8 ]
-x=int(input("Enter the Element"))
-findFirstAndLast(arr, len(arr), x)
+x=int(input("Enter the Element : "))
+findposition(arr, x)
