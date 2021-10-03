@@ -1,14 +1,8 @@
 ## Assigned Issue Number ?
 #Issue_Number
 
-## Language(s) Opted ?
-C/C++/Python/Java ...
-
-## Number of file(s) added or updated ?
-1/2/3/4/...
-
-## Name and location of the file(s) ?
-Folder => Sub_Folder => ... => File.extension
+## Location of the file(s) ?
+Folder => Sub-Folder => ... => File.extension
 
 ### Checklist
 

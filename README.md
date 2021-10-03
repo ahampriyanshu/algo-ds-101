@@ -22,71 +22,70 @@
 
 ## How To Contribute
 
-### 1. Go The Issue Section
-![2](https://user-images.githubusercontent.com/54521023/94943088-d363da80-04f4-11eb-80e5-444999c5fb42.png)
-
-### 2.1 Either Create A New Issue 
-![3](https://user-images.githubusercontent.com/54521023/94943089-d3fc7100-04f4-11eb-92a4-51d6363a99b4.png)
-
-### 2.2 Or Choose An Existing One
-![4](https://user-images.githubusercontent.com/54521023/94943091-d4950780-04f4-11eb-96ce-1bd08c260cbd.png)
-
-### 3. Choose Your Preferred Language
-![5](https://user-images.githubusercontent.com/54521023/94943094-d5c63480-04f4-11eb-94cb-d99b0298d6d0.png)
-
-### 4. Get Assigned
-![6](https://user-images.githubusercontent.com/54521023/94943096-d6f76180-04f4-11eb-8670-24694b247e6e.png)
-
-### 5. Fork The Repo
+### 1. Fork The Repo
 ![1](https://user-images.githubusercontent.com/54521023/94943081-d19a1700-04f4-11eb-81dc-b5bd1a3b9adb.png)
 
-### 6.1 Create A New Branch 
-![02](https://user-images.githubusercontent.com/54521023/94954691-18910800-0507-11eb-95c5-df953d74db3e.png)
+### 2. Go The Issue Section
+![2](https://user-images.githubusercontent.com/54521023/94943088-d363da80-04f4-11eb-80e5-444999c5fb42.png)
 
-### 6.2 Switch From Main Branch
-![01](https://user-images.githubusercontent.com/54521023/94954664-0dd67300-0507-11eb-884c-49ba8870bb3b.png)
+### 3.1 Choose An Existing Issue
+![3](https://user-images.githubusercontent.com/54521023/94943091-d4950780-04f4-11eb-96ce-1bd08c260cbd.png)
 
-### 6.3 Perfect 👏
-![03](https://user-images.githubusercontent.com/54521023/94954694-19299e80-0507-11eb-80cb-508e308edd09.png)
+### 3.2 Or You Can Create A New One
+![4](https://user-images.githubusercontent.com/54521023/94943089-d3fc7100-04f4-11eb-92a4-51d6363a99b4.png)
+
+* Before opening a new issue make sure that similar kind of issue doesn't already exist.
+
+### 4. Check For The Languages Available
+![5](https://user-images.githubusercontent.com/54521023/135753314-d67a67b5-3e57-48c5-b58e-076e442f3849.png)
+
+### 4. Comment In The Stated Syntax
+![6](https://user-images.githubusercontent.com/54521023/135754330-be6aa099-2ccf-44c7-aebe-e9348c23ae82.png)
+
+* ``Language In Which You Will Contribute => Time Required By You To Push The Changes``
+* Ask for the issue that you plan to complete.
+* Do not wait to get assigned.
+* Please try to push the changes in less than or equal to the stated(by you only) time period. Failing to do that, your comment will be discarded and the language will be made available to other participants.
+* Try to avoid any casual communication.
+
+### 6 Create A New Branch 
+![7](https://user-images.githubusercontent.com/54521023/94954691-18910800-0507-11eb-95c5-df953d74db3e.png)
 
 ### 7. Create A New File with A Relevant Name
-![7](https://user-images.githubusercontent.com/54521023/94943103-d8288e80-04f4-11eb-8839-64eb73bf308a.png)
+![8](https://user-images.githubusercontent.com/54521023/94943103-d8288e80-04f4-11eb-8839-64eb73bf308a.png)
 
-![8](https://user-images.githubusercontent.com/54521023/94943110-d959bb80-04f4-11eb-83ed-fa58040ed15d.png)
+* Make sure to follow the [naming convection](https://github.com/ahampriyanshu/algo_ds_101/blob/main/CONTRIBUTING.md#naming-convention)
 
-### 8. Give Relevant Commit Message
-![9](https://user-images.githubusercontent.com/54521023/94943115-da8ae880-04f4-11eb-8a1c-fe8151c3bf95.png)
+![9](https://user-images.githubusercontent.com/54521023/135753421-9420757f-1a7d-47fa-b5a3-7943ab96ec39.png)
 
-### 9. Commit The File
-![10](https://user-images.githubusercontent.com/54521023/94943121-dc54ac00-04f4-11eb-8cf5-c93fedf73f35.png)
+### 8. Commit The File
+![10](https://user-images.githubusercontent.com/54521023/135758806-f9c0a445-4553-475d-a02f-0f1d7e5b802c.png)
 
 ### 10. Compare And Pull
-![11](https://user-images.githubusercontent.com/54521023/94943124-dced4280-04f4-11eb-9c83-f9f099ca962d.png)
-![04](https://user-images.githubusercontent.com/54521023/94954695-1a5acb80-0507-11eb-8c5f-0da9ca6fa77e.png)
+![11](https://user-images.githubusercontent.com/54521023/135753640-38554923-9dd3-43a7-bd5a-ab3c33dbac05.png)
+
+* [Before pulling make sure your branch is up-to-date](#sync-your-forked-repository)
 
 ### 11. Give Relevant PR Message
-![12](https://user-images.githubusercontent.com/54521023/94943129-de1e6f80-04f4-11eb-84aa-98e5de616a53.png)
+![12](https://user-images.githubusercontent.com/54521023/135753639-bcf2b0d2-763c-49fd-be9f-9b4175d29c3d.png)
 
 ### 12. Enter Related Issue No
 ![13](https://user-images.githubusercontent.com/54521023/94943135-dfe83300-04f4-11eb-8db8-639077cf8b9c.png)
 
-### 13. Enter Opted Language
-![14](https://user-images.githubusercontent.com/54521023/94943142-e080c980-04f4-11eb-920e-05af0fa1e3a2.png)
+### 13. Fill Up The Checkboxe(s)
+![14](https://user-images.githubusercontent.com/54521023/135755940-ef41a77d-2e4b-4518-96f2-2a6643b8def7.png)
 
-### 14. Enter Number Of Files Updated
-![15](https://user-images.githubusercontent.com/54521023/94943148-e1196000-04f4-11eb-92ee-530cb7e74218.png)
+### 14. Create A Pull Request
+![15](https://user-images.githubusercontent.com/54521023/94943157-e37bba00-04f4-11eb-8d5e-cd65c93bf842.png)
 
-### 15. Enter File(s) Name(s)
-![16](https://user-images.githubusercontent.com/54521023/94943153-e1b1f680-04f4-11eb-9aa8-0aa99c48a081.png)
+### 15. Congrats 🎉
+![16](https://user-images.githubusercontent.com/54521023/135753630-0d898e7e-1533-4278-9288-25ec08a3836e.png)
 
-### 16. Fill Up The Checkboxe(s)
-![17](https://user-images.githubusercontent.com/54521023/94943155-e2e32380-04f4-11eb-92eb-2dc6e339082d.png)
+### 20. Wait Till Your PR Gets Merged
+![17](https://user-images.githubusercontent.com/54521023/135753819-76a75d6d-b15e-4096-8f4c-11ad1d5e3e17.png)
 
-### 17. Create Pull Request
-![18](https://user-images.githubusercontent.com/54521023/94943157-e37bba00-04f4-11eb-8d5e-cd65c93bf842.png)
-
-### 18. Congrats 🎉
-![19](https://user-images.githubusercontent.com/54521023/94943163-e4145080-04f4-11eb-8237-c0b2a6c75393.png)
+## Want To Contribute More ?
+I have created [this](https://github.com/ahampriyanshu/norm_has_an_api) funny api. Have a look and decide if it is something that interests you.
 
 ## Want To Document The Repo ?
 * Click [here](https://github.com/ahampriyanshu/algo_ds_101/issues/new?assignees=octocat&labels=Hacktoberfest2021%2CHacktoberfest%2Cnew+submssion%2Cfirst+timer%2Cgood+first+issue%2Cdocumentation&template=Documentation.yml&title=Directory+You+Purpose+to+Document) to know more
@@ -112,11 +111,11 @@ $ git reset --hard upstream/main
 $ git push origin main
 ```
 
-### Github
+### GUI
 
-![Screenshot from 2021-10-01 00-23-07](https://user-images.githubusercontent.com/54521023/135514252-18bab611-4683-4d3c-a8a8-03117292fbb7.png)
-![Screenshot from 2021-10-01 00-23-25](https://user-images.githubusercontent.com/54521023/135514247-020bb6e8-b869-4668-a350-89081a4ed5a8.png)
-![Screenshot from 2021-10-01 00-23-54](https://user-images.githubusercontent.com/54521023/135514235-9e40abdf-ed8c-4954-9bc3-a9e6d41fad49.png)
+![18](https://user-images.githubusercontent.com/54521023/135514252-18bab611-4683-4d3c-a8a8-03117292fbb7.png)
+![19](https://user-images.githubusercontent.com/54521023/135514247-020bb6e8-b869-4668-a350-89081a4ed5a8.png)
+![20](https://user-images.githubusercontent.com/54521023/135514235-9e40abdf-ed8c-4954-9bc3-a9e6d41fad49.png)
 
 ## Contributing Guidelines
 Read [contributing guidelines](https://github.com/ahampriyanshu/algo_ds_101/blob/main/CONTRIBUTING.md)
