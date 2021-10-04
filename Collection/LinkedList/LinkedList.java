@@ -7,27 +7,29 @@
 import java.util.*;
 class LinkedListDemo{
   public static void main(String args[]){
-    
-    Scanner sc=new Scanner(System.in);
-    //String str=sc.next();  //Use this to input from user.
-    
     //This is how we initialise a linkedlist named 'list' with Data type as String which will be stored.
     LinkedList<String> list=new LinkedList<String>();
     
-    
-    //Take some inputs and add the elements
-    list.add("Hi");
-    list.add("Welcome to");
-    list.add("Hacktoberfest 2k21");
-    
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the number strings to be added in list initially");
+    int n=sc.nextInt();
+    while(n-->0){
+     String str=sc.next();  //Use this to input from user.
+     list.add(str);  //keep on adding the strings.
+    }
     //The list elements get added one after the other and its printed as in order.
     System.out.println(list);
     
-    //But we can use other methods like addFirst() and addLast() to add elements at the beginning and the last
-    list.addFirst("Lets begin here");
-    list.addFirst("START DEMO from @PrakashAditya17");
-    list.addLast("Lets do some open source contribution");
-    list.addLast("ENDING DEMO");
+   // we can use other methods like addFirst() and addLast() to add elements at the beginning and the last
+    System.out.println("Enter the string you want to add at the beginning");
+    String starting_str=sc.next();
+    list.addFirst(starting_str);
+    
+    System.out.println("Enter the string you want to add at the ending");
+    String ending_str=sc.next();
+    list.addLast(ending_str); 
+    
+    
     
     System.out.println("Updated list->"+list);    
     
@@ -44,13 +46,20 @@ class LinkedListDemo{
     System.out.println("Last Node is"+str2);
     
     //Since its indexed, we can also set element at specified position and also remove by specifying the position
-    list.set(1,"Hello");  //"Hi" gets replaced with "Hello"
-    list.remove(2);       //"Welcome to" is removed here
+    System.out.println("Enter the index and String you want to insert at");
+    int ind=sc.nextInt();
+    String new_str=sc.next();
+    list.set(ind,new_str); 
+ 
+    list.addFirst("LinkedList DEMO from @PrakashAditya17::");  //Random string added here
+   
+    System.out.println("UPDATED LIST->"+list); 
+    System.out.println("Enter the position of any String you want to remove");
+    int ind_remove=sc.nextInt();
+    list.remove(ind_remove);       
     
-    System.out.println("FINAL LIST->"+list); 
-    
-    //For iteration we can use use the following way.
-    for(String ele : list){
+   //For iteration we can use use the following way.
+    for(String ele : list)
       System.out.print(ele+",");
   }
 }
