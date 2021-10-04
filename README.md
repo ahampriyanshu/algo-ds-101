@@ -118,10 +118,10 @@ $ git push origin main
 ![20](https://user-images.githubusercontent.com/54521023/135514235-9e40abdf-ed8c-4954-9bc3-a9e6d41fad49.png)
 
 ## Contributing Guidelines
-Read [contributing guidelines](https://github.com/ahampriyanshu/algo_ds_101/blob/main/CONTRIBUTING.md)
+Read [contributing guidelines](CONTRIBUTING.md/)
 
 ## Contributors
-Meet our wonderful [contributors](https://github.com/ahampriyanshu/algo_ds_101/blob/main/CONTRIBUTORS.md)
+Meet our wonderful [contributors](CONTRIBUTORS.md/)
 
 ## Code of Conduct
 Read our [code of conduct](CODE_OF_CONDUCT.md/).
