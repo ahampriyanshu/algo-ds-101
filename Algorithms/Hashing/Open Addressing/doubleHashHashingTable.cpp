@@ -35,13 +35,20 @@ int hashFxn(int key) {
     return hash(key);
 }
 
-// Performs linear probing to resolve collisions
-int linearProbe(int key, bool searching) {
+// Used for second hash function
+int otherHashFxn(int key) {
+    std::hash<int> hash;
+    return 1 + (7 - (hash(key) % 7));
+}
+
+// Performs double hashing to resolve collisions
+int doubleHash(int key, bool searching) {
     int hash = static_cast<int>(fabs(hashFxn(key)));
     int i = 0;
     Entry entry;
     do {
-        int index = static_cast<int>(fabs((hash + i) % totalSize));
+        int index = static_cast<int>(fabs((hash +
+            (i * otherHashFxn(key))))) % totalSize;
         entry = table[index];
         if (searching) {
             if (entry.key == notPresent) {
@@ -58,11 +65,13 @@ int linearProbe(int key, bool searching) {
                 if (!rehashing) cout << "Spot found!" << endl;
                 return index;
             }
-            if (!rehashing) cout << "Spot taken, looking at next" << endl;
+            if (!rehashing) cout << "Spot taken, looking at next (next index:"
+                << " " << static_cast<int>(fabs((hash +
+                (i * otherHashFxn(key))))) % totalSize << ")" << endl;
             i++;
         }
-        if (i == totalSize) {
-            cout << "Linear probe failed" << endl;
+        if (i == totalSize * 100) {
+            cout << "DoubleHash probe failed" << endl;
             return notPresent;
         }
     } while (entry.key != notPresent);
@@ -119,11 +128,11 @@ void rehash() {
     cout << "Table was rehashed, new size is: " << totalSize << endl;
 }
 
-// Adds entry using linear probing. Checks for load factor here
+// Checks for load factor here
 void add(int key) {
     Entry * entry = new Entry();
     entry->key = key;
-    int index = linearProbe(key, false);
+    int index = doubleHash(key, false);
     table[index] = *entry;
     // Load factor greater than 0.5 causes resizing
     if (++size/ static_cast<double>(totalSize) >= 0.5) {
@@ -133,12 +142,12 @@ void add(int key) {
 
 // Removes key. Leaves tombstone upon removal.
 void remove(int key) {
-    int index = linearProbe(key, true);
+    int index = doubleHash(key, true);
     if (index == notPresent) {
         cout << "key not found" << endl;
     }
-    cout << "Removal Successful, leaving tomb" << endl;
     table[index].key = tomb;
+    cout << "Removal successful, leaving tombstone" << endl;
     size--;
 }
 
@@ -147,8 +156,8 @@ void addInfo(int key) {
     cout << "Initial table: ";
     display();
     cout << endl;
-    cout << "hash of " << key << " is " << hashFxn(key) << " % "
-        << totalSize << " == " << fabs(hashFxn(key) % totalSize);
+    cout << "hash of " << key << " is " << hashFxn(key)
+        << " % " << totalSize << " == " << fabs(hashFxn(key) % totalSize);
     cout << endl;
     add(key);
     cout << "New table: ";
@@ -200,7 +209,7 @@ int main(void) {
         case 3: {
             cout << "Enter key to search = ";
             cin >> key;
-            Entry entry = table[linearProbe(key, true)];
+            Entry entry = table[doubleHash(key, true)];
             if (entry.key == notPresent) {
                 cout << "Key not present";
             }
