@@ -1,4 +1,5 @@
 // Circular Queue implementation in Java
+import java.util.*;
 
 public class CQueue {
     int SIZE = 5; // Size of Circular Queue
@@ -80,33 +81,33 @@ public class CQueue {
   
       CQueue q = new CQueue();
   
-      // Fails because front = -1
-      q.deQueue();
-  
-      q.enQueue(1);
-      q.enQueue(2);
-      q.enQueue(3);
-      q.enQueue(4);
-      q.enQueue(5);
-  
-      // Fails to enqueue because front == 0 && rear == SIZE - 1
-      q.enQueue(6);
-  
-      q.display();
-  
-      int elem = q.deQueue();
-  
-      if (elem != -1) {
-        System.out.println("Deleted Element is " + elem);
-      }
-      q.display();
-  
-      q.enQueue(7);
-  
-      q.display();
-  
-      // Fails to enqueue because front == rear + 1
-      q.enQueue(8);
+      Scanner sc=new Scanner(System.in);
+      int choice=0,x;
+      do{
+          System.out.println("1-Insert\n2-Delete\n3-Display\n4-Exit");
+          choice=sc.nextInt();
+          switch(choice){
+              case 1:
+                  System.out.println("Enter Number");
+                  x=sc.nextInt();
+                  q.enQueue(x);
+                  q.display();
+                  break;
+              case 2:
+                  x=q.deQueue();
+                  if(x!=-1)
+                    System.out.println("Deleted Element is "+x);
+                  break;
+              case 3:
+                  q.display();
+                  break;
+              case 4:
+                  break;
+              default:
+                  System.out.println("Invalid Option");
+                  System.exit(0);
+          }
+      }while(choice!=4);
     }
   
   }
