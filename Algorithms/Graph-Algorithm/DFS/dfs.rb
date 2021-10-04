@@ -1,3 +1,4 @@
+
 def depth_first_search(search_value, tree)
   stack = [tree]
   visited = [tree]
