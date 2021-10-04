@@ -6,13 +6,19 @@
 
 INF = 9999999
 # number of vertices
-N = 5
+N = int(input("Enter the number of vertices:"))
 # adjacency matrix to represent graph
-G = [[0, 9, 75, 0, 0],
-     [9, 0, 95, 19, 42],
-     [75, 95, 0, 51, 66],
-     [0, 19, 51, 0, 31],
-     [0, 42, 66, 31, 0]]
+
+# Initialize list G
+G = []
+print("Enter the entries rowwise:")
+  
+# For user input
+for i in range(N):          
+    a =[]
+    for j in range(N):     
+         a.append(int(input()))
+    G.append(a)
 # array to track node that was selected.
 selected_node = [0, 0, 0, 0, 0]
 
