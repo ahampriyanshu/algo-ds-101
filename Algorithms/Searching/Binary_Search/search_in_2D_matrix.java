@@ -15,12 +15,28 @@ public class search_in_2D_matrix {
     }
     public static void main(String[] args)
     {
-        int mat[][] = { { 10, 20, 30, 40 },
-                    { 15, 25, 35, 45 },
-                    { 27, 29, 37, 48 },
-                    { 32, 33, 39, 50 } };
-
-        boolean isFound = searchMatrix(mat,29);
-        System.out.println(isFound);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number of rows");
+        int row = sc.nextInt();
+        System.out.println("Enter number of coloumns");
+        int col = sc.nextInt();
+  
+        int mat[][] = new int[row][col];
+        
+        System.out.println("Enter matrix elements in sorted manner");
+        for(int i=0;i<row;i++){
+            for(int j=0;j<col;j++){
+                mat[i][j] = sc.nextInt();
+            }
+        }
+        System.out.println("Enter element to be searched");
+        int target = sc.nextInt();
+        boolean isFound = searchMatrix(mat,target);
+        if(isFound) {
+            System.out.println("Target element found in matrix");
+        }
+        else {
+            System.out.println("Target element not found in matrix");
+        }
     }
 }
