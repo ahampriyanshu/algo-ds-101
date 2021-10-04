@@ -4,6 +4,17 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// initialize
+void initialize1(vector<int > &parent, vector<int > &rank, vector<int > &size, int n)
+{
+	// initiaize parent, rank, and size array
+	for(int i=0;i<n;i++)
+	{
+		parent[i]=i;
+		rank[i]=0;
+		size[i]=0;
+	}
+}
 
 // find function
 int dsfind(vector<int > &parent, int x)// with path compression
@@ -39,27 +50,21 @@ void dsunion(vector<int > &parent, vector<int > &rank, int x, int y)// (union by
 
 int main() 
 {
-	int n = 11;
+	int n;
+	cout<<"ENTER N:\n";
+	cin>>n;
 	
 	vector<int > parent(n), rank(n), size(n);// by default array element will be 0
 	
-	// initiaize parent, rank, and size array
+	initialize1(parent, rank, size, n);
+	
+	cout<<"Enter n lines of u and v, such that u and v in same set:\n";
 	for(int i=0;i<n;i++)
 	{
-		parent[i]=i;
-		rank[i]=0;
-		size[i]=0;
+		int u,v;
+		cin>>u>>v;
+		dsunion(parent, rank, u, v);
 	}
-	
-	//forming disjoint set
-	dsunion(parent, rank, 0, 1);
-	dsunion(parent, rank, 1, 2);
-	dsunion(parent, rank, 2, 3);
-	dsunion(parent, rank, 4, 5);
-	dsunion(parent, rank, 5, 6);
-	dsunion(parent, rank, 6, 7);
-	dsunion(parent, rank, 7, 8);
-	dsunion(parent, rank, 9, 10);
 	
 	// Q.1) finding total no of groups
 	//		traverse parent array, find the parent of each parent[i], and insert in the set, return size of set.
@@ -68,7 +73,7 @@ int main()
 	{
 		st.insert(dsfind(parent, parent[i]));
 	}
-	cout<<st.size()<<endl;
+	cout<<"\nTotal no. of disjoint set: "<<st.size()<<endl;
 	
 	// Q.2) print all the groups present
 	unordered_map<int, vector<int >> mp;
@@ -76,6 +81,7 @@ int main()
 	{
 		mp[dsfind(parent, parent[i])].push_back(i);
 	}
+	cout<<"\nPrinting each set and their elements:\n";
 	for(auto it : mp)
 	{
 		cout<<it.first<<" -> ";// parent
