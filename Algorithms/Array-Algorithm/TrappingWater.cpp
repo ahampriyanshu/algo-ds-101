@@ -1,3 +1,7 @@
+// Author - Nishit Bansal, Nishit278 @github 
+// Solution using 2 pointer method  
+// Time Complexity - O(n)
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -21,6 +25,8 @@ int trap(vector<int>& h) {
         }
         return ans;
     }
+
+// Driver's code 
 int main(){
     int n;
     cin >> n;
