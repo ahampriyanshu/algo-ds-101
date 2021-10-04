@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class StackUsingLL {
     Node head;
     class Node {
@@ -58,31 +60,55 @@ public class StackUsingLL {
                 System.out.println("");
             }
         }
+        
+    public static void operation(StackUsingLL stack) {
+    	 System.out.println("Enter the operation");
+         System.out.println("1. "+"push");
+         System.out.println("2. pop");
+         System.out.println("3. peek");
+         System.out.println("4. display");
+         
+         Scanner sc = new Scanner(System.in);
+         int input = sc.nextInt();
+         
+         switch(input) {
+         // push into stack
+         case 1:
+             System.out.println("Enter the number of elements to be pushed");
+             int number = sc.nextInt();
+             
+             System.out.println("Enter the elements");
+             while(number-->0) {
+             	int element = sc.nextInt();
+             	stack.push(element);
+             }
+             stack.operation(stack);
+          // Delete top element of Stack
+           case 2:
+         	stack.pop();
+         	stack.operation(stack);
+             
+          // print Top element of Stack  
+           case 3:
+         	  System.out.printf("\nTop element is %d\n", stack.peek());
+         	 stack.operation(stack);
+             
+           //print Stack elements  
+           case 4:
+         	stack.display();
+         	stack.operation(stack);
+         	
+           case 5:
+        	System.out.println("EXIT");
+        	System.exit(0);
+         	
+           default: System.exit(0);
+         }
+    }
 
     public static void main(String[] args) {
         //object of class
-        StackUsingLL stack = new StackUsingLL();
-
-        // insert Stack value
-        stack.push(11);
-        stack.push(22);
-        stack.push(33);
-        stack.push(44);
-
-        //print Stack elements
-        stack.display();
-
-        // print Top element of Stack
-        System.out.printf("\nTop element is %d\n", stack.peek());
-
-        // Delete top element of Stack
-        stack.pop();
-        stack.pop();
-
-        //print Stack elements after popping elements
-        stack.display();
-
-        // print Top element of Stack
-        System.out.printf("\nTop element is %d\n", stack.peek());
+    	StackUsingLL stack = new StackUsingLL();
+        stack.operation(stack);
     }
 }
