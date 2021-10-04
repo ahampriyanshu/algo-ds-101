@@ -2,24 +2,6 @@ import math
  
 # Pre-processing to calculate values of memo[][]
 def dfs(u, p, memo, lev, log, g):
-     
-    # Using recursion formula to calculate
-    # the values of memo[][]
-    memo[u][0] = p
-    for i in range(1, log + 1):
-        memo[u][i] = memo[memo[u][i - 1]][i - 1]
-         
-    for v in g[u]:
-        if v != p:
-            lev[v] = lev[u] + 1
-            dfs(v, u, memo, lev, log, g)
- 
-# Function to return the LCA of nodes u and v
-def lca(u, v, log, lev, memo):
-import math
- 
-# Pre-processing to calculate values of memo[][]
-def dfs(u, p, memo, lev, log, g):
 
     memo[u][0] = p
     for i in range(1, log + 1):
