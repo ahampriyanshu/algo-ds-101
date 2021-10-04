@@ -3154,6 +3154,13 @@
             <sub style="font-size:14px"><b>Tasfik Rahman</b></sub>
         </a>
     </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/ManavArora26>
+            <img src=https://avatars.githubusercontent.com/u/72567005?v=4 width="100;"  alt=Manav Arora/>
+            <br />
+            <sub style="font-size:14px"><b>Manav Arora</b></sub>
+        </a>
+    </td>
 </tr>
 </table>
 
