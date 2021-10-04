@@ -39,7 +39,7 @@
 ### 4. Check For The Languages Available
 ![5](https://user-images.githubusercontent.com/54521023/135753314-d67a67b5-3e57-48c5-b58e-076e442f3849.png)
 
-### 4. Comment In The Stated Syntax
+### 5. Comment In The Stated Syntax
 ![6](https://user-images.githubusercontent.com/54521023/135754330-be6aa099-2ccf-44c7-aebe-e9348c23ae82.png)
 
 * ``Language In Which You Will Contribute => Time Required By You To Push The Changes``
@@ -118,10 +118,10 @@ $ git push origin main
 ![20](https://user-images.githubusercontent.com/54521023/135514235-9e40abdf-ed8c-4954-9bc3-a9e6d41fad49.png)
 
 ## Contributing Guidelines
-Read [contributing guidelines](https://github.com/ahampriyanshu/algo_ds_101/blob/main/CONTRIBUTING.md)
+Read [contributing guidelines](CONTRIBUTING.md/)
 
 ## Contributors
-Meet our wonderful [contributors](https://github.com/ahampriyanshu/algo_ds_101/blob/main/CONTRIBUTORS.md)
+Meet our wonderful [contributors](CONTRIBUTORS.md/)
 
 ## Code of Conduct
 Read our [code of conduct](CODE_OF_CONDUCT.md/).
