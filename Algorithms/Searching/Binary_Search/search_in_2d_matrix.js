@@ -12,12 +12,12 @@ function BinarySearch(arr,val,start=0,end=arr.length-1){
             return mid;
         }
         
-        if(val<arr[mid]){    //if val is small then change end to mid-1
+        if(val<arr[mid]){    //if value is small then change end to mid-1
             end=mid-1;
         }
 
         else{
-            start=mid+1;     //if val is large then change start to mid+1
+            start=mid+1;     //if value is large then change start to mid+1
         }
 
     }
