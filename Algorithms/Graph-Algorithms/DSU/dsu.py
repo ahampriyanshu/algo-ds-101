@@ -54,7 +54,7 @@ class AbstractDSU:
     Time complexity: worst case O(log n), often almost O(1)
     Space complexity: O(2n)
 
-    Element are numbered from 1 to n
+    Elements are numbered from 1 to n
 
     Args:
         n (int): number of elements (number of sets)
@@ -99,11 +99,11 @@ class AbstractDSU:
         return self.prev[v]
 
     def union_sets(self, a, b):
-        """United two sets that contain the elements passed
+        """Unite two sets that contain the elements passed
 
         Args:
             a (int): element of the first set
-            b (int): ekement of the second set
+            b (int): element of the second set
         """
         if not self._process_set_boundaries(a) or not self._process_set_boundaries(b):
             return
@@ -126,8 +126,8 @@ class AbstractDSU:
         Assumes that set x is the bigger set
 
         Args:
-            x (int): element of the set
-            y (int): element of the set
+            x (int): element of the first set
+            y (int): element of the second set
         """
         raise NotImplementedError()
 
