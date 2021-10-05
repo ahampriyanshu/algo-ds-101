@@ -1,6 +1,6 @@
 <p align="center">
 <img width="450" height="450" src="https://user-images.githubusercontent.com/54521023/94943180-e676aa80-04f4-11eb-8842-9634c1e66fa4.png" /><br>
-<img src="https://img.shields.io/badge/HacktoberFest-2021-brightgreen.svg?style=for-the-badge" alt="HactoberFest 2021" />  <img src="https://img.shields.io/github/license/ahampriyanshu/algo_ds_101?style=for-the-badge" />  <img src="https://img.shields.io/github/repo-size/ahampriyanshu/algo_ds_101?style=for-the-badge" />  <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/ahampriyanshu/algo_ds_101?style=for-the-badge" />  <img alt="GitHub issues" src="https://img.shields.io/github/issues/ahampriyanshu/algo_ds_101?style=for-the-badge" />   
+<img src="https://img.shields.io/github/license/ahampriyanshu/algo_ds_101?style=for-the-badge" />  <img src="https://img.shields.io/github/repo-size/ahampriyanshu/algo_ds_101?style=for-the-badge" />  <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/ahampriyanshu/algo_ds_101?style=for-the-badge" />  <img alt="GitHub issues" src="https://img.shields.io/github/issues/ahampriyanshu/algo_ds_101?style=for-the-badge" />   
 </p>
 
 ## Index
@@ -8,17 +8,8 @@
 * [Data Structures](Data-Structures/)
 * [Algorithms](Algorithms/)
 * [Maths And Stats](Maths/)
-* [STL](STL/)
 * [Collection](Collection/)
-
-## HacktoberFest 2021
-
-![hacktoberfest 2021](https://user-images.githubusercontent.com/54521023/135562921-ce70f204-4e49-4278-b1e0-62cf13a385e3.png)
-
-* [Sign up via Github or Gitlab](https://hacktoberfest.digitalocean.com/register)
-* Create four PRs and wait till they get merged.
-* [Check your stats](https://hacktoberfest.digitalocean.com/profile)
-* Please don't spam.
+* [STL](STL/)
 
 ## How To Contribute
 
@@ -42,7 +33,7 @@
 ### 5. Comment In The Stated Syntax
 ![6](https://user-images.githubusercontent.com/54521023/135754330-be6aa099-2ccf-44c7-aebe-e9348c23ae82.png)
 
-* ``Language In Which You Will Contribute => Time Required By You To Push The Changes``
+* **Language In Which You Will Contribute => Time Required By You To Push The Changes**
 * Ask for the issue that you plan to complete.
 * Do not wait to get assigned.
 * Please try to push the changes in less than or equal to the stated(by you only) time period. Failing to do that, your comment will be discarded and the language will be made available to other participants.
@@ -83,9 +74,6 @@
 
 ### 20. Wait Till Your PR Gets Merged
 ![17](https://user-images.githubusercontent.com/54521023/135753819-76a75d6d-b15e-4096-8f4c-11ad1d5e3e17.png)
-
-## Want To Contribute More ?
-I have created [this](https://github.com/ahampriyanshu/norm_has_an_api) funny api. Have a look and decide if it is something that interests you.
 
 ## Want To Document The Repo ?
 * Click [here](https://github.com/ahampriyanshu/algo_ds_101/issues/new?assignees=octocat&labels=Hacktoberfest2021%2CHacktoberfest%2Cnew+submssion%2Cfirst+timer%2Cgood+first+issue%2Cdocumentation&template=Documentation.yml&title=Directory+You+Purpose+to+Document) to know more
