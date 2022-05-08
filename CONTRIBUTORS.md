@@ -2225,9 +2225,9 @@
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/hello-fri-end>
-            <img src=https://avatars.githubusercontent.com/u/43880587?v=4 width="100;"  alt=Shah Anwaar Khalid/>
+            <img src=https://avatars.githubusercontent.com/u/43880587?v=4 width="100;"  alt=Anwaar Khalid/>
             <br />
-            <sub style="font-size:14px"><b>Shah Anwaar Khalid</b></sub>
+            <sub style="font-size:14px"><b>Anwaar Khalid</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
