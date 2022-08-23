@@ -2803,10 +2803,10 @@
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/HarshUdai>
-            <img src=https://avatars.githubusercontent.com/u/50704886?v=4 width="100;"  alt=Harsh Udai/>
+        <a href=https://github.com/Harsh-Udai-robomq>
+            <img src=https://avatars.githubusercontent.com/u/50704886?v=4 width="100;"  alt=HarshUdai/>
             <br />
-            <sub style="font-size:14px"><b>Harsh Udai</b></sub>
+            <sub style="font-size:14px"><b>HarshUdai</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
